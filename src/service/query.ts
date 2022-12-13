@@ -1,3 +1,1 @@
-export const query = (str: string) => {
-
-}
+export const query = (str: string) => {}

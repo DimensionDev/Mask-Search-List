@@ -30,6 +30,15 @@ export enum ChainId {
   Palm = 11297108109,
 }
 
+/**
+ * All integrated network Plugin IDs
+ */
+export declare enum NetworkPluginID {
+  PLUGIN_EVM = 'com.mask.evm',
+  PLUGIN_FLOW = 'com.mask.flow',
+  PLUGIN_SOLANA = 'com.mask.solana',
+}
+
 export enum SearchResultType {
   // e.g., 0xd8da6bf26964af9d7eed9e03e53415d37aa96045
   Address = 'Address',
@@ -44,6 +53,7 @@ export enum SearchResultType {
 }
 
 export interface FungibleToken {
+  pluginID: NetworkPluginID
   id: string | number
   name: string
   symbol: string
@@ -52,9 +62,10 @@ export interface FungibleToken {
 }
 
 export interface NonFungibleToken {
+  pluginID: NetworkPluginID
   address: string
   name: string
-  chain: string
+  chainId: ChainId
   source: SourceType
   type: SearchResultType
 }
@@ -98,7 +109,8 @@ export enum SourceType {
 }
 
 export interface NonFungibleCollection {
-  chainId: string
+  pluginID: NetworkPluginID
+  chainId: ChainId
   name: string
   slug?: string
   symbol?: string
@@ -116,15 +128,21 @@ export interface NonFungibleCollection {
   /** source type */
   source: SourceType
   type: SearchResultType
-  socialLinks: {
-    website?: string
-    email?: string
-    twitter?: string
-    discord?: string
-    telegram?: string
-    github?: string
-    instagram?: string
-    medium?: string
+  collection: {
+    chainId: ChainId
+    name: string
+    symbol?: string
+    address?: string
+    socialLinks: {
+      website?: string
+      email?: string
+      twitter?: string
+      discord?: string
+      telegram?: string
+      github?: string
+      instagram?: string
+      medium?: string
+    }
   }
 }
 

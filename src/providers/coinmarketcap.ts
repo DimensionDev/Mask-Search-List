@@ -1,4 +1,4 @@
-import {FungibleToken, FungibleTokenProvider, SearchResultType, SourceType} from '../type'
+import { FungibleToken, FungibleTokenProvider, NetworkPluginID, SearchResultType, SourceType } from '../type'
 import axios from 'axios'
 import urlcat from 'urlcat'
 
@@ -41,6 +41,7 @@ export class CoinMarketCap implements FungibleTokenProvider {
     return res.data.data.map(
       (x) =>
         ({
+          pluginID: NetworkPluginID.PLUGIN_EVM,
           id: x.id,
           name: x.name,
           symbol: x.symbol,

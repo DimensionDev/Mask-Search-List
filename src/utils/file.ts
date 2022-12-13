@@ -1,6 +1,6 @@
 import path from 'node:path'
 import fs from 'node:fs/promises'
-import {FungibleToken, NonFungibleCollection, NonFungibleToken, SourceType} from '../type'
+import { FungibleToken, NonFungibleCollection, NonFungibleToken, SourceType } from '../type'
 
 // @ts-ignore
 export const getOutputDir = (type) => path.join(process.env.PWD, `output/${type}`)

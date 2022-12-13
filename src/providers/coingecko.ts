@@ -1,7 +1,7 @@
 import axios from 'axios'
-import {FungibleToken, FungibleTokenProvider, SearchResultType, SourceType} from '../type'
+import { FungibleToken, FungibleTokenProvider, NetworkPluginID, SearchResultType, SourceType } from '../type'
 import urlcat from 'urlcat'
-import {delay} from '../utils'
+import { delay } from '../utils'
 
 export const baseURL = 'https://api.coingecko.com/api/v3'
 
@@ -52,6 +52,7 @@ export class CoinGecko implements FungibleTokenProvider {
 
       result.push(
         ...list.data.map((x) => ({
+          pluginID: NetworkPluginID.PLUGIN_EVM,
           id: x.id,
           symbol: x.symbol,
           name: x.name,
