@@ -33,7 +33,7 @@ export enum ChainId {
 /**
  * All integrated network Plugin IDs
  */
-export declare enum NetworkPluginID {
+export enum NetworkPluginID {
   PLUGIN_EVM = 'com.mask.evm',
   PLUGIN_FLOW = 'com.mask.flow',
   PLUGIN_SOLANA = 'com.mask.solana',

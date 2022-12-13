@@ -17,11 +17,12 @@ const nonFungibleCollecitonProviders = [nftScanCollectionAPI]
 async function main() {
   let fungibleTokens: FungibleToken[] = []
   for (const p of fungibleProviders) {
+    console.log(`Fetch the data from ${p.getProviderName()}`)
     try {
       const tokens = await p.getTopTokens()
       fungibleTokens = [...fungibleTokens, ...tokens]
     } catch (e) {
-      console.log(`Fetch the chain failed by ${p.getProviderName()}`)
+      console.log(`Fetching the chain failed by ${p.getProviderName()}`)
       console.log(e)
     }
 
