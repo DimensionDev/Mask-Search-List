@@ -26,7 +26,7 @@ export interface Platform {
   slug: string
   token_address: string
 }
-const baseProURL = 'https://pro-api.coinmarketcap.com'
+const baseProURL = 'https://coinmarketcap-agent.r2d2.to'
 
 export class CoinMarketCap implements FungibleTokenProvider {
   async getTopTokens(): Promise<FungibleToken[]> {
@@ -34,9 +34,7 @@ export class CoinMarketCap implements FungibleTokenProvider {
       sort: 'cmc_rank',
       limit: 2000,
     })
-    const res = await axios.get<Response>(url, {
-      headers: { 'X-CMC_PRO_API_KEY': '__KEY___' },
-    })
+    const res = await axios.get<Response>(url)
 
     return res.data.data.map(
       (x) =>

@@ -11,6 +11,8 @@ import {
   SourceType,
 } from '../type'
 
+const baseURL = 'https://nftscan-proxy.r2d2.to'
+
 const configs = [
   {
     chain: 'eth',
@@ -30,44 +32,51 @@ const configs = [
     chain: 'polygon',
     chainId: ChainId.Polygon,
     pluginID: NetworkPluginID.PLUGIN_EVM,
-    url: 'https://restapi.nftscan.com',
+    url: 'https://polygonapi.nftscan.com',
     coin: 'MATIC',
   },
-  {
-    chain: 'moonbeam',
-    chainId: ChainId.Moonbeam,
-    pluginID: NetworkPluginID.PLUGIN_EVM,
-    url: 'https://restapi.nftscan.com',
-    coin: 'GLMR',
-  },
+  // {
+  //   chain: 'moonbeam',
+  //   chainId: ChainId.Moonbeam,
+  //   pluginID: NetworkPluginID.PLUGIN_EVM,
+  //   url: 'https://restapi.nftscan.com',
+  //   coin: 'GLMR',
+  // },
   {
     chain: 'arbitrum',
     chainId: ChainId.Arbitrum,
     pluginID: NetworkPluginID.PLUGIN_EVM,
-    url: 'https://restapi.nftscan.com',
+    url: 'https://arbitrumapi.nftscan.com',
     coin: 'ETH',
   },
   {
     chain: 'optimism',
     chainId: ChainId.Optimistic,
     pluginID: NetworkPluginID.PLUGIN_EVM,
-    url: 'https://restapi.nftscan.com',
+    url: 'https://optimismapi.nftscan.com',
     coin: 'ETH',
   },
-  {
-    chain: 'avalanche',
-    chainId: ChainId.Avalanche,
-    pluginID: NetworkPluginID.PLUGIN_EVM,
-    url: 'https://restapi.nftscan.com',
-    coin: 'AVAX',
-  },
-  {
-    chain: 'solana',
-    chainId: ChainId.Mainnet,
-    pluginID: NetworkPluginID.PLUGIN_SOLANA,
-    url: 'https://restapi.nftscan.com',
-    coin: 'SOL',
-  },
+  // {
+  //   chain: 'cronos',
+  //   chainId: ChainId.xDai,
+  //   pluginID: NetworkPluginID.PLUGIN_EVM,
+  //   url: 'https://cronosapi.nftscan.com',
+  //   coin: 'CRO',
+  // },
+  // {
+  //   chain: 'avalanche',
+  //   chainId: ChainId.Avalanche,
+  //   pluginID: NetworkPluginID.PLUGIN_EVM,
+  //   url: 'https://avaxapi.nftscan.com',
+  //   coin: 'AVAX',
+  // },
+  // {
+  //   chain: 'solana',
+  //   chainId: ChainId.Mainnet,
+  //   pluginID: NetworkPluginID.PLUGIN_SOLANA,
+  //   url: 'https://solana.nftscan.com',
+  //   coin: 'SOL',
+  // },
 ]
 
 export type Response = {
@@ -126,8 +135,13 @@ export class NFTScanToken implements NonFungibleTokenProvider {
     let result: NonFungibleToken[] = []
 
     for (let config of configs) {
-      const url = urlcat(config.url, '/api/v2/statistics/ranking/marketcap')
-      const list = await axios.get<Response>(url, { headers: { 'X-API-KEY': '___KEY___' } })
+      const url = urlcat(baseURL, '/api/v2/statistics/ranking/marketcap')
+      const list = await axios.get<Response>(url, {
+        headers: {
+          'content-type': 'application/json',
+          'x-app-chainid': config.pluginID === NetworkPluginID.PLUGIN_SOLANA ? "solana" : config.chainId.toString(),
+        }
+      })
 
       const data = list.data.data.map(
         (x) =>
@@ -157,8 +171,14 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
     let result: NonFungibleCollection[] = []
 
     for (let config of configs) {
-      const url = urlcat(config.url, '/api//v2/collections/rankings', { limit: 1000 })
-      const list = await axios.get<CollectionResponse>(url, { headers: { 'X-API-KEY': '__KEY___' } })
+      const url = urlcat(baseURL, '/api/v2/collections/rankings', {limit: 1000})
+
+      const list = await axios.get<CollectionResponse>(url, {
+        headers: {
+          'content-type': 'application/json',
+          'x-app-chainid': config.pluginID === NetworkPluginID.PLUGIN_SOLANA ? "solana" : config.chainId.toString(),
+        },
+      })
 
       const data = list.data.data.map(
         (x) =>
