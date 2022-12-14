@@ -1,9 +1,17 @@
 import path from 'node:path'
 import fs from 'node:fs/promises'
-import { FungibleToken, NonFungibleCollection, NonFungibleToken, SourceType } from '../type'
+import {FungibleToken, NonFungibleCollection, NonFungibleToken, SourceType} from '../type'
 
 // @ts-ignore
 export const getOutputDir = (type) => path.join(process.env.PWD, `output/${type}`)
+// @ts-ignore
+export const getPublicDir = (type) => path.join(process.env.PWD, `public/${type}`)
+
+export async function initFolder() {
+  await createIfNotExist(getOutputDir('fungible-tokens'))
+  await createIfNotExist(getOutputDir('non-fungible-tokens'))
+  await createIfNotExist(getOutputDir('non-fungible-collections'))
+}
 
 export async function writeTokensToFile(
   provider: SourceType,
@@ -28,3 +36,20 @@ export async function writeCollectionsToFile(provider: SourceType, tokens: Fungi
     },
   )
 }
+
+export async function mergePublicFileToOutput(type: 'fungible-tokens' | 'non-fungible-tokens' | 'non-fungible-collections') {
+  const src = path.join(`${getPublicDir(type)}`, 'specific-list.json')
+  const dest = path.join(`${getOutputDir(type)}`, 'specific-list.json')
+
+  await fs.copyFile(src, dest)
+}
+
+async function createIfNotExist(path: string) {
+  try {
+    const handle = await fs.opendir(path)
+    await handle.close()
+  } catch {
+    await fs.mkdir(path, {recursive: true})
+  }
+}
+

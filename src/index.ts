@@ -1,6 +1,6 @@
 import { FungibleToken, NonFungibleCollection, NonFungibleToken } from './type'
 import { CoinGecko } from './providers/coingecko'
-import { writeCollectionsToFile, writeTokensToFile } from './utils'
+import {initFolder, mergePublicFileToOutput, writeCollectionsToFile, writeTokensToFile} from './utils'
 import * as process from 'process'
 import { CoinMarketCap } from './providers/coinmarketcap'
 import { NFTScanCollection, NFTScanToken } from './providers/NFTScan'
@@ -15,6 +15,9 @@ const nonFungibleTokenProviders = [nftScanTokenAPI]
 const nonFungibleCollecitonProviders = [nftScanCollectionAPI]
 
 async function main() {
+  await initFolder()
+
+  // Fetch fungible token
   let fungibleTokens: FungibleToken[] = []
   for (const p of fungibleProviders) {
     console.log(`Fetch the data from ${p.getProviderName()}`)
@@ -30,7 +33,9 @@ async function main() {
 
     await writeTokensToFile(p.getProviderName(), 'fungible-tokens', fungibleTokens)
   }
+  await mergePublicFileToOutput("fungible-tokens")
 
+  // Fetch nonFungible token
   let nonFungibleTokens: NonFungibleToken[] = []
   for (const p of nonFungibleTokenProviders) {
     try {
@@ -45,7 +50,9 @@ async function main() {
 
     await writeTokensToFile(p.getProviderName(), 'non-fungible-tokens', nonFungibleTokens)
   }
+  await mergePublicFileToOutput("non-fungible-tokens")
 
+  // Fetch nonFungible Collections
   let nonFungibleCollections: NonFungibleCollection[] = []
   for (const p of nonFungibleCollecitonProviders) {
     try {
@@ -60,6 +67,7 @@ async function main() {
 
     await writeCollectionsToFile(p.getProviderName(), nonFungibleCollections)
   }
+  await mergePublicFileToOutput("non-fungible-collections")
 
   console.log('Generate success!')
   process.exit(0)
