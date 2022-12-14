@@ -37,7 +37,7 @@ export class CoinMarketCap implements FungibleTokenProvider {
     const res = await axios.get<Response>(url)
 
     return res.data.data.map(
-      (x) =>
+      (x, index) =>
         ({
           pluginID: NetworkPluginID.PLUGIN_EVM,
           id: x.id,
@@ -45,6 +45,7 @@ export class CoinMarketCap implements FungibleTokenProvider {
           symbol: x.symbol,
           source: SourceType.CoinMarketCap,
           type: SearchResultType.FungibleToken,
+          rank: x.rank,
         } as FungibleToken),
     )
   }

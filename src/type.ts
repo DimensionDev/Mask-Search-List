@@ -52,24 +52,6 @@ export enum SearchResultType {
   NonFungibleCollection = 'NonFungibleCollection',
 }
 
-export interface FungibleToken {
-  pluginID: NetworkPluginID
-  id: string | number
-  name: string
-  symbol: string
-  source: SourceType
-  type: SearchResultType
-}
-
-export interface NonFungibleToken {
-  pluginID: NetworkPluginID
-  address: string
-  name: string
-  chainId: ChainId
-  source: SourceType
-  type: SearchResultType
-}
-
 export enum SourceType {
   // FT assets
   DeBank = 'DeBank',
@@ -108,10 +90,33 @@ export enum SourceType {
   R2D2 = 'R2D2',
 }
 
+export interface FungibleToken {
+  pluginID: NetworkPluginID
+  id: string | number
+  name: string
+  symbol: string
+  logoURL: string
+  source: SourceType
+  type: SearchResultType
+  rank: number
+}
+
+export interface NonFungibleToken {
+  pluginID: NetworkPluginID
+  address: string
+  name: string
+  iconURL?: string
+  chainId: ChainId
+  source: SourceType
+  type: SearchResultType
+  rank: number
+}
+
 export interface NonFungibleCollection {
   pluginID: NetworkPluginID
   chainId: ChainId
   name: string
+  logoURL: string
   slug?: string
   symbol?: string
   description?: string
@@ -128,11 +133,13 @@ export interface NonFungibleCollection {
   /** source type */
   source: SourceType
   type: SearchResultType
+  rank: number
   collection: {
     chainId: ChainId
     name: string
     symbol?: string
     address?: string
+    iconURL?: string | null
     socialLinks: {
       website?: string
       email?: string
