@@ -58,6 +58,8 @@ export class CoinGecko implements FungibleTokenProvider {
           name: x.name,
           source: SourceType.CoinGecko,
           type: SearchResultType.FungibleToken,
+          logoURL: x.image,
+          rank: x.market_cap_rank,
         })),
       )
 

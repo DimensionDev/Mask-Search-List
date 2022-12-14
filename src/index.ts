@@ -1,6 +1,6 @@
 import { FungibleToken, NonFungibleCollection, NonFungibleToken } from './type'
 import { CoinGecko } from './providers/coingecko'
-import {initFolder, mergePublicFileToOutput, writeCollectionsToFile, writeTokensToFile} from './utils'
+import { initFolder, mergePublicFileToOutput, writeCollectionsToFile, writeTokensToFile } from './utils'
 import * as process from 'process'
 import { CoinMarketCap } from './providers/coinmarketcap'
 import { NFTScanCollection, NFTScanToken } from './providers/NFTScan'
@@ -33,7 +33,7 @@ async function main() {
 
     await writeTokensToFile(p.getProviderName(), 'fungible-tokens', fungibleTokens)
   }
-  await mergePublicFileToOutput("fungible-tokens")
+  await mergePublicFileToOutput('fungible-tokens')
 
   // Fetch nonFungible token
   let nonFungibleTokens: NonFungibleToken[] = []
@@ -50,7 +50,7 @@ async function main() {
 
     await writeTokensToFile(p.getProviderName(), 'non-fungible-tokens', nonFungibleTokens)
   }
-  await mergePublicFileToOutput("non-fungible-tokens")
+  await mergePublicFileToOutput('non-fungible-tokens')
 
   // Fetch nonFungible Collections
   let nonFungibleCollections: NonFungibleCollection[] = []
@@ -67,7 +67,7 @@ async function main() {
 
     await writeCollectionsToFile(p.getProviderName(), nonFungibleCollections)
   }
-  await mergePublicFileToOutput("non-fungible-collections")
+  await mergePublicFileToOutput('non-fungible-collections')
 
   console.log('Generate success!')
   process.exit(0)

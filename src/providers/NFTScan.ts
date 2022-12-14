@@ -139,12 +139,12 @@ export class NFTScanToken implements NonFungibleTokenProvider {
       const list = await axios.get<Response>(url, {
         headers: {
           'content-type': 'application/json',
-          'x-app-chainid': config.pluginID === NetworkPluginID.PLUGIN_SOLANA ? "solana" : config.chainId.toString(),
-        }
+          'x-app-chainid': config.pluginID === NetworkPluginID.PLUGIN_SOLANA ? 'solana' : config.chainId.toString(),
+        },
       })
 
       const data = list.data.data.map(
-        (x) =>
+        (x, index) =>
           ({
             pluginID: config.pluginID,
             address: x.contract_address,
@@ -152,6 +152,8 @@ export class NFTScanToken implements NonFungibleTokenProvider {
             chainId: config.chainId,
             type: SearchResultType.NonFungibleToken,
             source: SourceType.NFTScan,
+            logoURL: x.logo_url,
+            rank: index + 1,
           } as NonFungibleToken),
       )
 
@@ -171,17 +173,17 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
     let result: NonFungibleCollection[] = []
 
     for (let config of configs) {
-      const url = urlcat(baseURL, '/api/v2/collections/rankings', {limit: 1000})
+      const url = urlcat(baseURL, '/api/v2/collections/rankings', { limit: 1000 })
 
       const list = await axios.get<CollectionResponse>(url, {
         headers: {
           'content-type': 'application/json',
-          'x-app-chainid': config.pluginID === NetworkPluginID.PLUGIN_SOLANA ? "solana" : config.chainId.toString(),
+          'x-app-chainid': config.pluginID === NetworkPluginID.PLUGIN_SOLANA ? 'solana' : config.chainId.toString(),
         },
       })
 
       const data = list.data.data.map(
-        (x) =>
+        (x, index) =>
           ({
             pluginID: config.pluginID,
             address: x.contract_address,
@@ -193,10 +195,12 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
             verified: x.verified,
             source: SourceType.NFTScan,
             type: SearchResultType.NonFungibleCollection,
+            rank: index + 1,
             collection: {
               address: x.contract_address,
               name: x.name,
               chainId: config.chainId,
+              iconURL: x.logo_url,
               socialLinks: {
                 website: x.website,
                 email: x.email,
