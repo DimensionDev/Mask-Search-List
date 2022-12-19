@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "pluginID": "com.mask.evm",
+    "address": "0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb",
+    "name": "CryptoPunks",
+    "chainId": 1,
+    "symbol": "PUNK",
+    "iconURL": "https://logo.nftscan.com/logo/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb.png",
+    "tokensTotal": 10000,
+    "verified": false,
+    "source": "NFTScan",
+    "type": "NonFungibleCollection",
+    "rank": 3,
+    "collection": {
+      "address": "0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb",
+      "name": "CryptoPunks",
+      "chainId": 1,
+      "iconURL": "https://logo.nftscan.com/logo/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb.png",
+      "socialLinks": {
+        "website": "https://www.larvalabs.com/cryptopunks",
+        "email": "info@larvalabs.com",
+        "twitter": "cryptopunksnfts",
+        "discord": "https://discord.gg/tQp4pSE",
+        "telegram": null,
+        "github": "https://github.com/larvalabs/cryptopunks",
+        "instagram": null,
+        "medium": null
+      }
+    }
+  }
+]
