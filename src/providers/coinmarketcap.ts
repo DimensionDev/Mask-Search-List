@@ -40,7 +40,7 @@ export class CoinMarketCap implements FungibleTokenProvider {
     })
 
     return res.data.data.map(
-      (x, index) =>
+      (x) =>
         ({
           pluginID: NetworkPluginID.PLUGIN_EVM,
           id: x.id,

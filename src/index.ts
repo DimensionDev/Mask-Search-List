@@ -18,8 +18,8 @@ async function main() {
   await initFolder()
 
   // Fetch fungible token
-  let fungibleTokens: FungibleToken[] = []
   for (const p of fungibleProviders) {
+    let fungibleTokens: FungibleToken[] = []
     console.log(`Fetch the data from ${p.getProviderName()}`)
     try {
       const tokens = await p.getTopTokens()
@@ -36,8 +36,8 @@ async function main() {
   await mergePublicFileToOutput('fungible-tokens')
 
   // Fetch nonFungible token
-  let nonFungibleTokens: NonFungibleToken[] = []
   for (const p of nonFungibleTokenProviders) {
+    let nonFungibleTokens: NonFungibleToken[] = []
     console.log(`Fetch the data from ${p.getProviderName()}`)
     try {
       const tokens = await p.getTopTokens()
@@ -54,8 +54,8 @@ async function main() {
   await mergePublicFileToOutput('non-fungible-tokens')
 
   // Fetch nonFungible Collections
-  let nonFungibleCollections: NonFungibleCollection[] = []
   for (const p of nonFungibleCollecitonProviders) {
+    let nonFungibleCollections: NonFungibleCollection[] = []
     console.log(`Fetch the data from ${p.getProviderName()}`)
     try {
       const collections = await p.getCollections()
