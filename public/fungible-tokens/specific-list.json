@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "pluginID": "com.mask.evm",
+    "id": "mask-network",
+    "symbol": "mask",
+    "name": "Mask Network",
+    "source": "CoinGecko",
+    "type": "FungibleToken",
+    "logoURL": "https://assets.coingecko.com/coins/images/14051/large/Mask_Network.jpg?1614050316",
+  }
+]
