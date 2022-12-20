@@ -38,6 +38,7 @@ async function main() {
   // Fetch nonFungible token
   let nonFungibleTokens: NonFungibleToken[] = []
   for (const p of nonFungibleTokenProviders) {
+    console.log(`Fetch the data from ${p.getProviderName()}`)
     try {
       const tokens = await p.getTopTokens()
       nonFungibleTokens = [...nonFungibleTokens, ...tokens]
@@ -55,6 +56,7 @@ async function main() {
   // Fetch nonFungible Collections
   let nonFungibleCollections: NonFungibleCollection[] = []
   for (const p of nonFungibleCollecitonProviders) {
+    console.log(`Fetch the data from ${p.getProviderName()}`)
     try {
       const collections = await p.getCollections()
       nonFungibleCollections = [...nonFungibleCollections, ...collections]

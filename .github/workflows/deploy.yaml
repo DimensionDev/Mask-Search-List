@@ -23,6 +23,8 @@ jobs:
         if: steps.yarn-cache.outputs.cache-hit != 'true'
 
       - name: build
+        env:
+          COINMARKETCAP_API_KEY: ${{ secrets.COINMARKETCAP_API_KEY }}
         run: |
           yarn build
 
