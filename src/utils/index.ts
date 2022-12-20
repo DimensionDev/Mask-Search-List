@@ -5,3 +5,4 @@ export async function imageChecker(url: string) {
 
 export * from './file'
 export * from './time'
+export * from './config'
