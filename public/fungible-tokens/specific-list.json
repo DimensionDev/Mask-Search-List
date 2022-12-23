@@ -7,5 +7,15 @@
     "source": "CoinGecko",
     "type": "FungibleToken",
     "logoURL": "https://assets.coingecko.com/coins/images/14051/large/Mask_Network.jpg?1614050316"
+  },
+  {
+    "pluginID": "com.mask.evm",
+    "id": "binancecoin",
+    "symbol": "bnb",
+    "name": "BNB",
+    "alias": ["binance"],
+    "source": "CoinGecko",
+    "type": "FungibleToken",
+    "logoURL": "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1644979850"
   }
 ]
