@@ -20,6 +20,7 @@ const configs = [
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://restapi.nftscan.com',
     coin: 'ETH',
+    limit: 500
   },
   {
     chain: 'bnb',
@@ -27,6 +28,7 @@ const configs = [
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://bnbapi.nftscan.com',
     coin: 'BNB',
+    limit: 500
   },
   {
     chain: 'polygon',
@@ -34,6 +36,7 @@ const configs = [
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://polygonapi.nftscan.com',
     coin: 'MATIC',
+    limit: 500
   },
   // {
   //   chain: 'moonbeam',
@@ -48,6 +51,7 @@ const configs = [
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://arbitrumapi.nftscan.com',
     coin: 'ETH',
+    limit: 200
   },
   {
     chain: 'optimism',
@@ -55,6 +59,7 @@ const configs = [
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://optimismapi.nftscan.com',
     coin: 'ETH',
+    limit: 200
   },
   // {
   //   chain: 'cronos',
@@ -155,7 +160,7 @@ export class NFTScanToken implements NonFungibleTokenProvider {
             logoURL: x.logo_url,
             rank: index + 1,
           } as NonFungibleToken),
-      )
+      ).slice(0, config.limit)
 
       result = [...result, ...data]
     }
@@ -173,7 +178,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
     let result: NonFungibleCollection[] = []
 
     for (let config of configs) {
-      const url = urlcat(baseURL, '/api/v2/collections/rankings', { limit: 1000 })
+      const url = urlcat(baseURL, '/api/v2/collections/rankings', {limit: config.limit ?? 1000})
 
       const list = await axios.get<CollectionResponse>(url, {
         headers: {
