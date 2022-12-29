@@ -2,6 +2,7 @@ import { FungibleToken, FungibleTokenProvider, NetworkPluginID, SearchResultType
 import axios from 'axios'
 import urlcat from 'urlcat'
 import { getCoinMarketCapAPIKey } from '../utils'
+import { chunk } from 'lodash'
 
 export interface IDInfo {
   id: number
@@ -27,9 +28,28 @@ export interface Platform {
   slug: string
   token_address: string
 }
+
 const baseProURL = 'https://pro-api.coinmarketcap.com/'
 
 export class CoinMarketCap implements FungibleTokenProvider {
+  private async getMetadata(ids: (string | number)[]) {
+    const idsChunk = chunk(ids, 200)
+    const reqs = idsChunk.map((x) => {
+      const metadataURL = urlcat(baseProURL, 'v2/cryptocurrency/info', {
+        id: x.join(),
+        aux: 'logo',
+      })
+      return axios.get<{ data: Record<string, { logo: string }> }>(metadataURL, {
+        headers: { 'X-CMC_PRO_API_KEY': getCoinMarketCapAPIKey() },
+      })
+    })
+
+    const result = await Promise.all(reqs)
+    const data = result.map((x) => x.data.data)
+    // @ts-ignore
+    return Object.assign(...data)
+  }
+
   async getTopTokens(): Promise<FungibleToken[]> {
     const url = urlcat(baseProURL, 'v1/cryptocurrency/map', {
       sort: 'cmc_rank',
@@ -38,6 +58,8 @@ export class CoinMarketCap implements FungibleTokenProvider {
     const res = await axios.get<Response>(url, {
       headers: { 'X-CMC_PRO_API_KEY': getCoinMarketCapAPIKey() },
     })
+
+    const metadata = await this.getMetadata(res.data.data.map((x) => x.id))
 
     return res.data.data.map(
       (x) =>
@@ -49,6 +71,7 @@ export class CoinMarketCap implements FungibleTokenProvider {
           source: SourceType.CoinMarketCap,
           type: SearchResultType.FungibleToken,
           rank: x.rank,
+          logoURL: metadata[x.id.toString()]?.logo,
         } as FungibleToken),
     )
   }
