@@ -195,7 +195,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
             name: x.name,
             chainId: config.chainId,
             symbol: x.symbol,
-            iconURL: x.logo_url,
+            logoURL: x.logo_url,
             tokensTotal: x.items_total,
             verified: x.verified,
             source: SourceType.NFTScan,
