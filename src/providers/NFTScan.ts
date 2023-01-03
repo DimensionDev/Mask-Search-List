@@ -10,6 +10,8 @@ import {
   SearchResultType,
   SourceType,
 } from '../type'
+import { orderBy, sortBy } from 'lodash'
+import { delay } from '../utils'
 
 const baseURL = 'https://nftscan-proxy.r2d2.to'
 
@@ -20,7 +22,7 @@ const configs = [
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://restapi.nftscan.com',
     coin: 'ETH',
-    limit: 500
+    limit: 500,
   },
   {
     chain: 'bnb',
@@ -28,7 +30,7 @@ const configs = [
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://bnbapi.nftscan.com',
     coin: 'BNB',
-    limit: 500
+    limit: 500,
   },
   {
     chain: 'polygon',
@@ -36,7 +38,7 @@ const configs = [
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://polygonapi.nftscan.com',
     coin: 'MATIC',
-    limit: 500
+    limit: 500,
   },
   // {
   //   chain: 'moonbeam',
@@ -51,7 +53,7 @@ const configs = [
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://arbitrumapi.nftscan.com',
     coin: 'ETH',
-    limit: 200
+    limit: 200,
   },
   {
     chain: 'optimism',
@@ -59,7 +61,7 @@ const configs = [
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://optimismapi.nftscan.com',
     coin: 'ETH',
-    limit: 200
+    limit: 200,
   },
   // {
   //   chain: 'cronos',
@@ -100,7 +102,7 @@ export type Response = {
 export type CollectionResponse = {
   code: number
   msg: any
-  data: Array<{
+  data: {
     contract_address: string
     name: string
     symbol: string
@@ -132,6 +134,16 @@ export type CollectionResponse = {
     collections_with_same_name: string
     price_symbol: string
     volume_total: number
+  }
+}
+
+export type CollectionsRankingResponse = {
+  code: number
+  msg: any
+  data: Array<{
+    contract_address: string
+    contract_name: string
+    market_cap: string
   }>
 }
 
@@ -148,19 +160,21 @@ export class NFTScanToken implements NonFungibleTokenProvider {
         },
       })
 
-      const data = list.data.data.map(
-        (x, index) =>
-          ({
-            pluginID: config.pluginID,
-            address: x.contract_address,
-            name: x.contract_name,
-            chainId: config.chainId,
-            type: SearchResultType.NonFungibleToken,
-            source: SourceType.NFTScan,
-            logoURL: x.logo_url,
-            rank: index + 1,
-          } as NonFungibleToken),
-      ).slice(0, config.limit)
+      const data = list.data.data
+        .map(
+          (x, index) =>
+            ({
+              pluginID: config.pluginID,
+              address: x.contract_address,
+              name: x.contract_name,
+              chainId: config.chainId,
+              type: SearchResultType.NonFungibleToken,
+              source: SourceType.NFTScan,
+              logoURL: x.logo_url,
+              rank: index + 1,
+            } as NonFungibleToken),
+        )
+        .slice(0, config.limit)
 
       result = [...result, ...data]
     }
@@ -173,54 +187,89 @@ export class NFTScanToken implements NonFungibleTokenProvider {
   }
 }
 
+let cache: NonFungibleCollection[] | undefined = undefined
+
 export class NFTScanCollection implements NonFungibleCollectionProvider {
+  async getCollection(address: string, chainId: string | number, rank: number, config: any) {
+    if (!cache) {
+      const url = 'https://dsearch.mask.r2d2.to/non-fungible-collections/nftscan.json'
+      const result = await axios.get<NonFungibleCollection[]>(url)
+      cache = result.data
+    }
+
+    const exist = cache.find((x) => x?.address?.toLowerCase() === address.toLowerCase())
+
+    if (exist) return Object.assign(exist, { rank })
+    const collectionURL = urlcat(baseURL, '/api/v2/collections/:contract_address', { contract_address: address })
+
+    const collectionResult = await axios.get<CollectionResponse>(collectionURL, {
+      headers: {
+        'content-type': 'application/json',
+        'x-app-chainid': chainId,
+      },
+    })
+
+    await delay(1000)
+
+    const collection = collectionResult.data.data
+
+    return {
+      pluginID: config.pluginID,
+      address: collection.contract_address,
+      name: collection.name,
+      chainId: config.chainId,
+      symbol: collection.symbol,
+      logoURL: collection.logo_url,
+      tokensTotal: collection.items_total,
+      verified: collection.verified,
+      source: SourceType.NFTScan,
+      type: SearchResultType.NonFungibleCollection,
+      rank: rank,
+      collection: {
+        address: collection.contract_address,
+        name: collection.name,
+        chainId: config.chainId,
+        iconURL: collection.logo_url,
+        socialLinks: {
+          website: collection.website,
+          email: collection.email,
+          twitter: collection.twitter,
+          discord: collection.discord,
+          telegram: collection.telegram,
+          github: collection.github,
+          instagram: collection.instagram,
+          medium: collection.medium,
+        },
+      },
+    } as NonFungibleCollection
+  }
   async getCollections(): Promise<NonFungibleCollection[]> {
     let result: NonFungibleCollection[] = []
 
     for (let config of configs) {
-      const url = urlcat(baseURL, '/api/v2/collections/rankings', {limit: config.limit ?? 1000})
+      const chainId = config.pluginID === NetworkPluginID.PLUGIN_SOLANA ? 'solana' : config.chainId.toString()
+      const url = urlcat(baseURL, '/api/v2/statistics/ranking/marketcap')
 
-      const list = await axios.get<CollectionResponse>(url, {
+      const list = await axios.get<CollectionsRankingResponse>(url, {
         headers: {
           'content-type': 'application/json',
-          'x-app-chainid': config.pluginID === NetworkPluginID.PLUGIN_SOLANA ? 'solana' : config.chainId.toString(),
+          'x-app-chainid': chainId,
         },
       })
 
-      const data = list.data.data.map(
-        (x, index) =>
-          ({
-            pluginID: config.pluginID,
-            address: x.contract_address,
-            name: x.name,
-            chainId: config.chainId,
-            symbol: x.symbol,
-            logoURL: x.logo_url,
-            tokensTotal: x.items_total,
-            verified: x.verified,
-            source: SourceType.NFTScan,
-            type: SearchResultType.NonFungibleCollection,
-            rank: index + 1,
-            collection: {
-              address: x.contract_address,
-              name: x.name,
-              chainId: config.chainId,
-              iconURL: x.logo_url,
-              socialLinks: {
-                website: x.website,
-                email: x.email,
-                twitter: x.twitter,
-                discord: x.discord,
-                telegram: x.telegram,
-                github: x.github,
-                instagram: x.instagram,
-                medium: x.medium,
-              },
-            },
-          } as NonFungibleCollection),
-      )
+      const data = orderBy(list.data.data, ['market_cap'], ['desc']).slice(0, config.limit)
 
-      result = [...result, ...data]
+      for (let i = 0; i < data.length; i++) {
+        const item = data[i]
+        try {
+          const collection = await this.getCollection(item.contract_address, chainId, i + 1, config)
+          if (collection) {
+            result = [...result, collection]
+          }
+        } catch (e) {
+          console.log(`Fetch error for ${config.chainId} ${item.contract_address} from nftscan`)
+        }
+      }
     }
 
     return result
