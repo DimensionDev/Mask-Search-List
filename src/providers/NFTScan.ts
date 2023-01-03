@@ -40,13 +40,14 @@ const configs = [
     coin: 'MATIC',
     limit: 500,
   },
-  // {
-  //   chain: 'moonbeam',
-  //   chainId: ChainId.Moonbeam,
-  //   pluginID: NetworkPluginID.PLUGIN_EVM,
-  //   url: 'https://restapi.nftscan.com',
-  //   coin: 'GLMR',
-  // },
+  {
+    chain: 'moonbeam',
+    chainId: ChainId.Moonbeam,
+    pluginID: NetworkPluginID.PLUGIN_EVM,
+    url: 'https://restapi.nftscan.com',
+    coin: 'GLMR',
+    limit: 200
+  },
   {
     chain: 'arbitrum',
     chainId: ChainId.Arbitrum,
@@ -69,14 +70,16 @@ const configs = [
   //   pluginID: NetworkPluginID.PLUGIN_EVM,
   //   url: 'https://cronosapi.nftscan.com',
   //   coin: 'CRO',
+  //   limit: 200
   // },
-  // {
-  //   chain: 'avalanche',
-  //   chainId: ChainId.Avalanche,
-  //   pluginID: NetworkPluginID.PLUGIN_EVM,
-  //   url: 'https://avaxapi.nftscan.com',
-  //   coin: 'AVAX',
-  // },
+  {
+    chain: 'avalanche',
+    chainId: ChainId.Avalanche,
+    pluginID: NetworkPluginID.PLUGIN_EVM,
+    url: 'https://avaxapi.nftscan.com',
+    coin: 'AVAX',
+    limit: 200
+  },
   // {
   //   chain: 'solana',
   //   chainId: ChainId.Mainnet,
