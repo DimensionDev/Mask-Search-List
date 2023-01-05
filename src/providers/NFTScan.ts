@@ -11,7 +11,7 @@ import {
   SourceType,
 } from '../type'
 import { orderBy } from 'lodash'
-import { delay } from '../utils'
+import { delay, getRuntimeEnableCache } from '../utils'
 
 const baseURL = 'https://nftscan-proxy.r2d2.to'
 
@@ -215,7 +215,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
       (x) => x.pluginID === NetworkPluginID.PLUGIN_SOLANA && x?.name?.toLowerCase() === name.toLowerCase(),
     )
 
-    if (exist) return Object.assign(exist, { rank })
+    if (exist && getRuntimeEnableCache()) return Object.assign(exist, { rank })
     const collectionURL = urlcat(baseURL, '/api/sol/collections/:collection_name', { collection_name: name })
 
     const collectionResult = await axios.get<CollectionResponse>(collectionURL, {
@@ -269,7 +269,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
 
     const exist = cache.find((x) => x?.address?.toLowerCase() === address.toLowerCase())
 
-    if (exist) return Object.assign(exist, { rank })
+    if (exist && getRuntimeEnableCache()) return Object.assign(exist, { rank })
     const collectionURL = urlcat(baseURL, '/api/v2/collections/:contract_address', { contract_address: address })
 
     const collectionResult = await axios.get<CollectionResponse>(collectionURL, {
