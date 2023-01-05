@@ -269,7 +269,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
 
     const exist = cache.find((x) => x?.address?.toLowerCase() === address.toLowerCase())
 
-    if (exist && getRuntimeEnableCache()) return Object.assign(exist, { rank })
+    if (exist) return Object.assign(exist, { rank })
     const collectionURL = urlcat(baseURL, '/api/v2/collections/:contract_address', { contract_address: address })
 
     const collectionResult = await axios.get<CollectionResponse>(collectionURL, {

@@ -18,6 +18,8 @@ export async function writeTokensToFile(
   type: 'fungible-tokens' | 'non-fungible-tokens',
   tokens: FungibleToken[] | NonFungibleToken[],
 ) {
+  if (!tokens.length) throw new Error(`Forbid writing the empty data of ${provider}'s ${tokens} to output`)
+
   await fs.writeFile(
     path.join(getOutputDir(type), `${provider?.toLowerCase()}.json`),
     JSON.stringify(tokens, undefined, 2),
@@ -28,6 +30,8 @@ export async function writeTokensToFile(
 }
 
 export async function writeCollectionsToFile(provider: SourceType, tokens: FungibleToken[] | NonFungibleCollection[]) {
+  if (!tokens.length) throw new Error(`Forbid writing the empty data of ${provider}'s ${tokens} to output`)
+
   await fs.writeFile(
     path.join(getOutputDir('non-fungible-collections'), `${provider?.toLowerCase()}.json`),
     JSON.stringify(tokens, undefined, 2),
