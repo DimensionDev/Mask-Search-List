@@ -4,6 +4,22 @@ on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
+    inputs:
+      target:
+        description: 'The target of fetching data type'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - fungible-tokens
+          - non-fungible-tokens
+          - non-fungible-collections
+      enableCache:
+        description: 'Enable fetching from cache'
+        required: false
+        default: true
+        type: boolean
 
 jobs:
   generate:
@@ -25,6 +41,8 @@ jobs:
       - name: build
         env:
           COINMARKETCAP_API_KEY: ${{ secrets.COINMARKETCAP_API_KEY }}
+          RUNTIME_TARGET: ${{ inputs.target }}
+          RUNTIME_ENABLE_CACHE: ${{ inputs.enableCache }}
         run: |
           yarn build
 
