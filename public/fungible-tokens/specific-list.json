@@ -13,7 +13,7 @@
     "id": "binancecoin",
     "symbol": "bnb",
     "name": "BNB",
-    "alias": ["binance", "bscnetwork", "BNBChain"],
+    "alias": ["binance", "bscnetwork", "BNBChain", "bsc"],
     "source": "CoinGecko",
     "type": "FungibleToken",
     "logoURL": "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1644979850"
