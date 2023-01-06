@@ -1,24 +1,25 @@
 import axios from 'axios'
 import urlcat from 'urlcat'
 import {
-  ChainId,
+  EVMChainId,
   NetworkPluginID,
   NonFungibleCollection,
   NonFungibleCollectionProvider,
   NonFungibleToken,
   NonFungibleTokenProvider,
   SearchResultType,
+  SolanaChainId,
   SourceType,
 } from '../type'
-import { orderBy } from 'lodash'
-import { delay, getRuntimeEnableCache } from '../utils'
+import {orderBy} from 'lodash'
+import {delay, getRuntimeEnableCache} from '../utils'
 
 const baseURL = 'https://nftscan-proxy.r2d2.to'
 
 const evmConfigs = [
   {
     chain: 'eth',
-    chainId: ChainId.Mainnet,
+    chainId: EVMChainId.Mainnet,
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://restapi.nftscan.com',
     coin: 'ETH',
@@ -26,7 +27,7 @@ const evmConfigs = [
   },
   {
     chain: 'bnb',
-    chainId: ChainId.BNB,
+    chainId: EVMChainId.BNB,
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://bnbapi.nftscan.com',
     coin: 'BNB',
@@ -34,7 +35,7 @@ const evmConfigs = [
   },
   {
     chain: 'polygon',
-    chainId: ChainId.Polygon,
+    chainId: EVMChainId.Polygon,
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://polygonapi.nftscan.com',
     coin: 'MATIC',
@@ -42,7 +43,7 @@ const evmConfigs = [
   },
   {
     chain: 'moonbeam',
-    chainId: ChainId.Moonbeam,
+    chainId: EVMChainId.Moonbeam,
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://restapi.nftscan.com',
     coin: 'GLMR',
@@ -50,7 +51,7 @@ const evmConfigs = [
   },
   {
     chain: 'arbitrum',
-    chainId: ChainId.Arbitrum,
+    chainId: EVMChainId.Arbitrum,
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://arbitrumapi.nftscan.com',
     coin: 'ETH',
@@ -58,7 +59,7 @@ const evmConfigs = [
   },
   {
     chain: 'optimism',
-    chainId: ChainId.Optimistic,
+    chainId: EVMChainId.Optimistic,
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://optimismapi.nftscan.com',
     coin: 'ETH',
@@ -74,7 +75,7 @@ const evmConfigs = [
   // },
   {
     chain: 'avalanche',
-    chainId: ChainId.Avalanche,
+    chainId: EVMChainId.Avalanche,
     pluginID: NetworkPluginID.PLUGIN_EVM,
     url: 'https://avaxapi.nftscan.com',
     coin: 'AVAX',
@@ -84,7 +85,7 @@ const evmConfigs = [
 
 const solanaConfigs = {
   chain: 'solana',
-  chainId: ChainId.Mainnet,
+  chainId: EVMChainId.Mainnet,
   pluginID: NetworkPluginID.PLUGIN_SOLANA,
   url: 'https://solana.nftscan.com',
   coin: 'SOL',
@@ -233,7 +234,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
       pluginID: NetworkPluginID.PLUGIN_SOLANA,
       address: collection.contract_address,
       name: name,
-      chainId: 1,
+      chainId: SolanaChainId.Mainnet,
       symbol: collection.symbol,
       logoURL: collection.logo_url,
       tokensTotal: collection.items_total,
@@ -244,7 +245,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
       collection: {
         address: collection.contract_address,
         name: collection.name,
-        chainId: 1,
+        chainId: SolanaChainId.Mainnet,
         iconURL: collection.logo_url,
         socialLinks: {
           website: collection.website,
