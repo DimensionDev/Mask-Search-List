@@ -1,4 +1,4 @@
-export enum ChainId {
+export enum EVMChainId {
   Mainnet = 1,
   Ropsten = 3,
   Rinkeby = 4,
@@ -28,6 +28,10 @@ export enum ChainId {
   Harmony = 1666600000,
   Harmony_Testnet = 1666700000,
   Palm = 11297108109,
+}
+
+export enum SolanaChainId {
+  Mainnet = 101,
 }
 
 /**
@@ -106,7 +110,7 @@ export interface NonFungibleToken {
   address: string
   name: string
   iconURL?: string
-  chainId: ChainId
+  chainId: EVMChainId
   source: SourceType
   type: SearchResultType
   rank: number
@@ -114,7 +118,7 @@ export interface NonFungibleToken {
 
 export interface NonFungibleCollection {
   pluginID: NetworkPluginID
-  chainId: ChainId
+  chainId: EVMChainId | SolanaChainId
   name: string
   logoURL: string
   slug?: string
@@ -135,7 +139,7 @@ export interface NonFungibleCollection {
   type: SearchResultType
   rank: number
   collection: {
-    chainId: ChainId
+    chainId: EVMChainId | SolanaChainId
     name: string
     symbol?: string
     address?: string
