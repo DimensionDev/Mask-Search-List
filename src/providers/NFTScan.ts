@@ -11,8 +11,8 @@ import {
   SolanaChainId,
   SourceType,
 } from '../type'
-import {orderBy} from 'lodash'
-import {delay, getRuntimeEnableCache} from '../utils'
+import { orderBy } from 'lodash'
+import { delay, getRuntimeEnableCache } from '../utils'
 
 const baseURL = 'https://nftscan-proxy.r2d2.to'
 
