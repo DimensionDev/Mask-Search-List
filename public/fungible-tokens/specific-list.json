@@ -13,7 +13,20 @@
     "id": "binancecoin",
     "symbol": "bnb",
     "name": "BNB",
-    "alias": ["binance", "bscnetwork", "BNBChain", "bsc"],
+    "alias": [
+      {
+        "value": "binance"
+      },
+      {
+        "value": "bscnetwork"
+      },
+      {
+        "value": "BNBChain"
+      },
+      {
+        "value": "bsc"
+      }
+    ],
     "source": "CoinGecko",
     "type": "FungibleToken",
     "logoURL": "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1644979850"
@@ -32,7 +45,11 @@
     "id": "matic-network",
     "symbol": "matic",
     "name": "Polygon",
-    "alias": ["polygonchain"],
+    "alias": [
+      {
+        "value": "polygonchain"
+      }
+    ],
     "source": "CoinGecko",
     "type": "FungibleToken",
     "logoURL": "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912"
@@ -42,7 +59,14 @@
     "id": "crypto-com-chain",
     "symbol": "cro",
     "name": "Cronos",
-    "alias": ["crypto", "cryptocom"],
+    "alias": [
+      {
+        "value": "crypto"
+      },
+      {
+        "value": "cryptocom"
+      }
+    ],
     "source": "CoinGecko",
     "type": "FungibleToken",
     "logoURL": "https://assets.coingecko.com/coins/images/7310/large/cro_token_logo.png?1669699773"
