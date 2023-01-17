@@ -1,0 +1,13 @@
+{
+  "0x790116d0685eB197B886DAcAD9C247f785987A4a": [
+    {
+      "chainId": 137,
+      "schema": 3,
+      "name": "Test Name",
+      "address": "0x22d5f9b75c524fec1d6619787e582644cd4d7422",
+      "description": "description",
+      "iconURL": "https://logo.nftscan.com/pls_logo/0x22d5f9b75c524fec1d6619787e582644cd4d7422.png",
+      "balance": 12
+    }
+  ]
+}

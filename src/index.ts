@@ -79,6 +79,9 @@ async function main() {
   }
   await mergePublicFileToOutput('non-fungible-collections')
 
+  // merge nft lucky drop file
+  await mergePublicFileToOutput('nft-lucky-drop')
+
   console.log('Generate success!')
   process.exit(0)
 }
