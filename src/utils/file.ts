@@ -11,6 +11,7 @@ export async function initFolder() {
   await createIfNotExist(getOutputDir('fungible-tokens'))
   await createIfNotExist(getOutputDir('non-fungible-tokens'))
   await createIfNotExist(getOutputDir('non-fungible-collections'))
+  await createIfNotExist(getOutputDir('nft-lucky-drop'))
 }
 
 export async function writeTokensToFile(
