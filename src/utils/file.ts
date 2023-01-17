@@ -42,7 +42,7 @@ export async function writeCollectionsToFile(provider: SourceType, tokens: Fungi
 }
 
 export async function mergePublicFileToOutput(
-  type: 'fungible-tokens' | 'non-fungible-tokens' | 'non-fungible-collections',
+  type: 'fungible-tokens' | 'non-fungible-tokens' | 'non-fungible-collections' | 'nft-lucky-drop',
 ) {
   const src = path.join(`${getPublicDir(type)}`, 'specific-list.json')
   const dest = path.join(`${getOutputDir(type)}`, 'specific-list.json')
