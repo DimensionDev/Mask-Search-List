@@ -103,6 +103,16 @@ export interface FungibleToken {
   source: SourceType
   type: SearchResultType
   rank: number
+  socialLinks: {
+    website?: string
+    email?: string
+    twitter?: string
+    discord?: string
+    telegram?: string
+    github?: string
+    instagram?: string
+    medium?: string
+  }
 }
 
 export interface NonFungibleToken {
