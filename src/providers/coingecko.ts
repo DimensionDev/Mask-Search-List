@@ -48,7 +48,7 @@ export type CoinDetail = {
   symbol: string
   name: string
   asset_platform_id: string
-  links: {
+  links?: {
     homepage: string[]
     blockchain_site: string[]
     official_forum_url: string[]
@@ -75,9 +75,9 @@ export class CoinGecko implements FungibleTokenProvider {
   private getSocialLinks(coin: CoinDetail) {
     // CoinGecko provided more info.
     return {
-      website: coin.links.homepage?.[0],
-      twitter: coin.links.twitter_screen_name,
-      telegram: coin.links.telegram_channel_identifier,
+      website: coin.links?.homepage?.[0],
+      twitter: coin.links?.twitter_screen_name,
+      telegram: coin.links?.telegram_channel_identifier,
     }
   }
 
