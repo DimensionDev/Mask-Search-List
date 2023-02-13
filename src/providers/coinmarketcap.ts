@@ -29,9 +29,33 @@ export interface Platform {
   token_address: string
 }
 
+export type CoinDetail = {
+  urls: {
+    website: string[]
+    technical_doc: string[]
+    twitter: string[]
+    reddit: string[]
+    message_board: string[]
+    announcement: string[]
+    chat: string[]
+    explorer: string[]
+    source_code: string[]
+  }
+  logo: string
+  id: number
+  name: string
+  symbol: string
+}
+
 const baseProURL = 'https://pro-api.coinmarketcap.com/'
 
 export class CoinMarketCap implements FungibleTokenProvider {
+  private getSocialLinks(coin: CoinDetail) {
+    return {
+      website: coin.urls.website?.[0],
+      twitter: coin.urls.twitter?.[0],
+    }
+  }
   private async getMetadata(ids: (string | number)[]) {
     const idsChunk = chunk(ids, 200)
     const reqs = idsChunk.map((x) => {
@@ -39,7 +63,7 @@ export class CoinMarketCap implements FungibleTokenProvider {
         id: x.join(),
         aux: 'logo',
       })
-      return axios.get<{ data: Record<string, { logo: string }> }>(metadataURL, {
+      return axios.get<{ data: Record<string, CoinDetail> }>(metadataURL, {
         headers: { 'X-CMC_PRO_API_KEY': getCoinMarketCapAPIKey() },
       })
     })
@@ -72,6 +96,7 @@ export class CoinMarketCap implements FungibleTokenProvider {
           type: SearchResultType.FungibleToken,
           rank: x.rank,
           logoURL: metadata[x.id.toString()]?.logo,
+          socialLinks: this.getSocialLinks(metadata[x.id.toString()]),
         } as FungibleToken),
     )
   }

@@ -94,6 +94,17 @@ export enum SourceType {
   R2D2 = 'R2D2',
 }
 
+export type SocialLinks = {
+  website?: string
+  email?: string
+  twitter?: string
+  discord?: string
+  telegram?: string
+  github?: string
+  instagram?: string
+  medium?: string
+}
+
 export interface FungibleToken {
   pluginID: NetworkPluginID
   id: string | number
@@ -103,6 +114,7 @@ export interface FungibleToken {
   source: SourceType
   type: SearchResultType
   rank: number
+  socialLinks: SocialLinks
 }
 
 export interface NonFungibleToken {
@@ -144,16 +156,7 @@ export interface NonFungibleCollection {
     symbol?: string
     address?: string
     iconURL?: string | null
-    socialLinks: {
-      website?: string
-      email?: string
-      twitter?: string
-      discord?: string
-      telegram?: string
-      github?: string
-      instagram?: string
-      medium?: string
-    }
+    socialLinks: SocialLinks
   }
 }
 
