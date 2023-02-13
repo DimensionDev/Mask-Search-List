@@ -18,13 +18,15 @@
         "value": "binance"
       },
       {
-        "value": "bscnetwork"
+        "value": "bscnetwork",
+        "isPin": true
       },
       {
         "value": "BNBChain"
       },
       {
-        "value": "bsc"
+        "value": "bsc",
+        "isPin": true
       }
     ],
     "source": "CoinGecko",
@@ -61,7 +63,8 @@
     "name": "Cronos",
     "alias": [
       {
-        "value": "crypto"
+        "value": "crypto",
+        "isPin": true
       },
       {
         "value": "cryptocom"
