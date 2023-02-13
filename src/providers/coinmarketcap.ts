@@ -30,7 +30,7 @@ export interface Platform {
 }
 
 export type CoinDetail = {
-  urls: {
+  urls?: {
     website: string[]
     technical_doc: string[]
     twitter: string[]
@@ -52,8 +52,8 @@ const baseProURL = 'https://pro-api.coinmarketcap.com/'
 export class CoinMarketCap implements FungibleTokenProvider {
   private getSocialLinks(coin: CoinDetail) {
     return {
-      website: coin.urls.website?.[0],
-      twitter: coin.urls.twitter?.[0],
+      website: coin.urls?.website?.[0],
+      twitter: coin.urls?.twitter?.[0],
     }
   }
   private async getMetadata(ids: (string | number)[]) {
