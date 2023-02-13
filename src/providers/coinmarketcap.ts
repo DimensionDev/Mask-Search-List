@@ -61,7 +61,7 @@ export class CoinMarketCap implements FungibleTokenProvider {
     const reqs = idsChunk.map((x) => {
       const metadataURL = urlcat(baseProURL, 'v2/cryptocurrency/info', {
         id: x.join(),
-        aux: 'logo',
+        aux: 'urls,logo',
       })
       return axios.get<{ data: Record<string, CoinDetail> }>(metadataURL, {
         headers: { 'X-CMC_PRO_API_KEY': getCoinMarketCapAPIKey() },
