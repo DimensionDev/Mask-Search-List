@@ -1,5 +1,12 @@
 import axios from 'axios'
-import { FungibleToken, FungibleTokenProvider, NetworkPluginID, SearchResultType, SourceType } from '../type'
+import {
+  FungibleToken,
+  FungibleTokenProvider,
+  NetworkPluginID,
+  SearchResultType,
+  SocialLinks,
+  SourceType,
+} from '../type'
 import urlcat from 'urlcat'
 import { delay } from '../utils'
 import { get } from 'lodash'
@@ -32,7 +39,7 @@ interface Coin {
   atl: number
   atl_change_percentage: number
   atl_date: Date
-  roi?: any
+  roi?: string
   last_updated: Date
 }
 
@@ -40,38 +47,21 @@ export type CoinDetail = {
   id: string
   symbol: string
   name: string
-  asset_platform_id: any
-  platforms: {
-    '': string
-  }
-  detail_platforms: {
-    '': {
-      decimal_place: any
-      contract_address: string
-    }
-  }
-  block_time_in_minutes: number
-  hashing_algorithm: string
-  categories: Array<string>
-  public_notice: any
-  additional_notices: Array<any>
-  description: {
-    en: string
-  }
+  asset_platform_id: string
   links: {
-    homepage: Array<string>
-    blockchain_site: Array<string>
-    official_forum_url: Array<string>
-    chat_url: Array<string>
-    announcement_url: Array<string>
+    homepage: string[]
+    blockchain_site: string[]
+    official_forum_url: string[]
+    chat_url: string[]
+    announcement_url: string[]
     twitter_screen_name: string
     facebook_username: string
-    bitcointalk_thread_identifier: any
+    bitcointalk_thread_identifier: string
     telegram_channel_identifier: string
     subreddit_url: string
     repos_url: {
-      github: Array<string>
-      bitbucket: Array<any>
+      github: string[]
+      bitbucket: string[]
     }
   }
   image: {
@@ -79,23 +69,6 @@ export type CoinDetail = {
     small: string
     large: string
   }
-  country_origin: string
-  genesis_date: string
-  sentiment_votes_up_percentage: number
-  sentiment_votes_down_percentage: number
-  market_cap_rank: number
-  coingecko_rank: number
-  coingecko_score: number
-  developer_score: number
-  community_score: number
-  liquidity_score: number
-  public_interest_score: number
-  public_interest_stats: {
-    alexa_rank: number
-    bing_matches: any
-  }
-  status_updates: Array<any>
-  last_updated: string
 }
 
 export class CoinGecko implements FungibleTokenProvider {
@@ -109,11 +82,11 @@ export class CoinGecko implements FungibleTokenProvider {
   }
 
   private async getMetadata(ids: (string | number)[]) {
-    const result: any = {}
+    const result: Record<string, SocialLinks> = {}
     for (const id of ids) {
       try {
         const metadataURL = urlcat(baseProURL, '/api/v3/coins/:id', {
-          id: id,
+          id,
           localization: false,
           tickers: false,
           market_data: false,

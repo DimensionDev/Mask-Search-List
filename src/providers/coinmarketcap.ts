@@ -31,27 +31,20 @@ export interface Platform {
 
 export type CoinDetail = {
   urls: {
-    website: Array<string>
-    technical_doc: Array<string>
-    twitter: Array<any>
-    reddit: Array<string>
-    message_board: Array<string>
-    announcement: Array<any>
-    chat: Array<any>
-    explorer: Array<string>
-    source_code: Array<string>
+    website: string[]
+    technical_doc: string[]
+    twitter: string[]
+    reddit: string[]
+    message_board: string[]
+    announcement: string[]
+    chat: string[]
+    explorer: string[]
+    source_code: string[]
   }
   logo: string
   id: number
   name: string
   symbol: string
-  slug: string
-  description: string
-  date_added: string
-  date_launched: string
-  tags: Array<string>
-  platform: any
-  category: string
 }
 
 const baseProURL = 'https://pro-api.coinmarketcap.com/'
