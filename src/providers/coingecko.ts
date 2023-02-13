@@ -130,7 +130,7 @@ export class CoinGecko implements FungibleTokenProvider {
           type: SearchResultType.FungibleToken,
           logoURL: x.image,
           rank: x.market_cap_rank,
-          socialLinks: get(links.data, x.id),
+          socialLinks: links[x.id],
         })),
       )
 
