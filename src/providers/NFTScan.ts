@@ -110,16 +110,16 @@ export class NFTScanToken implements NonFungibleTokenProvider {
     const data = list.data.data
       .map(
         (x, index) =>
-          ({
-            pluginID: config.pluginID,
-            address: x.contract_address,
-            name: x.contract_name,
-            chainId: config.chainId,
-            type: SearchResultType.NonFungibleToken,
-            source: SourceType.NFTScan,
-            logoURL: x.logo_url,
-            rank: index + 1,
-          } as NonFungibleToken),
+        ({
+          pluginID: config.pluginID,
+          address: x.contract_address,
+          name: x.contract_name,
+          chainId: config.chainId,
+          type: SearchResultType.NonFungibleToken,
+          source: SourceType.NFTScan,
+          logoURL: x.logo_url,
+          rank: index + 1,
+        } as NonFungibleToken),
       )
       .slice(0, config.limit)
 
@@ -137,17 +137,6 @@ let cache: NonFungibleCollection[] | undefined = undefined
 
 export class NFTScanCollection implements NonFungibleCollectionProvider {
   async getSolanaCollection(name: string, rank: number) {
-    if (!cache) {
-      const url = 'https://dsearch.mask.r2d2.to/non-fungible-collections/nftscan.json'
-      const result = await axios.get<NonFungibleCollection[]>(url)
-      cache = result.data
-    }
-
-    const exist = cache.find(
-      (x) => x.pluginID === NetworkPluginID.PLUGIN_SOLANA && x?.name?.toLowerCase() === name.toLowerCase(),
-    )
-
-    if (exist && getRuntimeEnableCache()) return Object.assign(exist, { rank })
     const collectionURL = urlcat(baseURL, '/api/sol/collections/:collection_name', { collection_name: name })
 
     const collectionResult = await axios.get<CollectionResponse>(collectionURL, {
@@ -193,15 +182,6 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
   }
 
   async getCollection(address: string, chainId: string | number, rank: number, config: any) {
-    if (!cache) {
-      const url = 'https://dsearch.mask.r2d2.to/non-fungible-collections/nftscan.json'
-      const result = await axios.get<NonFungibleCollection[]>(url)
-      cache = result.data
-    }
-
-    const exist = cache.find((x) => x?.address?.toLowerCase() === address.toLowerCase())
-
-    if (exist) return Object.assign(exist, { rank })
     const collectionURL = urlcat(baseURL, '/api/v2/collections/:contract_address', { contract_address: address })
 
     const collectionResult = await axios.get<CollectionResponse>(collectionURL, {
