@@ -33,7 +33,7 @@ async function main() {
     console.log(`The current chain get ${fungibleTokens.length} tokens`)
 
     if (fungibleTokens.length) {
-      await writeTokensToFile(p.getProviderName(), 'fungible-tokens', fungibleTokens)
+      await writeTokensToFile(p.getProviderName(), 'fungible-tokens', fungibleTokens.filter(x => x.source === p.getProviderName()))
     }
   }
 
