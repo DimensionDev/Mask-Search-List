@@ -40,7 +40,7 @@ jobs:
         with:
           args:
             zip -qq -r v${{ steps.package-version.outputs.current-version }}.zip
-            dist/v${{ steps.package-version.outputs.current-version }}
+            public/v${{ steps.package-version.outputs.current-version }}
 
       - name: Upload Latest Release
         uses: actions/upload-artifact@v2
