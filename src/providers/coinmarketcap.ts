@@ -1,8 +1,8 @@
-import { FungibleToken, FungibleTokenProvider, NetworkPluginID, SearchResultType, SourceType } from '../type'
 import axios from 'axios'
 import urlcat from 'urlcat'
-import { getCoinMarketCapAPIKey } from '../utils'
 import { chunk } from 'lodash'
+import { getCoinMarketCapAPIKey } from '../utils'
+import { FungibleToken, FungibleTokenProvider, NetworkPluginID, SearchResultType, SourceType } from '../type'
 
 export interface IDInfo {
   id: number

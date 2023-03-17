@@ -1,7 +1,7 @@
+import * as process from 'process'
 import { FungibleToken, NonFungibleCollection, NonFungibleToken } from './type'
 import { CoinGecko } from './providers/coingecko'
 import { initFolder, mergePublicFileToOutput, writeCollectionsToFile, writeTokensToFile } from './utils'
-import * as process from 'process'
 import { CoinMarketCap } from './providers/coinmarketcap'
 import { NFTScanCollection, NFTScanToken } from './providers/NFTScan'
 
@@ -33,7 +33,11 @@ async function main() {
     console.log(`The current chain get ${fungibleTokens.length} tokens`)
 
     if (fungibleTokens.length) {
-      await writeTokensToFile(p.getProviderName(), 'fungible-tokens', fungibleTokens.filter(x => x.source === p.getProviderName()))
+      await writeTokensToFile(
+        p.getProviderName(),
+        'fungible-tokens',
+        fungibleTokens.filter((x) => x.source === p.getProviderName()),
+      )
     }
   }
 
