@@ -3,6 +3,7 @@ name: Generate and Deploy
 on:
   schedule:
     - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   generate:
@@ -40,7 +41,7 @@ jobs:
         with:
           args:
             zip -qq -r v${{ steps.package-version.outputs.current-version }}.zip
-            public/v${{ steps.package-version.outputs.current-version }}
+            public/v${{steps.package-version.outputs.current-version }}
 
       - name: Upload Latest Release
         uses: actions/upload-artifact@v2
@@ -55,7 +56,7 @@ jobs:
           file: v${{ steps.package-version.outputs.current-version }}.zip
           asset_name: v${{ steps.package-version.outputs.current-version }}.zip
           tag: v${{ steps.package-version.outputs.current-version }}
-          overwrite: true          
+          overwrite: true
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -64,5 +65,3 @@ jobs:
           publish_dir: ./public
           keep_files: true
           cname: dsearch.mask.r2d2.to
-
-
