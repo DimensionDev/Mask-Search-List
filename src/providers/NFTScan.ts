@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { orderBy } from 'lodash'
 import urlcat from 'urlcat'
 import {
   EVMChainId,
@@ -11,7 +12,6 @@ import {
   SolanaChainId,
   SourceType,
 } from '../type'
-import { orderBy } from 'lodash'
 import { delay, getRuntimeEnableCache } from '../utils'
 
 const baseURL = 'https://nftscan-proxy.r2d2.to'
@@ -99,7 +99,6 @@ export class NFTScanToken implements NonFungibleTokenProvider {
   async getTopTokens() {
     let result: NonFungibleToken[] = []
 
-
     const url = urlcat(baseURL, '/api/v2/statistics/ranking/marketcap')
     const list = await axios.get<Response>(url, {
       headers: {
@@ -111,16 +110,16 @@ export class NFTScanToken implements NonFungibleTokenProvider {
     const data = list.data.data
       .map(
         (x, index) =>
-        ({
-          pluginID: config.pluginID,
-          address: x.contract_address,
-          name: x.contract_name,
-          chainId: config.chainId,
-          type: SearchResultType.NonFungibleToken,
-          source: SourceType.NFTScan,
-          logoURL: x.logo_url,
-          rank: index + 1,
-        } as NonFungibleToken),
+          ({
+            pluginID: config.pluginID,
+            address: x.contract_address,
+            name: x.contract_name,
+            chainId: config.chainId,
+            type: SearchResultType.NonFungibleToken,
+            source: SourceType.NFTScan,
+            logoURL: x.logo_url,
+            rank: index + 1,
+          } as NonFungibleToken),
       )
       .slice(0, config.limit)
 

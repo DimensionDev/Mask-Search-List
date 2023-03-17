@@ -1,4 +1,5 @@
 import axios from 'axios'
+import urlcat from 'urlcat'
 import {
   FungibleToken,
   FungibleTokenProvider,
@@ -7,9 +8,7 @@ import {
   SocialLinks,
   SourceType,
 } from '../type'
-import urlcat from 'urlcat'
 import { delay } from '../utils'
-import { get } from 'lodash'
 
 export const baseURL = 'https://api.coingecko.com/api/v3'
 export const baseProURL = 'https://coingecko-agent.r2d2.to'
