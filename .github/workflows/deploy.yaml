@@ -24,12 +24,12 @@ jobs:
         run: yarn install
         if: steps.yarn-cache.outputs.cache-hit != 'true'
 
-      - name: build
-        env:
-          COINMARKETCAP_API_KEY: ${{ secrets.COINMARKETCAP_API_KEY }}
-          RUNTIME_TARGET: ${{ inputs.target }}
-        run: |
-          yarn build
+      # - name: build
+      #   env:
+      #     COINMARKETCAP_API_KEY: ${{ secrets.COINMARKETCAP_API_KEY }}
+      #     RUNTIME_TARGET: ${{ inputs.target }}
+      #   run: |
+      #     yarn build
 
       - name: Get Package Version
         id: package-version
