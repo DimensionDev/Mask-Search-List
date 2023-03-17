@@ -12,7 +12,7 @@ import {
   SolanaChainId,
   SourceType,
 } from '../type'
-import { delay, getRuntimeEnableCache } from '../utils'
+import { delay } from '../utils'
 
 const baseURL = 'https://nftscan-proxy.r2d2.to'
 
@@ -110,16 +110,16 @@ export class NFTScanToken implements NonFungibleTokenProvider {
     const data = list.data.data
       .map(
         (x, index) =>
-        ({
-          pluginID: config.pluginID,
-          address: x.contract_address,
-          name: x.contract_name,
-          chainId: config.chainId,
-          type: SearchResultType.NonFungibleToken,
-          source: SourceType.NFTScan,
-          logoURL: x.logo_url,
-          rank: index + 1,
-        } as NonFungibleToken),
+          ({
+            pluginID: config.pluginID,
+            address: x.contract_address,
+            name: x.contract_name,
+            chainId: config.chainId,
+            type: SearchResultType.NonFungibleToken,
+            source: SourceType.NFTScan,
+            logoURL: x.logo_url,
+            rank: index + 1,
+          } as NonFungibleToken),
       )
       .slice(0, config.limit)
 
