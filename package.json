@@ -10,6 +10,8 @@
     "prepare": "husky install",
     "prettier": "prettier -c .",
     "lint-fix": "prettier --write .",
+    "predeploy": "ts-node src/index.ts",
+    "deploy": "gh-pages -d build",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
