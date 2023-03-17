@@ -10,6 +10,7 @@
     "prepare": "husky install",
     "prettier": "prettier -c .",
     "lint-fix": "prettier --write .",
+    "publish": "gh-pages -d ./public",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
