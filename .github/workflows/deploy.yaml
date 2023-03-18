@@ -1,8 +1,10 @@
 name: Generate and Deploy
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
+  push:
+    branches: [
+      'ci/**'
+    ]
   workflow_dispatch:
 
 jobs:
@@ -41,7 +43,7 @@ jobs:
         with:
           args:
             zip -qq -r v${{ steps.package-version.outputs.current-version }}.zip
-            public
+            output
 
       - name: Upload Latest Release
         uses: actions/upload-artifact@v2
