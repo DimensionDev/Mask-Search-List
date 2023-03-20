@@ -19,49 +19,49 @@ async function main() {
   await initFolder()
 
   // Fetch fungible token
-  // for (const p of fungibleProviders) {
-  //   let fungibleTokens: FungibleToken[] = []
-  //   console.log(`Fetch the data from ${p.getProviderName()}`)
-  //   try {
-  //     const tokens = await p.getTopTokens()
-  //     fungibleTokens = [...fungibleTokens, ...tokens]
-  //   } catch (e) {
-  //     console.log(`Fetching the chain failed by ${p.getProviderName()}`)
-  //     console.log(e)
-  //   }
+  for (const p of fungibleProviders) {
+    let fungibleTokens: FungibleToken[] = []
+    console.log(`Fetch the data from ${p.getProviderName()}`)
+    try {
+      const tokens = await p.getTopTokens()
+      fungibleTokens = [...fungibleTokens, ...tokens]
+    } catch (e) {
+      console.log(`Fetching the chain failed by ${p.getProviderName()}`)
+      console.log(e)
+    }
 
-  //   console.log(`The current chain get ${fungibleTokens.length} tokens`)
+    console.log(`The current chain get ${fungibleTokens.length} tokens`)
 
-  //   if (fungibleTokens.length) {
-  //     await writeTokensToFile(
-  //       p.getProviderName(),
-  //       'fungible-tokens',
-  //       fungibleTokens.filter((x) => x.source === p.getProviderName()),
-  //     )
-  //   }
-  // }
+    if (fungibleTokens.length) {
+      await writeTokensToFile(
+        p.getProviderName(),
+        'fungible-tokens',
+        fungibleTokens.filter((x) => x.source === p.getProviderName()),
+      )
+    }
+  }
 
-  // await mergePublicFileToOutput('fungible-tokens')
+  await mergePublicFileToOutput('fungible-tokens')
 
   // Fetch nonFungible token
-  // for (const p of nonFungibleTokenProviders) {
-  //   let nonFungibleTokens: NonFungibleToken[] = []
-  //   console.log(`Fetch the data from ${p.getProviderName()}`)
-  //   try {
-  //     const tokens = await p.getTopTokens()
-  //     nonFungibleTokens = [...nonFungibleTokens, ...tokens]
-  //   } catch (e) {
-  //     console.log(`Fetch the chain failed by ${p.getProviderName()}`)
-  //     console.log(e)
-  //   }
+  for (const p of nonFungibleTokenProviders) {
+    let nonFungibleTokens: NonFungibleToken[] = []
+    console.log(`Fetch the data from ${p.getProviderName()}`)
+    try {
+      const tokens = await p.getTopTokens()
+      nonFungibleTokens = [...nonFungibleTokens, ...tokens]
+    } catch (e) {
+      console.log(`Fetch the chain failed by ${p.getProviderName()}`)
+      console.log(e)
+    }
 
-  //   console.log(`The current chain get ${nonFungibleTokens.length} tokens`)
+    console.log(`The current chain get ${nonFungibleTokens.length} tokens`)
 
-  //   if (nonFungibleTokens.length) {
-  //     await writeTokensToFile(p.getProviderName(), 'non-fungible-tokens', nonFungibleTokens)
-  //   }
-  // }
-  // await mergePublicFileToOutput('non-fungible-tokens')
+    if (nonFungibleTokens.length) {
+      await writeTokensToFile(p.getProviderName(), 'non-fungible-tokens', nonFungibleTokens)
+    }
+  }
+  await mergePublicFileToOutput('non-fungible-tokens')
 
   // Fetch nonFungible Collections
   for (const p of nonFungibleCollectionProviders) {
