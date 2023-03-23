@@ -40,7 +40,12 @@
     "source": "NFTScan",
     "type": "NonFungibleCollection",
     "rank": 134,
-    "keywords": ["spaceId"],
+    "alias": [
+      {
+        "value": "spaceid",
+        "isPin": true
+      }
+    ],
     "collection": {
       "address": "0x9cee09946a8113a503c1264e328c0e3aee4c8bcf",
       "name": "Space ID",
