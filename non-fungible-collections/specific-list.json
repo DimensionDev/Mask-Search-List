@@ -27,5 +27,35 @@
         "medium": null
       }
     }
+  },
+  {
+    "pluginID": "com.mask.evm",
+    "address": "0x9cee09946a8113a503c1264e328c0e3aee4c8bcf",
+    "name": "Space ID",
+    "chainId": 56,
+    "symbol": "SID",
+    "logoURL": "https://logo.nftscan.com/bsc_logo/0x9cee09946a8113a503c1264e328c0e3aee4c8bcf.png",
+    "tokensTotal": 39940,
+    "verified": false,
+    "source": "NFTScan",
+    "type": "NonFungibleCollection",
+    "rank": 134,
+    "keywords": ["spaceId"],
+    "collection": {
+      "address": "0x9cee09946a8113a503c1264e328c0e3aee4c8bcf",
+      "name": "Space ID",
+      "chainId": 56,
+      "iconURL": "https://logo.nftscan.com/bsc_logo/0x9cee09946a8113a503c1264e328c0e3aee4c8bcf.png",
+      "socialLinks": {
+        "website": "https://space.id/",
+        "email": null,
+        "twitter": "SpaceIDProtocol",
+        "discord": "https://discord.com/invite/2qrrf79K2A",
+        "telegram": null,
+        "github": null,
+        "instagram": null,
+        "medium": null
+      }
+    }
   }
 ]
