@@ -1,8 +1,10 @@
 name: Generate and Deploy
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
+  push:
+    branches: [
+      'update-specific-list'
+    ]
   workflow_dispatch:
 
 jobs:
