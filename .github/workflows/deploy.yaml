@@ -3,7 +3,7 @@ name: Generate and Deploy
 on:
   push:
     branches: [
-      'update-specific-list'
+      'update-token-lists'
     ]
   workflow_dispatch:
 
