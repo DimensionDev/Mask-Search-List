@@ -62,5 +62,34 @@
         "medium": null
       }
     }
+  },
+  {
+    "pluginID": "com.mask.evm",
+    "address": "0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85",
+    "name": "ENS",
+    "chainId": 1,
+    "symbol": "ens",
+    "logoURL": "https://logo.nftscan.com/logo/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85.png",
+    "tokensTotal": 2984544,
+    "verified": false,
+    "source": "NFTScan",
+    "type": "NonFungibleCollection",
+    "rank": 2,
+    "collection": {
+      "address": "0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85",
+      "name": "ENS",
+      "chainId": 1,
+      "iconURL": "https://logo.nftscan.com/logo/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85.png",
+      "socialLinks": {
+        "website": "https://ens.domains",
+        "email": null,
+        "twitter": "ensdomains",
+        "discord": null,
+        "telegram": null,
+        "github": null,
+        "instagram": null,
+        "medium": "the-ethereum-name-service"
+      }
+    }
   }
 ]
