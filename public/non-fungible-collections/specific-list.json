@@ -30,16 +30,16 @@
   },
   {
     "pluginID": "com.mask.evm",
-    "address": "0x9cee09946a8113a503c1264e328c0e3aee4c8bcf",
-    "name": "Space ID",
+    "address": "0xe3b1d32e43ce8d658368e2cbff95d57ef39be8a6",
+    "name": "SPACE ID",
     "chainId": 56,
     "symbol": "SID",
-    "logoURL": "https://logo.nftscan.com/bsc_logo/0x9cee09946a8113a503c1264e328c0e3aee4c8bcf.png",
-    "tokensTotal": 39940,
+    "logoURL": "https://logo.nftscan.com/bsc_logo/0xe3b1d32e43ce8d658368e2cbff95d57ef39be8a6.png",
+    "tokensTotal": 660118,
     "verified": false,
     "source": "NFTScan",
     "type": "NonFungibleCollection",
-    "rank": 134,
+    "rank": 8,
     "alias": [
       {
         "value": "spaceid",
@@ -47,15 +47,15 @@
       }
     ],
     "collection": {
-      "address": "0x9cee09946a8113a503c1264e328c0e3aee4c8bcf",
-      "name": "Space ID",
+      "address": "0xe3b1d32e43ce8d658368e2cbff95d57ef39be8a6",
+      "name": "SPACE ID",
       "chainId": 56,
-      "iconURL": "https://logo.nftscan.com/bsc_logo/0x9cee09946a8113a503c1264e328c0e3aee4c8bcf.png",
+      "iconURL": "https://logo.nftscan.com/bsc_logo/0xe3b1d32e43ce8d658368e2cbff95d57ef39be8a6.png",
       "socialLinks": {
-        "website": "https://space.id/",
+        "website": null,
         "email": null,
         "twitter": "SpaceIDProtocol",
-        "discord": "https://discord.com/invite/2qrrf79K2A",
+        "discord": null,
         "telegram": null,
         "github": null,
         "instagram": null,
