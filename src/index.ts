@@ -80,7 +80,6 @@ async function main() {
   const spaces = await daoAPI.getSpaces()
   await writeDAOToFile(spaces)
 
-
   await mergePublicFileToOutput('non-fungible-collections')
   await mergePublicFileToOutput('non-fungible-tokens')
   await mergePublicFileToOutput('nft-lucky-drop')
