@@ -1,14 +1,16 @@
 import * as process from 'process'
 import { FungibleToken, NonFungibleCollection, NonFungibleToken } from './type'
 import { CoinGecko } from './providers/coingecko'
-import { initFolder, mergePublicFileToOutput, writeCollectionsToFile, writeTokensToFile } from './utils'
+import { initFolder, mergePublicFileToOutput, writeCollectionsToFile, writeTokensToFile, writeDAOToFile } from './utils'
 import { CoinMarketCap } from './providers/coinmarketcap'
 import { NFTScanCollection, NFTScanToken } from './providers/NFTScan'
+import { DAO } from './providers/dao'
 
 const coinGeckoAPI = new CoinGecko()
 const nftScanTokenAPI = new NFTScanToken()
 const nftScanCollectionAPI = new NFTScanCollection()
 const cmcAPI = new CoinMarketCap()
+const daoAPI = new DAO()
 
 const fungibleProviders = [coinGeckoAPI, cmcAPI]
 const nonFungibleTokenProviders = [nftScanTokenAPI]
@@ -16,9 +18,7 @@ const nonFungibleCollectionProviders = [nftScanCollectionAPI]
 
 async function main() {
   await initFolder()
-  await initFolder()
 
-  // Fetch fungible token
   for (const p of fungibleProviders) {
     let fungibleTokens: FungibleToken[] = []
     console.log(`Fetch the data from ${p.getProviderName()}`)
@@ -41,9 +41,6 @@ async function main() {
     }
   }
 
-  await mergePublicFileToOutput('fungible-tokens')
-
-  // Fetch nonFungible token
   for (const p of nonFungibleTokenProviders) {
     let nonFungibleTokens: NonFungibleToken[] = []
     console.log(`Fetch the data from ${p.getProviderName()}`)
@@ -61,9 +58,7 @@ async function main() {
       await writeTokensToFile(p.getProviderName(), 'non-fungible-tokens', nonFungibleTokens)
     }
   }
-  await mergePublicFileToOutput('non-fungible-tokens')
 
-  // Fetch nonFungible Collections
   for (const p of nonFungibleCollectionProviders) {
     let nonFungibleCollections: NonFungibleCollection[] = []
     console.log(`Fetch the data from ${p.getProviderName()}`)
@@ -81,10 +76,15 @@ async function main() {
       await writeCollectionsToFile(p.getProviderName(), nonFungibleCollections)
     }
   }
-  await mergePublicFileToOutput('non-fungible-collections')
 
-  // merge nft lucky drop file
+  const spaces = await daoAPI.getSpaces()
+  await writeDAOToFile(spaces)
+
+  await mergePublicFileToOutput('non-fungible-collections')
+  await mergePublicFileToOutput('non-fungible-tokens')
   await mergePublicFileToOutput('nft-lucky-drop')
+  await mergePublicFileToOutput('fungible-tokens')
+  await mergePublicFileToOutput('dao')
 
   console.log('Generate success!')
   process.exit(0)
