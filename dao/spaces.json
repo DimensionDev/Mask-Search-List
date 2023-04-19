@@ -1,0 +1,1102 @@
+[
+  {
+    "spaceId": "fabien.eth",
+    "spaceName": "Fabien",
+    "twitterHandler": "bonustrack87"
+  },
+  {
+    "spaceId": "dodobird.eth",
+    "spaceName": "DODO",
+    "twitterHandler": "BreederDodo"
+  },
+  {
+    "spaceId": "decentralgames.eth",
+    "spaceName": "Decentral Games",
+    "twitterHandler": "decentralgames"
+  },
+  {
+    "spaceId": "badgerdao.eth",
+    "spaceName": "BadgerDAO",
+    "twitterHandler": "badgerDAO"
+  },
+  {
+    "spaceId": "yam.eth",
+    "spaceName": "Yam",
+    "twitterHandler": "YamFinance"
+  },
+  {
+    "spaceId": "aavegotchi.eth",
+    "spaceName": "Aavegotchi",
+    "twitterHandler": "aavegotchi"
+  },
+  {
+    "spaceId": "xdaistake.eth",
+    "spaceName": "xDai Chain (Gnosis Chain)",
+    "twitterHandler": "xdaichain"
+  },
+  {
+    "spaceId": "frax.eth",
+    "spaceName": "Frax",
+    "twitterHandler": "fraxfinance"
+  },
+  {
+    "spaceId": "friendswithbenefits.eth",
+    "spaceName": "Friends With Benefits",
+    "twitterHandler": "fwbtweets"
+  },
+  {
+    "spaceId": "vote-perp.eth",
+    "spaceName": "Perpetual Protocol",
+    "twitterHandler": "perpprotocol"
+  },
+  {
+    "spaceId": "cream-finance.eth",
+    "spaceName": "Cream Finance",
+    "twitterHandler": "CreamdotFinance"
+  },
+  {
+    "spaceId": "stakedao.eth",
+    "spaceName": "Stake DAO",
+    "twitterHandler": "StakeDAOHQ"
+  },
+  {
+    "spaceId": "vote.airswap.eth",
+    "spaceName": "AirSwap",
+    "twitterHandler": "airswap"
+  },
+  {
+    "spaceId": "opiumprotocol.eth",
+    "spaceName": "Opium Network",
+    "twitterHandler": "Opium_Network"
+  },
+  {
+    "spaceId": "diadao.eth",
+    "spaceName": "DIA",
+    "twitterHandler": "DIAdata_org"
+  },
+  {
+    "spaceId": "alchemistcoin.eth",
+    "spaceName": "Alchemist",
+    "twitterHandler": "_alchemistcoin"
+  },
+  {
+    "spaceId": "gnosis.eth",
+    "spaceName": "GnosisDAO",
+    "twitterHandler": "gnosisdao"
+  },
+  {
+    "spaceId": "alpacafinance.eth",
+    "spaceName": "Alpaca Finance",
+    "twitterHandler": "AlpacaFinance"
+  },
+  {
+    "spaceId": "insuretoken.eth",
+    "spaceName": "inSure DeFi",
+    "twitterHandler": "InsureToken"
+  },
+  {
+    "spaceId": "itam.eth",
+    "spaceName": "ITAM",
+    "twitterHandler": "itamgames"
+  },
+  {
+    "spaceId": "pangolindex.eth",
+    "spaceName": "Pangolin",
+    "twitterHandler": "pangolindex"
+  },
+  {
+    "spaceId": "poolpool.pooltogether.eth",
+    "spaceName": "Pool Pool",
+    "twitterHandler": "PoolTogether_"
+  },
+  {
+    "spaceId": "awsbcommunity.eth",
+    "spaceName": "Allan Wall Street Bets (aWSB)",
+    "twitterHandler": "aWSBclub"
+  },
+  {
+    "spaceId": "bancornetwork.eth",
+    "spaceName": "Bancor",
+    "twitterHandler": "bancor"
+  },
+  {
+    "spaceId": "officialoceandao.eth",
+    "spaceName": "OceanDAO",
+    "twitterHandler": "OceanDAO_"
+  },
+  {
+    "spaceId": "aladdindao.eth",
+    "spaceName": "AladdinDAO",
+    "twitterHandler": "aladdindao"
+  },
+  {
+    "spaceId": "poh.eth",
+    "spaceName": "Proof Of Humanity",
+    "twitterHandler": "pohdao"
+  },
+  {
+    "spaceId": "ffdao.eth",
+    "spaceName": "forefront",
+    "twitterHandler": "forefront__"
+  },
+  {
+    "spaceId": "fei.eth",
+    "spaceName": "Fei",
+    "twitterHandler": "feiprotocol"
+  },
+  {
+    "spaceId": "apeswap-finance.eth",
+    "spaceName": "ApeSwap",
+    "twitterHandler": "ape_swap"
+  },
+  {
+    "spaceId": "ens.eth",
+    "spaceName": "ENS",
+    "twitterHandler": "ensdomains"
+  },
+  {
+    "spaceId": "spookyswap.eth",
+    "spaceName": "SpookySwap",
+    "twitterHandler": "SpookySwap"
+  },
+  {
+    "spaceId": "uniswap",
+    "spaceName": "Uniswap",
+    "twitterHandler": "uniswap"
+  },
+  {
+    "spaceId": "pickle.eth",
+    "spaceName": "PICKLE",
+    "twitterHandler": "picklefinance"
+  },
+  {
+    "spaceId": "snapshot.dcl.eth",
+    "spaceName": "Decentraland",
+    "twitterHandler": "decentraland"
+  },
+  {
+    "spaceId": "qidao.eth",
+    "spaceName": "Qi Dao | Mai.Finance",
+    "twitterHandler": "QiDaoProtocol"
+  },
+  {
+    "spaceId": "rarible.eth",
+    "spaceName": "Rarible Protocol DAO",
+    "twitterHandler": "rariblecom"
+  },
+  {
+    "spaceId": "decrypt-media.eth",
+    "spaceName": "Decrypt Media",
+    "twitterHandler": "decryptmedia"
+  },
+  {
+    "spaceId": "rbn.eth",
+    "spaceName": "Ribbon",
+    "twitterHandler": "ribbonfinance"
+  },
+  {
+    "spaceId": "gitcoindao.eth",
+    "spaceName": "Gitcoin",
+    "twitterHandler": "gitcoin"
+  },
+  {
+    "spaceId": "index-coop.eth",
+    "spaceName": "Index Coop",
+    "twitterHandler": "indexcoop"
+  },
+  {
+    "spaceId": "streamr.eth",
+    "spaceName": "Streamr",
+    "twitterHandler": "streamr"
+  },
+  {
+    "spaceId": "curve.eth",
+    "spaceName": "Curve Finance",
+    "twitterHandler": "CurveFinance"
+  },
+  {
+    "spaceId": "sushigov.eth",
+    "spaceName": "Sushi",
+    "twitterHandler": "SushiSwap"
+  },
+  {
+    "spaceId": "1inch.eth",
+    "spaceName": "1inch Network",
+    "twitterHandler": "1inchNetwork"
+  },
+  {
+    "spaceId": "cvx.eth",
+    "spaceName": "Convex Finance",
+    "twitterHandler": "ConvexFinance"
+  },
+  {
+    "spaceId": "aave.eth",
+    "spaceName": "Aave",
+    "twitterHandler": "AaveAave"
+  },
+  {
+    "spaceId": "bitdao.eth",
+    "spaceName": "BitDAO",
+    "twitterHandler": "BitDAO_Official"
+  },
+  {
+    "spaceId": "origingov.eth",
+    "spaceName": "Origin Story",
+    "twitterHandler": "originprotocol"
+  },
+  {
+    "spaceId": "mantra-dao.eth",
+    "spaceName": "MANTRA",
+    "twitterHandler": "MANTRAOMniverse"
+  },
+  {
+    "spaceId": "instadapp-gov.eth",
+    "spaceName": "Instadapp",
+    "twitterHandler": "instadapp"
+  },
+  {
+    "spaceId": "shapeshiftdao.eth",
+    "spaceName": "ShapeShift",
+    "twitterHandler": "ShapeShift"
+  },
+  {
+    "spaceId": "0xgov.eth",
+    "spaceName": "0x",
+    "twitterHandler": "0xProject"
+  },
+  {
+    "spaceId": "valixorg.eth",
+    "spaceName": "Validator",
+    "twitterHandler": "ValixOrg"
+  },
+  {
+    "spaceId": "sharkdao.eth",
+    "spaceName": "SharkDAO",
+    "twitterHandler": "sharkdao"
+  },
+  {
+    "spaceId": "bullsontheblock.eth",
+    "spaceName": "Bulls on the Block",
+    "twitterHandler": "bullsontheblock"
+  },
+  {
+    "spaceId": "balancer.eth",
+    "spaceName": "Balancer",
+    "twitterHandler": "balancer"
+  },
+  {
+    "spaceId": "daocity.eth",
+    "spaceName": "CityDAO",
+    "twitterHandler": "citydao"
+  },
+  {
+    "spaceId": "dydxgov.eth",
+    "spaceName": "dYdX",
+    "twitterHandler": "dydxfoundation"
+  },
+  {
+    "spaceId": "riskharbor.eth",
+    "spaceName": "Risk Harbor",
+    "twitterHandler": "riskharbor"
+  },
+  {
+    "spaceId": "dopedao.eth",
+    "spaceName": "DopeDAO",
+    "twitterHandler": "TheDopeWarsLoot"
+  },
+  {
+    "spaceId": "loot-dao.eth",
+    "spaceName": "Loot Owners",
+    "twitterHandler": "lootproject"
+  },
+  {
+    "spaceId": "immutablex.eth",
+    "spaceName": "ImmutableX",
+    "twitterHandler": "Immutable"
+  },
+  {
+    "spaceId": "gyrodao.eth",
+    "spaceName": "Gyroscope Protocol",
+    "twitterHandler": "gyrostable"
+  },
+  {
+    "spaceId": "pantherprotocol.eth",
+    "spaceName": "Panther Protocol",
+    "twitterHandler": "ZkPanther"
+  },
+  {
+    "spaceId": "gro.xyz",
+    "spaceName": "Gro DAO",
+    "twitterHandler": "gro_dao"
+  },
+  {
+    "spaceId": "sunrisegaming.eth",
+    "spaceName": "Sunrise Gaming by Dao",
+    "twitterHandler": "SunriseGaming_d"
+  },
+  {
+    "spaceId": "superraredao.eth",
+    "spaceName": "SuperRare DAO",
+    "twitterHandler": "superrare"
+  },
+  {
+    "spaceId": "xwg.eth",
+    "spaceName": "X World Games",
+    "twitterHandler": "xwg_games"
+  },
+  {
+    "spaceId": "skvlldao.eth",
+    "spaceName": "SkvllpvnkzDAO",
+    "twitterHandler": "skvllpvnkz"
+  },
+  {
+    "spaceId": "gearbox.eth",
+    "spaceName": "Gearbox",
+    "twitterHandler": "GearboxProtocol"
+  },
+  {
+    "spaceId": "abracadabrabymerlinthemagician.eth",
+    "spaceName": "Magic Internet Money",
+    "twitterHandler": "MIM_Spell"
+  },
+  {
+    "spaceId": "fuji-dao.eth",
+    "spaceName": "FujiDAO Pre-governance",
+    "twitterHandler": "FujiFinance"
+  },
+  {
+    "spaceId": "xxtka.eth",
+    "spaceName": "xToken",
+    "twitterHandler": "xtokenterminal"
+  },
+  {
+    "spaceId": "swpr.eth",
+    "spaceName": "Swapr",
+    "twitterHandler": "SwaprEth"
+  },
+  {
+    "spaceId": "genesisblocks.eth",
+    "spaceName": "Genesis Blocks",
+    "twitterHandler": "GenesisBlocks"
+  },
+  {
+    "spaceId": "piedao.eth",
+    "spaceName": "PieDAO",
+    "twitterHandler": "PieDAO_DeFi"
+  },
+  {
+    "spaceId": "cyberkongz.eth",
+    "spaceName": "CyberKongz",
+    "twitterHandler": "cyberkongz"
+  },
+  {
+    "spaceId": "svs.eth",
+    "spaceName": "Sneaky Vampire Syndicate",
+    "twitterHandler": "svsnft"
+  },
+  {
+    "spaceId": "mutantsdao.eth",
+    "spaceName": "MutantCats DAO",
+    "twitterHandler": "mutantcats"
+  },
+  {
+    "spaceId": "forgottengov.eth",
+    "spaceName": "Forgotten Runes Wizard's Cult",
+    "twitterHandler": "forgottenrunes"
+  },
+  {
+    "spaceId": "popcorn-snapshot.eth",
+    "spaceName": "Popcorn",
+    "twitterHandler": "Popcorn_DAO"
+  },
+  {
+    "spaceId": "apollodao.eth",
+    "spaceName": "WEALTHDAO",
+    "twitterHandler": "zhiyuan_2007"
+  },
+  {
+    "spaceId": "wexgov.eth",
+    "spaceName": "WEX",
+    "twitterHandler": "Wault_Finance"
+  },
+  {
+    "spaceId": "halloweenbearsdao.eth",
+    "spaceName": "HalloweenBearsDAO",
+    "twitterHandler": "halloweenbears"
+  },
+  {
+    "spaceId": "sismo.eth",
+    "spaceName": "Sismo",
+    "twitterHandler": "Sismo_eth"
+  },
+  {
+    "spaceId": "devdao.eth",
+    "spaceName": "Developer DAO",
+    "twitterHandler": "developer_dao"
+  },
+  {
+    "spaceId": "klimadao.eth",
+    "spaceName": "Klima DAO",
+    "twitterHandler": "KlimaDAO"
+  },
+  {
+    "spaceId": "doodles.eth",
+    "spaceName": "Doodles",
+    "twitterHandler": "doodles"
+  },
+  {
+    "spaceId": "anglegovernance.eth",
+    "spaceName": "Angle Protocol",
+    "twitterHandler": "AngleProtocol"
+  },
+  {
+    "spaceId": "gmx.eth",
+    "spaceName": "GMX",
+    "twitterHandler": "GMX_IO"
+  },
+  {
+    "spaceId": "mavxyz.eth",
+    "spaceName": "Maverick Protocol",
+    "twitterHandler": "mavprotocol"
+  },
+  {
+    "spaceId": "spartacusdao.eth",
+    "spaceName": "Spartacus DAO",
+    "twitterHandler": "Spartacus_Fi"
+  },
+  {
+    "spaceId": "treasuredao.eth",
+    "spaceName": "Treasure (Inactive Space)",
+    "twitterHandler": "Treasure_DAO"
+  },
+  {
+    "spaceId": "noragov.eth",
+    "spaceName": "SnowCrash DAO",
+    "twitterHandler": "SnowCrashDAO"
+  },
+  {
+    "spaceId": "wumingqi.eth",
+    "spaceName": "snapshot",
+    "twitterHandler": "wumingqi123"
+  },
+  {
+    "spaceId": "meritcircle.eth",
+    "spaceName": "Merit Circle",
+    "twitterHandler": "Meritcircle_io"
+  },
+  {
+    "spaceId": "arbis.eth",
+    "spaceName": "Umami Finance",
+    "twitterHandler": "umamifinance"
+  },
+  {
+    "spaceId": "launchdao.eth",
+    "spaceName": "LaunchDAO (Panther Protocol)",
+    "twitterHandler": "ZKPanther"
+  },
+  {
+    "spaceId": "bestfork.eth",
+    "spaceName": "Wonderland ",
+    "twitterHandler": "wonderland_fi"
+  },
+  {
+    "spaceId": "polymon.eth",
+    "spaceName": "Polychain Monsters",
+    "twitterHandler": "polychainmon"
+  },
+  {
+    "spaceId": "fortressdao.eth",
+    "spaceName": "Fortress DAO",
+    "twitterHandler": "FortressDAO"
+  },
+  {
+    "spaceId": "metaverse-pro.eth",
+    "spaceName": "MetaversePro",
+    "twitterHandler": "MetaverseProDAO"
+  },
+  {
+    "spaceId": "ethip.eth",
+    "spaceName": "MATIC",
+    "twitterHandler": "0xPolygon"
+  },
+  {
+    "spaceId": "paraswap-dao.eth",
+    "spaceName": "ParaSwap DAO",
+    "twitterHandler": "paraswap"
+  },
+  {
+    "spaceId": "revotu.eth",
+    "spaceName": "Polygon",
+    "twitterHandler": "0xPolygon"
+  },
+  {
+    "spaceId": "litedex.eth",
+    "spaceName": "Litedex Protocol",
+    "twitterHandler": "litedexprotocol"
+  },
+  {
+    "spaceId": "thegooddao.eth",
+    "spaceName": "GoodDollar DAO",
+    "twitterHandler": "gooddollarorg"
+  },
+  {
+    "spaceId": "snowbankgovernance.eth",
+    "spaceName": "Snowbank",
+    "twitterHandler": "SnowbankDAO"
+  },
+  {
+    "spaceId": "m-dao.eth",
+    "spaceName": "metaer",
+    "twitterHandler": "metaer_market"
+  },
+  {
+    "spaceId": "goldfinch.eth",
+    "spaceName": "Goldfinch",
+    "twitterHandler": "goldfinch_fi"
+  },
+  {
+    "spaceId": "alexec.eth",
+    "spaceName": "AlexDAO",
+    "twitterHandler": "The_PeopleDAO"
+  },
+  {
+    "spaceId": "dappradar.eth",
+    "spaceName": "DappRadar",
+    "twitterHandler": "dappradar"
+  },
+  {
+    "spaceId": "jadeprotocol.eth",
+    "spaceName": "Jade Protocol",
+    "twitterHandler": "jadeprotocol"
+  },
+  {
+    "spaceId": "younghwang.eth",
+    "spaceName": "Alatelecoin DAO",
+    "twitterHandler": "alashoo_lab"
+  },
+  {
+    "spaceId": "blockchainminers.eth",
+    "spaceName": "Blockchain Miners Club",
+    "twitterHandler": "BMC_NFT"
+  },
+  {
+    "spaceId": "hubbleexchange.eth",
+    "spaceName": "Hubble Exchange",
+    "twitterHandler": "HubbleExchange"
+  },
+  {
+    "spaceId": "grayboys.eth",
+    "spaceName": "The Mothership DAO (Gray Boys)",
+    "twitterHandler": "grayboysdao"
+  },
+  {
+    "spaceId": "beefydao.eth",
+    "spaceName": "Beefy",
+    "twitterHandler": "beefyfinance"
+  },
+  {
+    "spaceId": "phonon.eth",
+    "spaceName": "Phonon DAO",
+    "twitterHandler": "PhononDAO"
+  },
+  {
+    "spaceId": "theopendao.eth",
+    "spaceName": "OpenDAO",
+    "twitterHandler": "The_OpenDAO"
+  },
+  {
+    "spaceId": "people-dao.eth",
+    "spaceName": "PeopleDAO",
+    "twitterHandler": "The_PeopleDAO"
+  },
+  {
+    "spaceId": "vapornodes.eth",
+    "spaceName": "VaporFi Labs",
+    "twitterHandler": "_VaporFi"
+  },
+  {
+    "spaceId": "coinpirates.eth",
+    "spaceName": "Coinpirates",
+    "twitterHandler": "coin_pirates"
+  },
+  {
+    "spaceId": "gasdao.eth",
+    "spaceName": "Gas DAO",
+    "twitterHandler": "0xgasdao"
+  },
+  {
+    "spaceId": "redactedcartel.eth",
+    "spaceName": "Redacted",
+    "twitterHandler": "redactedcartel"
+  },
+  {
+    "spaceId": "savehuobidao.eth",
+    "spaceName": "SaveHuobiDao",
+    "twitterHandler": "savehuobidao"
+  },
+  {
+    "spaceId": "braindancedao.eth",
+    "spaceName": "BrainDanceDAO",
+    "twitterHandler": "BraindanceMeta"
+  },
+  {
+    "spaceId": "golflinks.eth",
+    "spaceName": "LinksDAO",
+    "twitterHandler": "linksdao"
+  },
+  {
+    "spaceId": "hundredfinance.eth",
+    "spaceName": "Hundred Finance",
+    "twitterHandler": "HundredFinance"
+  },
+  {
+    "spaceId": "dforcenet.eth",
+    "spaceName": "dForce",
+    "twitterHandler": "dForcenet"
+  },
+  {
+    "spaceId": "zora.eth",
+    "spaceName": "Zora",
+    "twitterHandler": "ourzora"
+  },
+  {
+    "spaceId": "smolverse.eth",
+    "spaceName": "Smolverse",
+    "twitterHandler": "smolverse"
+  },
+  {
+    "spaceId": "oxdaofi.eth",
+    "spaceName": "0xDAO",
+    "twitterHandler": "0xDAO_fi"
+  },
+  {
+    "spaceId": "castlekidvault.eth",
+    "spaceName": "Castle Kid DAO Vault",
+    "twitterHandler": "castlekidnft"
+  },
+  {
+    "spaceId": "chaingov.eth",
+    "spaceName": "Chain Gov",
+    "twitterHandler": "OnyxProtocol"
+  },
+  {
+    "spaceId": "shomustgoon.eth",
+    "spaceName": "DAO Maker",
+    "twitterHandler": "TheDaoMaker"
+  },
+  {
+    "spaceId": "futera.eth",
+    "spaceName": "Futera United",
+    "twitterHandler": "Futeraunited"
+  },
+  {
+    "spaceId": "ideamarket.eth",
+    "spaceName": "Ideamarket",
+    "twitterHandler": "ideamarket_io"
+  },
+  {
+    "spaceId": "galleondao.eth",
+    "spaceName": "Galleon",
+    "twitterHandler": "galleondao"
+  },
+  {
+    "spaceId": "assangedao.eth",
+    "spaceName": "AssangeDAO",
+    "twitterHandler": "AssangeDAO"
+  },
+  {
+    "spaceId": "cow.eth",
+    "spaceName": "CoW DAO",
+    "twitterHandler": "CoWSwap"
+  },
+  {
+    "spaceId": "rss3.eth",
+    "spaceName": "RSS3",
+    "twitterHandler": "rss3_"
+  },
+  {
+    "spaceId": "astardegens.eth",
+    "spaceName": "Astar Degens DAO",
+    "twitterHandler": "astardegens"
+  },
+  {
+    "spaceId": "botto.eth",
+    "spaceName": "Botto",
+    "twitterHandler": "bottoproject"
+  },
+  {
+    "spaceId": "deri.eth",
+    "spaceName": "Deri Protocol",
+    "twitterHandler": "DeriProtocol"
+  },
+  {
+    "spaceId": "astarbots.eth",
+    "spaceName": "AstarBots DAO",
+    "twitterHandler": "AstarBots"
+  },
+  {
+    "spaceId": "liberofinancial.eth",
+    "spaceName": "Libera Financial",
+    "twitterHandler": "LiberoFinancial"
+  },
+  {
+    "spaceId": "stgdao.eth",
+    "spaceName": "Stargate DAO",
+    "twitterHandler": "stargatefinance"
+  },
+  {
+    "spaceId": "synthetix-stakers-poll.eth",
+    "spaceName": "Synthetix Stakers Poll",
+    "twitterHandler": "synthetix_io"
+  },
+  {
+    "spaceId": "jpeg’d.eth",
+    "spaceName": "JPEG’d",
+    "twitterHandler": "JPEGd_69"
+  },
+  {
+    "spaceId": "gnars.eth",
+    "spaceName": "Gnars",
+    "twitterHandler": "gnars_dao"
+  },
+  {
+    "spaceId": "layer2dao.org",
+    "spaceName": "Layer2DAO",
+    "twitterHandler": "TheLayer2DAO"
+  },
+  {
+    "spaceId": "thegurudao.eth",
+    "spaceName": " GuruDAO Bootstrap Phase",
+    "twitterHandler": "dexguru"
+  },
+  {
+    "spaceId": "metislayer2.eth",
+    "spaceName": "MetisDAO",
+    "twitterHandler": "MetisDAO"
+  },
+  {
+    "spaceId": "gamiumworld.eth",
+    "spaceName": "Gamium DAO",
+    "twitterHandler": "gamiumcorp"
+  },
+  {
+    "spaceId": "lgcryptounicorns.eth",
+    "spaceName": "Crypto Unicorns",
+    "twitterHandler": "crypto_unicorns"
+  },
+  {
+    "spaceId": "shellprotocol.eth",
+    "spaceName": "Shell Protocol",
+    "twitterHandler": "ShellProtocol"
+  },
+  {
+    "spaceId": "arbitrum-odyssey.eth",
+    "spaceName": "Arbitrum Odyssey",
+    "twitterHandler": "arbitrum"
+  },
+  {
+    "spaceId": "safe.eth",
+    "spaceName": "SafeDAO",
+    "twitterHandler": "safe"
+  },
+  {
+    "spaceId": "lensterapp.eth",
+    "spaceName": "Lenster",
+    "twitterHandler": "lensterxyz"
+  },
+  {
+    "spaceId": "rebellionprotocol.eth",
+    "spaceName": "Rebellion Protocol DAO",
+    "twitterHandler": "RebellionToken"
+  },
+  {
+    "spaceId": "hashflowdao.eth",
+    "spaceName": "Hashflow",
+    "twitterHandler": "hashflow"
+  },
+  {
+    "spaceId": "derify.eth",
+    "spaceName": "Derify Protocol",
+    "twitterHandler": "DerifyProtocol"
+  },
+  {
+    "spaceId": "koba777.eth",
+    "spaceName": "ArbitrumPRO",
+    "twitterHandler": "arbitrum"
+  },
+  {
+    "spaceId": "familypartygames.eth",
+    "spaceName": "FamilyParty",
+    "twitterHandler": "FamilyPartyGame"
+  },
+  {
+    "spaceId": "fractaller.eth",
+    "spaceName": "Fractaller",
+    "twitterHandler": "FractallerP"
+  },
+  {
+    "spaceId": "dlytoken.eth",
+    "spaceName": "DLY DAO Gobernanza ",
+    "twitterHandler": "dlytoken"
+  },
+  {
+    "spaceId": "babydogevote.eth",
+    "spaceName": "Baby Doge",
+    "twitterHandler": "babydogecoin"
+  },
+  {
+    "spaceId": "aurafinance.eth",
+    "spaceName": "Aura Finance",
+    "twitterHandler": "AuraFinance"
+  },
+  {
+    "spaceId": "hop.eth",
+    "spaceName": "Hop",
+    "twitterHandler": "HopProtocol"
+  },
+  {
+    "spaceId": "sharelens.eth",
+    "spaceName": "Share",
+    "twitterHandler": "share_offic"
+  },
+  {
+    "spaceId": "taucoreteam.eth",
+    "spaceName": "Tau Network DAO",
+    "twitterHandler": "taucoreteam"
+  },
+  {
+    "spaceId": "sdaowin.eth",
+    "spaceName": "Shark DAO",
+    "twitterHandler": "sdaowin"
+  },
+  {
+    "spaceId": "karmaverse.eth",
+    "spaceName": "Karmaverse",
+    "twitterHandler": "Karmaverse_io"
+  },
+  {
+    "spaceId": "emdx.eth",
+    "spaceName": "EMDX ",
+    "twitterHandler": "emdx_io"
+  },
+  {
+    "spaceId": "eulerdao.eth",
+    "spaceName": "Euler",
+    "twitterHandler": "eulerfinance"
+  },
+  {
+    "spaceId": "kuiqian.eth",
+    "spaceName": "KuiQian亏钱俱乐部",
+    "twitterHandler": "duokongcrypto"
+  },
+  {
+    "spaceId": "argenter.eth",
+    "spaceName": "Argent",
+    "twitterHandler": "argentHQ"
+  },
+  {
+    "spaceId": "morpho.eth",
+    "spaceName": "Morpho",
+    "twitterHandler": "MorphoLabs"
+  },
+  {
+    "spaceId": "vestafinance.eth",
+    "spaceName": "Vesta",
+    "twitterHandler": "vestafinance"
+  },
+  {
+    "spaceId": "friendsofpooly.eth",
+    "spaceName": "PoolyDAO",
+    "twitterHandler": "FriendsofPooly"
+  },
+  {
+    "spaceId": "rhinofi.vote",
+    "spaceName": "rhino.fi",
+    "twitterHandler": "rhinofi"
+  },
+  {
+    "spaceId": "mutegov.eth",
+    "spaceName": "Mute",
+    "twitterHandler": "mute_io"
+  },
+  {
+    "spaceId": "givestation.eth",
+    "spaceName": "GiveStation",
+    "twitterHandler": "givestation"
+  },
+  {
+    "spaceId": "luxbiocell.eth",
+    "spaceName": "Lux Bio Cell",
+    "twitterHandler": "LBXCofficial"
+  },
+  {
+    "spaceId": "tomfinance.eth",
+    "spaceName": "Tom Finance",
+    "twitterHandler": "TOMSwapGroup"
+  },
+  {
+    "spaceId": "loopringdao.eth",
+    "spaceName": "Loopring",
+    "twitterHandler": "loopringorg"
+  },
+  {
+    "spaceId": "ipistr.eth",
+    "spaceName": "Shorter Finance",
+    "twitterHandler": "shorter_finance"
+  },
+  {
+    "spaceId": "3nation.eth",
+    "spaceName": "LensProtocol",
+    "twitterHandler": "LensProtocol"
+  },
+  {
+    "spaceId": "fistdex.eth",
+    "spaceName": "FstSwap",
+    "twitterHandler": "FstSwapbright"
+  },
+  {
+    "spaceId": "19451024.eth",
+    "spaceName": "zkSync",
+    "twitterHandler": "zksync"
+  },
+  {
+    "spaceId": "zerozero.eth",
+    "spaceName": "zerozero DAO",
+    "twitterHandler": "zerozero_fdtn"
+  },
+  {
+    "spaceId": "moonwell-governance.eth",
+    "spaceName": "Moonwell Governance",
+    "twitterHandler": "MoonwellDeFi"
+  },
+  {
+    "spaceId": "o3dao.eth",
+    "spaceName": "O3 Swap",
+    "twitterHandler": "O3_Labs"
+  },
+  {
+    "spaceId": "kuiclub.eth",
+    "spaceName": "Kui Club",
+    "twitterHandler": "Kuiclub"
+  },
+  {
+    "spaceId": "exzonetworkgovernance.eth",
+    "spaceName": "Exzo Network",
+    "twitterHandler": "exzo_network"
+  },
+  {
+    "spaceId": "syncswapxyz.eth",
+    "spaceName": "SyncSwap",
+    "twitterHandler": "syncswap"
+  },
+  {
+    "spaceId": "cultivatordao.eth",
+    "spaceName": "Cultivator DAO",
+    "twitterHandler": "lensprotocol"
+  },
+  {
+    "spaceId": "pushdao.eth",
+    "spaceName": "Push",
+    "twitterHandler": "pushprotocol"
+  },
+  {
+    "spaceId": "691800.eth",
+    "spaceName": "arbitrum",
+    "twitterHandler": "ArbitrumDevs"
+  },
+  {
+    "spaceId": "conic-dao.eth",
+    "spaceName": "Conic",
+    "twitterHandler": "ConicFinance"
+  },
+  {
+    "spaceId": "optimus-dao.eth",
+    "spaceName": "Optimus DAO",
+    "twitterHandler": "optimusoptbot"
+  },
+  {
+    "spaceId": "permissionassociation.eth",
+    "spaceName": "Permission.io",
+    "twitterHandler": "PermissionIO"
+  },
+  {
+    "spaceId": "staderdao.eth",
+    "spaceName": "Stader",
+    "twitterHandler": "staderlabs"
+  },
+  {
+    "spaceId": "🌿lens🌿.eth",
+    "spaceName": "We are lens Friends",
+    "twitterHandler": "web3_alpha"
+  },
+  {
+    "spaceId": "acrossprotocol.eth",
+    "spaceName": "Across DAO",
+    "twitterHandler": "AcrossProtocol"
+  },
+  {
+    "spaceId": "joker520.eth",
+    "spaceName": "Rainbow dao",
+    "twitterHandler": "rainbow"
+  },
+  {
+    "spaceId": "kuwaoracle.eth",
+    "spaceName": "Kuwa Oracle",
+    "twitterHandler": "Kuwa_oracle"
+  },
+  {
+    "spaceId": "nftearthl2.eth",
+    "spaceName": "NFTEarth",
+    "twitterHandler": "NFTEarth_L2"
+  },
+  {
+    "spaceId": "nexondao.eth",
+    "spaceName": "Nexon Finance",
+    "twitterHandler": "NexonFi"
+  },
+  {
+    "spaceId": "bitembassy.eth",
+    "spaceName": "BIT Embassy",
+    "twitterHandler": "bitembassy"
+  },
+  {
+    "spaceId": "onyx.eth",
+    "spaceName": "Onyx ",
+    "twitterHandler": "OnyxProtocol"
+  },
+  {
+    "spaceId": "poktdao.eth",
+    "spaceName": "Pocket Network",
+    "twitterHandler": "POKTdao"
+  },
+  {
+    "spaceId": "halofi.eth",
+    "spaceName": "HaloFi",
+    "twitterHandler": "halofi_me"
+  },
+  {
+    "spaceId": "meta-octagon.eth",
+    "spaceName": "MOTG DAO",
+    "twitterHandler": "metaoctagon"
+  },
+  {
+    "spaceId": "0xhoneyjar.eth",
+    "spaceName": "The Honey Jar",
+    "twitterHandler": "0xhoneyjar"
+  },
+  {
+    "spaceId": "xmyzz.eth",
+    "spaceName": "Universe Dao",
+    "twitterHandler": "UniverseProtoct"
+  },
+  {
+    "spaceId": "shelldrop.eth",
+    "spaceName": "ShellDrop",
+    "twitterHandler": "ShellProtocol"
+  },
+  {
+    "spaceId": "arbitrumfoundation.eth",
+    "spaceName": "Arbitrum DAO",
+    "twitterHandler": "arbitrum"
+  }
+]
