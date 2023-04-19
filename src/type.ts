@@ -160,6 +160,12 @@ export interface NonFungibleCollection {
   }
 }
 
+export interface Space {
+  spaceId: string
+  spaceName: string
+  twitterHandler: string
+}
+
 export interface FungibleTokenProvider {
   getTopTokens(): Promise<FungibleToken[]>
   getProviderName(): SourceType
@@ -173,4 +179,8 @@ export interface NonFungibleTokenProvider {
 export interface NonFungibleCollectionProvider {
   getCollections(): Promise<NonFungibleCollection[]>
   getProviderName(): SourceType
+}
+
+export interface DaoProvider {
+  getSpaces(): Promise<Space[]>
 }
