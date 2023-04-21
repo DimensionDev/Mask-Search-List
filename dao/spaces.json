@@ -221,7 +221,7 @@
     "spaceName": "Uniswap",
     "twitterHandler": "uniswap",
     "avatar": "ipfs://QmdNntEZMnen3QE9GfHG4heeqMJkFjxQ9BDof4m8xzV6UT",
-    "followersCount": 89972
+    "followersCount": 89973
   },
   {
     "spaceId": "pickle.eth",
@@ -333,7 +333,7 @@
     "spaceName": "BitDAO",
     "twitterHandler": "BitDAO_Official",
     "avatar": "ipfs://QmeKgWPVtnEZv6S8VRymCQtqFD8GQ7CffrxtLvstshbZND",
-    "followersCount": 53462
+    "followersCount": 53463
   },
   {
     "spaceId": "origingov.eth",
@@ -620,7 +620,7 @@
     "spaceName": "GMX",
     "twitterHandler": "GMX_IO",
     "avatar": "ipfs://QmYg73njLyPinShPKZjy1U2zKH8QULK2qfCgBRNYLuVP37",
-    "followersCount": 66161
+    "followersCount": 66162
   },
   {
     "spaceId": "mavxyz.eth",
@@ -1026,7 +1026,7 @@
     "spaceName": "Stargate DAO",
     "twitterHandler": "stargatefinance",
     "avatar": "ipfs://QmNStftrH92EKDXENSoxHgVneaV5jYyNoG5NKeRD88HUSY",
-    "followersCount": 305249
+    "followersCount": 305280
   },
   {
     "spaceId": "synthetix-stakers-poll.eth",
@@ -1299,7 +1299,7 @@
     "spaceName": "Shorter Finance",
     "twitterHandler": "shorter_finance",
     "avatar": "ipfs://bafkreieav7mmr56vhcfr2obljl4god3s3mh5on22n3ix3rvtki2fnw7kg4",
-    "followersCount": 24881
+    "followersCount": 24882
   },
   {
     "spaceId": "3nation.eth",
@@ -1362,7 +1362,7 @@
     "spaceName": "SyncSwap",
     "twitterHandler": "syncswap",
     "avatar": "ipfs://bafkreidockudiyug72vsmpmv57iqp6gq7hbdgcf53bf3qzbftjoqjf3j7a",
-    "followersCount": 37696
+    "followersCount": 37697
   },
   {
     "spaceId": "cultivatordao.eth",
@@ -1453,7 +1453,7 @@
     "spaceName": "Nexon Finance",
     "twitterHandler": "NexonFi",
     "avatar": "ipfs://bafkreibbvvqntvkqdkk76bq5b6ra56akbkio67vkkhdagwd5zkoj4rouq4",
-    "followersCount": 2957
+    "followersCount": 2958
   },
   {
     "spaceId": "bitembassy.eth",
@@ -1509,6 +1509,6 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 172840
+    "followersCount": 172841
   }
 ]
