@@ -245,11 +245,6 @@
     "twitterHandler": "originprotocol"
   },
   {
-    "spaceId": "mantra-dao.eth",
-    "spaceName": "MANTRA",
-    "twitterHandler": "MANTRAOMniverse"
-  },
-  {
     "spaceId": "instadapp-gov.eth",
     "spaceName": "Instadapp",
     "twitterHandler": "instadapp"
@@ -261,8 +256,8 @@
   },
   {
     "spaceId": "0xgov.eth",
-    "spaceName": "0x",
-    "twitterHandler": "0xProject"
+    "spaceName": "0x Protocol",
+    "twitterHandler": "zeroexProtocol"
   },
   {
     "spaceId": "valixorg.eth",
@@ -773,11 +768,6 @@
     "spaceId": "gamiumworld.eth",
     "spaceName": "Gamium DAO",
     "twitterHandler": "gamiumcorp"
-  },
-  {
-    "spaceId": "lgcryptounicorns.eth",
-    "spaceName": "Crypto Unicorns",
-    "twitterHandler": "crypto_unicorns"
   },
   {
     "spaceId": "shellprotocol.eth",
