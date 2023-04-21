@@ -50,7 +50,9 @@ export class DAO implements DaoProvider {
     return uniqBy(rawSpaces.filter(x => x.avatar && x.followersCount > 499 && x.validation.name !== 'any' && x.twitter).map(x => ({
       spaceId: x.id,
       spaceName: x.name,
-      twitterHandler: x.twitter
+      twitterHandler: x.twitter,
+      avatar: x.avatar,
+      followersCount: x.followersCount
     }) as Space), x => x.spaceId)
   }
 }

@@ -164,6 +164,8 @@ export interface Space {
   spaceId: string
   spaceName: string
   twitterHandler: string
+  followersCount: number
+  avatar: string
 }
 
 export interface FungibleTokenProvider {
