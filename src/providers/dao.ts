@@ -9,7 +9,17 @@ interface RawSpace {
   avatar: string,
   twitter: string,
   followersCount: number,
-  validation: { name: string }
+  filter: {
+    minScore: number,
+    onlyMembers: boolean
+  },
+  validation: {
+    name: string,
+    params: {
+      minScore: number,
+    }
+  }
+  treasuries: { name: string, address: string }[]
 }
 
 export class DAO implements DaoProvider {
@@ -30,6 +40,10 @@ export class DAO implements DaoProvider {
             ) {
               id
               name
+              filter {
+                minScore
+                onlyMembers
+              }
               avatar
               twitter
               followersCount
@@ -53,7 +67,13 @@ export class DAO implements DaoProvider {
         x.followersCount > 499 &&
         x.validation.name !== 'any' &&
         x.twitter &&
-        !blockedList.includes(x.id)
+        !blockedList.includes(x.id) &&
+        (
+          x.treasuries.length > 0 ||
+          x.validation.params.minScore > 0 ||
+          x.filter.onlyMembers ||
+          x.filter.minScore > 0
+        )
     ).map(x => ({
       spaceId: x.id,
       spaceName: x.name,
