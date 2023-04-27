@@ -40,7 +40,7 @@ export class DAO implements DaoProvider {
             ) {
               id
               name
-              filter {
+              filters {
                 minScore
                 onlyMembers
               }
@@ -50,6 +50,10 @@ export class DAO implements DaoProvider {
               validation {
                 params
                 name
+              }
+              treasuries {
+                name
+                address
               }
             }
           }      
