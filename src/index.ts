@@ -19,63 +19,63 @@ const nonFungibleCollectionProviders = [nftScanCollectionAPI]
 async function main() {
   await initFolder()
 
-  // for (const p of fungibleProviders) {
-  //   let fungibleTokens: FungibleToken[] = []
-  //   console.log(`Fetch the data from ${p.getProviderName()}`)
-  //   try {
-  //     const tokens = await p.getTopTokens()
-  //     fungibleTokens = [...fungibleTokens, ...tokens]
-  //   } catch (e) {
-  //     console.log(`Fetching the chain failed by ${p.getProviderName()}`)
-  //     console.log(e)
-  //   }
+  for (const p of fungibleProviders) {
+    let fungibleTokens: FungibleToken[] = []
+    console.log(`Fetch the data from ${p.getProviderName()}`)
+    try {
+      const tokens = await p.getTopTokens()
+      fungibleTokens = [...fungibleTokens, ...tokens]
+    } catch (e) {
+      console.log(`Fetching the chain failed by ${p.getProviderName()}`)
+      console.log(e)
+    }
 
-  //   console.log(`The current chain get ${fungibleTokens.length} tokens`)
+    console.log(`The current chain get ${fungibleTokens.length} tokens`)
 
-  //   if (fungibleTokens.length) {
-  //     await writeTokensToFile(
-  //       p.getProviderName(),
-  //       'fungible-tokens',
-  //       fungibleTokens.filter((x) => x.source === p.getProviderName()),
-  //     )
-  //   }
-  // }
+    if (fungibleTokens.length) {
+      await writeTokensToFile(
+        p.getProviderName(),
+        'fungible-tokens',
+        fungibleTokens.filter((x) => x.source === p.getProviderName()),
+      )
+    }
+  }
 
-  // for (const p of nonFungibleTokenProviders) {
-  //   let nonFungibleTokens: NonFungibleToken[] = []
-  //   console.log(`Fetch the data from ${p.getProviderName()}`)
-  //   try {
-  //     const tokens = await p.getTopTokens()
-  //     nonFungibleTokens = [...nonFungibleTokens, ...tokens]
-  //   } catch (e) {
-  //     console.log(`Fetch the chain failed by ${p.getProviderName()}`)
-  //     console.log(e)
-  //   }
+  for (const p of nonFungibleTokenProviders) {
+    let nonFungibleTokens: NonFungibleToken[] = []
+    console.log(`Fetch the data from ${p.getProviderName()}`)
+    try {
+      const tokens = await p.getTopTokens()
+      nonFungibleTokens = [...nonFungibleTokens, ...tokens]
+    } catch (e) {
+      console.log(`Fetch the chain failed by ${p.getProviderName()}`)
+      console.log(e)
+    }
 
-  //   console.log(`The current chain get ${nonFungibleTokens.length} tokens`)
+    console.log(`The current chain get ${nonFungibleTokens.length} tokens`)
 
-  //   if (nonFungibleTokens.length) {
-  //     await writeTokensToFile(p.getProviderName(), 'non-fungible-tokens', nonFungibleTokens)
-  //   }
-  // }
+    if (nonFungibleTokens.length) {
+      await writeTokensToFile(p.getProviderName(), 'non-fungible-tokens', nonFungibleTokens)
+    }
+  }
 
-  // for (const p of nonFungibleCollectionProviders) {
-  //   let nonFungibleCollections: NonFungibleCollection[] = []
-  //   console.log(`Fetch the data from ${p.getProviderName()}`)
-  //   try {
-  //     const collections = await p.getCollections()
-  //     nonFungibleCollections = [...nonFungibleCollections, ...collections]
-  //   } catch (e) {
-  //     console.log(`Fetch the chain failed by ${p.getProviderName()}`)
-  //     console.log(e)
-  //   }
+  for (const p of nonFungibleCollectionProviders) {
+    let nonFungibleCollections: NonFungibleCollection[] = []
+    console.log(`Fetch the data from ${p.getProviderName()}`)
+    try {
+      const collections = await p.getCollections()
+      nonFungibleCollections = [...nonFungibleCollections, ...collections]
+    } catch (e) {
+      console.log(`Fetch the chain failed by ${p.getProviderName()}`)
+      console.log(e)
+    }
 
-  //   console.log(`The current chain get ${nonFungibleCollections.length} collections`)
+    console.log(`The current chain get ${nonFungibleCollections.length} collections`)
 
-  //   if (nonFungibleCollections.length) {
-  //     await writeCollectionsToFile(p.getProviderName(), nonFungibleCollections)
-  //   }
-  // }
+    if (nonFungibleCollections.length) {
+      await writeCollectionsToFile(p.getProviderName(), nonFungibleCollections)
+    }
+  }
 
   const spaces = await daoAPI.getSpaces()
   await writeDAOToFile(spaces)
