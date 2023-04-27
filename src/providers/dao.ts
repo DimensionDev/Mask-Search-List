@@ -1,6 +1,7 @@
 import { DaoProvider, Space } from '../type'
 import axios from 'axios'
 import { uniqBy } from 'lodash'
+import blockedList from '../../public/dao/blocked-list.json'
 
 interface RawSpace {
   id: string,
@@ -8,7 +9,17 @@ interface RawSpace {
   avatar: string,
   twitter: string,
   followersCount: number,
-  validation: { name: string }
+  filters: {
+    minScore: number,
+    onlyMembers: boolean
+  },
+  validation: {
+    name: string,
+    params: {
+      minScore: number,
+    }
+  }
+  treasuries: { name: string, address: string }[]
 }
 
 export class DAO implements DaoProvider {
@@ -29,12 +40,20 @@ export class DAO implements DaoProvider {
             ) {
               id
               name
+              filters {
+                minScore
+                onlyMembers
+              }
               avatar
               twitter
               followersCount
               validation {
                 params
                 name
+              }
+              treasuries {
+                name
+                address
               }
             }
           }      
@@ -47,7 +66,19 @@ export class DAO implements DaoProvider {
       (x) => (x.status === 'fulfilled' ? x.value.data.data.spaces ?? undefined : undefined)
     ).filter(x => x) as RawSpace[]
 
-    return uniqBy(rawSpaces.filter(x => x.avatar && x.followersCount > 499 && x.validation.name !== 'any' && x.twitter).map(x => ({
+    return uniqBy(rawSpaces.filter(
+      x => x.avatar &&
+        x.followersCount > 499 &&
+        x.validation.name !== 'any' &&
+        x.twitter &&
+        !blockedList.includes(x.id) &&
+        (
+          x.treasuries.length > 0 ||
+          x.validation.params.minScore > 0 ||
+          x.filters.onlyMembers ||
+          x.filters.minScore > 0
+        )
+    ).map(x => ({
       spaceId: x.id,
       spaceName: x.name,
       twitterHandler: x.twitter,
