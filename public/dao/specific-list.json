@@ -10,12 +10,5 @@
     "spaceName": "Stargate DAO",
     "twitterHandler": "stargatefinance",
     "avatar": "https://cdn.stamp.fyi/space/stgdao.eth?s=164"
-  },
-  {
-    "spaceId": "koba777.eth",
-    "spaceName": "ArbitrumPRO",
-    "twitterHandler": "arbitrum",
-    "avatar": "https://cdn.stamp.fyi/space/koba777.eth?s=164",
-    "strategyName": "aPRO"
   }
 ]
