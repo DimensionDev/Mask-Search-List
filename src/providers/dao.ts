@@ -1,7 +1,9 @@
 import { DaoProvider, Space } from '../type'
 import axios from 'axios'
 import { uniqBy } from 'lodash'
-import blockedList from '../../public/dao/blocked-list.json'
+import * as verifyList_ from '../../public/dao/verify-list.json'
+
+const verifyList: { [key: string]: number } = verifyList_
 
 interface RawSpace {
   id: string,
@@ -67,27 +69,14 @@ export class DAO implements DaoProvider {
     ).filter(x => x) as RawSpace[]
 
     return uniqBy(rawSpaces.filter(
-      x => !blockedList.includes(x.id) && (x.followersCount > 999 || checkIsVerified(x))
+      x => verifyList[x.id] !== -1 && (x.followersCount > 999 || verifyList[x.id] === 1)
     ).map(x => ({
       spaceId: x.id,
       spaceName: x.name,
       twitterHandler: x.twitter,
       avatar: x.avatar,
       followersCount: x.followersCount,
-      isVerified: checkIsVerified(x)
+      isVerified: verifyList[x.id] === 1
     }) as Space), x => x.spaceId)
   }
-}
-
-
-function checkIsVerified(x: RawSpace) {
-  return Boolean(x.avatar &&
-    x.validation.name !== 'any' &&
-    x.twitter &&
-    (
-      x.treasuries.length > 0 ||
-      x.validation.params.minScore > 0 ||
-      x.filters.onlyMembers ||
-      x.filters.minScore > 0
-    ))
 }
