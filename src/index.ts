@@ -78,6 +78,7 @@ async function main() {
   // }
 
   const spaces = await daoAPI.getSpaces()
+  console.log({ spaces })
   await writeDAOToFile(spaces)
 
   await mergePublicFileToOutput('non-fungible-collections')
