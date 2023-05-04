@@ -73,5 +73,19 @@
     "source": "CoinGecko",
     "type": "FungibleToken",
     "logoURL": "https://assets.coingecko.com/coins/images/7310/large/cro_token_logo.png?1669699773"
+  },
+  {
+    "pluginID": "com.mask.evm",
+    "id": "rss3",
+    "symbol": "rss3",
+    "name": "RSS3",
+    "source": "CoinGecko",
+    "type": "FungibleToken",
+    "logoURL": "https://assets.coingecko.com/coins/images/23575/large/RSS3.png?1644494645",
+    "socialLinks": {
+      "website": "https://rss3.io",
+      "twitter": "rss3_",
+      "telegram": "rss3_en"
+    }
   }
 ]
