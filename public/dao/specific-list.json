@@ -3,12 +3,14 @@
     "spaceId": "cakevote.eth",
     "spaceName": "PancakeSwap",
     "twitterHandler": "PancakeSwap",
+    "isVerified": true,
     "avatar": "https://cdn.stamp.fyi/space/cakevote.eth?s=164"
   },
   {
     "spaceId": "stgdao.eth",
     "spaceName": "Stargate DAO",
     "twitterHandler": "stargatefinance",
+    "isVerified": true,
     "avatar": "https://cdn.stamp.fyi/space/stgdao.eth?s=164"
   }
 ]
