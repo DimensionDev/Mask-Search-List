@@ -166,6 +166,7 @@ export interface Space {
   twitterHandler: string
   followersCount: number
   avatar: string
+  isVerified: boolean
 }
 
 export interface FungibleTokenProvider {

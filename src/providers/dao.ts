@@ -67,23 +67,27 @@ export class DAO implements DaoProvider {
     ).filter(x => x) as RawSpace[]
 
     return uniqBy(rawSpaces.filter(
-      x => x.avatar &&
-        x.followersCount > 499 &&
-        x.validation.name !== 'any' &&
-        x.twitter &&
-        !blockedList.includes(x.id) &&
-        (
-          x.treasuries.length > 0 ||
-          x.validation.params.minScore > 0 ||
-          x.filters.onlyMembers ||
-          x.filters.minScore > 0
-        )
+      x => !blockedList.includes(x.id) && (x.followersCount > 999 || checkIsVerified(x))
     ).map(x => ({
       spaceId: x.id,
       spaceName: x.name,
       twitterHandler: x.twitter,
       avatar: x.avatar,
-      followersCount: x.followersCount
+      followersCount: x.followersCount,
+      isVerified: checkIsVerified(x)
     }) as Space), x => x.spaceId)
   }
+}
+
+
+function checkIsVerified(x: RawSpace) {
+  return Boolean(x.avatar &&
+    x.validation.name !== 'any' &&
+    x.twitter &&
+    (
+      x.treasuries.length > 0 ||
+      x.validation.params.minScore > 0 ||
+      x.filters.onlyMembers ||
+      x.filters.minScore > 0
+    ))
 }
