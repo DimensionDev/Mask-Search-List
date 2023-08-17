@@ -87,5 +87,15 @@
       "twitter": "rss3_",
       "telegram": "rss3_en"
     }
+  },
+  {
+    "pluginID": "com.mask.evm",
+    "id": "axlusdc",
+    "address": "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+    "symbol": "axlusdc",
+    "name": "Bridged USD Coin (Axelar)",
+    "source": "CoinGecko",
+    "type": "FungibleToken",
+    "logoURL": "https://raw.githubusercontent.com/DackieSwap/dackieswap-tokens/main/images/8453/tokens/0xEB466342C4d449BC9f53A865D5Cb90586f405215.png"
   }
 ]

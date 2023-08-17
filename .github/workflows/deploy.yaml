@@ -1,8 +1,9 @@
 name: Generate and Deploy
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
+  push:
+    on: 
+      - 'add-base'
   workflow_dispatch:
 
 jobs:
