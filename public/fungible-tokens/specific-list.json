@@ -87,5 +87,20 @@
       "twitter": "rss3_",
       "telegram": "rss3_en"
     }
+  },
+  {
+    "pluginID": "com.mask.evm",
+    "id": "carv",
+    "symbol": "carv",
+    "name": "CARV",
+    "source": "CoinGecko",
+    "type": "FungibleToken",
+    "logoURL": "https://assets.coingecko.com/coins/images/37689/standard/CARV_%281%29.png?1728418485",
+    "socialLinks": {
+      "website": "https://carv.io/",
+      "twitter": "carv_official",
+      "medium": "https://medium.com/@Carv",
+      "discord": "https://discord.com/invite/carv"
+    }
   }
 ]
