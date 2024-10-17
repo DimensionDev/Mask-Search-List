@@ -10,24 +10,29 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.2.0'
+          cache: 'pnpm'
       - name: Use node_modules cache
         uses: actions/cache@v4
-        id: yarn-cache
+        id: pnpm-cache
         with:
           path: |
             node_modules
-          key: yarn-${{ hashFiles('package.json') }}-${{ hashFiles('yarn.lock') }}
+          key: pnpm-${{ hashFiles('package.json') }}-${{ hashFiles('pnpm-lock.yaml') }}
 
-      - name: yarn install
-        run: yarn install
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
+      - name: pnpm install
+        run: pnpm install
+        if: steps.pnpm-cache.outputs.cache-hit != 'true'
 
       - name: build
         env:
           COINMARKETCAP_API_KEY: ${{ secrets.COINMARKETCAP_API_KEY }}
           RUNTIME_TARGET: ${{ inputs.target }}
         run: |
-          yarn build
+          pnpm build
 
       - name: Get Package Version
         id: package-version
