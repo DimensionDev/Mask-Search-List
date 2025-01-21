@@ -44,7 +44,7 @@
     "spaceName": "Aavegotchi",
     "twitterHandler": "aavegotchi",
     "avatar": "ipfs://bafkreidbonscxgm7ylrjtfpg7xxhoqr57zxtghavjjcu552hhowgb7repq",
-    "followersCount": 86145,
+    "followersCount": 86147,
     "isVerified": true
   },
   {
@@ -156,7 +156,7 @@
     "spaceName": "Lido",
     "twitterHandler": null,
     "avatar": "ipfs://QmT4DNWx6eRxUPeDp1NMtBv6pvQ9tMdTk1aRMWNfPqpZWG",
-    "followersCount": 31947,
+    "followersCount": 31944,
     "isVerified": true
   },
   {
@@ -212,7 +212,7 @@
     "spaceName": "GnosisDAO",
     "twitterHandler": "gnosisdao",
     "avatar": "ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42",
-    "followersCount": 11822,
+    "followersCount": 11816,
     "isVerified": true
   },
   {
@@ -292,7 +292,7 @@
     "spaceName": "PoolTogether",
     "twitterHandler": "PoolTogether_",
     "avatar": "ipfs://QmZ2kX5Eo79yaYJBqxZC9bxtGfgCDF3vQ2zM1vMx6A7PW8",
-    "followersCount": 5226,
+    "followersCount": 5222,
     "isVerified": true
   },
   {
@@ -340,7 +340,7 @@
     "spaceName": "Compound",
     "twitterHandler": null,
     "avatar": "ipfs://bafkreibmpwegz45rdonek3yxssx2gmlaolmnbldrqjwdk7zp4gccfcgy7u",
-    "followersCount": 7244,
+    "followersCount": 7237,
     "isVerified": false
   },
   {
@@ -428,7 +428,7 @@
     "spaceName": "ENS",
     "twitterHandler": "ensdomains",
     "avatar": "ipfs://QmSL2X1h1uk26ahSALTw2qKyc61VaySRRstueVMm1Aym3e",
-    "followersCount": 139939,
+    "followersCount": 139936,
     "isVerified": true
   },
   {
@@ -484,7 +484,7 @@
     "spaceName": "Uniswap",
     "twitterHandler": "uniswapfnd",
     "avatar": "ipfs://QmdNntEZMnen3QE9GfHG4heeqMJkFjxQ9BDof4m8xzV6UT",
-    "followersCount": 124479,
+    "followersCount": 124476,
     "isVerified": false
   },
   {
@@ -564,7 +564,7 @@
     "spaceName": "Gitcoin",
     "twitterHandler": "gitcoin",
     "avatar": "ipfs://bafkreibeccmlpytnkyied2po2d32thitbnvtcnof42qs4cwxchi4boyfli",
-    "followersCount": 150015,
+    "followersCount": 150014,
     "isVerified": true
   },
   {
@@ -588,7 +588,7 @@
     "spaceName": "IoTeX Network",
     "twitterHandler": "iotex_io",
     "avatar": "ipfs://bafkreibbehxpx7hq6od47ivhax3qvfww4kv2dpnpmju7ghquxz5ynjpa5y",
-    "followersCount": 1864,
+    "followersCount": 1865,
     "isVerified": false
   },
   {
@@ -628,7 +628,7 @@
     "spaceName": "Curve Finance",
     "twitterHandler": "CurveFinance",
     "avatar": "ipfs://QmPjSYaMMNPyKwhBvR7StQeh4izfy1oP9ND6SDaGQUaExW",
-    "followersCount": 32932,
+    "followersCount": 32926,
     "isVerified": true
   },
   {
@@ -652,7 +652,7 @@
     "spaceName": "Sushi",
     "twitterHandler": "SushiSwap",
     "avatar": "ipfs://QmT1Ban8im8JQm2gqYSoMGaLZTgxR8nFyrYBF7MgWvRKFh",
-    "followersCount": 61095,
+    "followersCount": 61096,
     "isVerified": true
   },
   {
@@ -684,7 +684,7 @@
     "spaceName": "Convex Finance",
     "twitterHandler": "ConvexFinance",
     "avatar": "ipfs://QmXB2Ce726sNzJbrJPsQQz1BZRQvfDntPS18prAi9JmrgG",
-    "followersCount": 4564,
+    "followersCount": 4568,
     "isVerified": true
   },
   {
@@ -692,7 +692,7 @@
     "spaceName": "Aave",
     "twitterHandler": "Aave",
     "avatar": "ipfs://bafkreib3znpvulcnlezcff3lzuhatczquu7othceyxvzgvnepzrk2r7gqq",
-    "followersCount": 152674,
+    "followersCount": 152678,
     "isVerified": true
   },
   {
@@ -708,7 +708,7 @@
     "spaceName": "Mantle (prev. BitDAO)",
     "twitterHandler": "0xMantle",
     "avatar": "ipfs://bafkreib4sesy2gxeayly4qua6vgvfe6svvotz7ild6jpys4jrfid6kfgiy",
-    "followersCount": 88451,
+    "followersCount": 88452,
     "isVerified": true
   },
   {
@@ -772,7 +772,7 @@
     "spaceName": "0x Protocol",
     "twitterHandler": "zeroexProtocol",
     "avatar": "ipfs://bafkreihwikk7a3tposvwtzftkwm6baswuj3ulm4ibdsh26mueq7u2ymmu4",
-    "followersCount": 2043,
+    "followersCount": 2042,
     "isVerified": true
   },
   {
@@ -796,7 +796,7 @@
     "spaceName": "Shiba Inu Ecosystem",
     "twitterHandler": null,
     "avatar": "ipfs://QmVgm7neFVdZacdhyGS1vnYExMkoWgk386Vc9PjRa2XY65",
-    "followersCount": 2896,
+    "followersCount": 2898,
     "isVerified": false
   },
   {
@@ -860,7 +860,7 @@
     "spaceName": "Balancer",
     "twitterHandler": "balancer",
     "avatar": "ipfs://QmfQDYJF93G53RcCUaCzyy2eEViM6kCVmp6UMKPqcM649H",
-    "followersCount": 35539,
+    "followersCount": 35543,
     "isVerified": true
   },
   {
@@ -884,7 +884,7 @@
     "spaceName": "CityDAO",
     "twitterHandler": "citydao",
     "avatar": "ipfs://bafkreib3dan6bfrmpxcgruawh5mi37wjsd6hiek3jk63lac5u3eseebjxi",
-    "followersCount": 4393,
+    "followersCount": 4392,
     "isVerified": true
   },
   {
@@ -892,7 +892,7 @@
     "spaceName": "dYdX",
     "twitterHandler": "dydxfoundation",
     "avatar": "ipfs://bafkreiglesqtj5lj6puizvnov4agkvpn62ecmsbvpwi2zonbrhxflopzba",
-    "followersCount": 24183,
+    "followersCount": 24182,
     "isVerified": true
   },
   {
@@ -1148,7 +1148,7 @@
     "spaceName": "Doodles",
     "twitterHandler": "doodles",
     "avatar": "ipfs://QmaKLMC4AwjRzP5MwLHvGbyyafN1bieshnLuhr8B3f5FY3",
-    "followersCount": 4963,
+    "followersCount": 4964,
     "isVerified": true
   },
   {
@@ -1156,7 +1156,7 @@
     "spaceName": "Beets",
     "twitterHandler": "beets_fi",
     "avatar": "ipfs://bafkreig2w5k4swl6dmbhhx3uprx5sosdooclkmy2ekkeh5gn3cyabpqhhi",
-    "followersCount": 5002,
+    "followersCount": 5005,
     "isVerified": true
   },
   {
@@ -1340,7 +1340,7 @@
     "spaceName": "GoodDollar DAO",
     "twitterHandler": "gooddollarorg",
     "avatar": "ipfs://QmQZUXPavNWG6xcMBCkpywo7p27HZnksMutMfowUCtjyeX",
-    "followersCount": 1879,
+    "followersCount": 1880,
     "isVerified": false
   },
   {
@@ -1604,7 +1604,7 @@
     "spaceName": "Zora",
     "twitterHandler": "ourzora",
     "avatar": "ipfs://QmWZz3dZFFcSEAYnNR5n141J63WCXD7kdFu4cv4byVmCBK",
-    "followersCount": 23406,
+    "followersCount": 23407,
     "isVerified": true
   },
   {
@@ -1724,7 +1724,7 @@
     "spaceName": "CoW DAO",
     "twitterHandler": "CoWSwap",
     "avatar": "https://ipfs.filebase.io/ipfs/QmUZp4Ljp3sa5dz827kRv12LazACeUB2kxTMvbu7tKzpcu",
-    "followersCount": 7110,
+    "followersCount": 7107,
     "isVerified": true
   },
   {
@@ -1780,7 +1780,7 @@
     "spaceName": "Stargate DAO",
     "twitterHandler": "stargatefinance",
     "avatar": "ipfs://QmNStftrH92EKDXENSoxHgVneaV5jYyNoG5NKeRD88HUSY",
-    "followersCount": 920131,
+    "followersCount": 920135,
     "isVerified": true
   },
   {
@@ -1796,7 +1796,7 @@
     "spaceName": "Pistachio DAO",
     "twitterHandler": "SnapshotLabs",
     "avatar": "ipfs://bafkreihoi2zgftkok5zfxajhafgkntq733czlb6dh7i55bmxa3l5oxb63a",
-    "followersCount": 3628,
+    "followersCount": 3629,
     "isVerified": false
   },
   {
@@ -1828,7 +1828,7 @@
     "spaceName": "ApeCoin DAO",
     "twitterHandler": "apecoin",
     "avatar": "ipfs://QmfVZLhH51S1G3UVFRZecXR5KbhS1CQ9RVbpgsqU25YG2C",
-    "followersCount": 33146,
+    "followersCount": 33147,
     "isVerified": true
   },
   {
@@ -1932,7 +1932,7 @@
     "spaceName": "SafeDAO",
     "twitterHandler": "safe",
     "avatar": "ipfs://bafkreihajbe776zgzt7crg4ekq3xpq6nghyr7we2hrldpygzhdljgc7nm4",
-    "followersCount": 16995,
+    "followersCount": 16992,
     "isVerified": false
   },
   {
@@ -1988,7 +1988,7 @@
     "spaceName": "Optimism Collective",
     "twitterHandler": "optimismPBC",
     "avatar": "https://github.com/ethereum-optimism/brand-kit/blob/main/assets/images/Profile-Logo.png?raw=true",
-    "followersCount": 203593,
+    "followersCount": 203594,
     "isVerified": true
   },
   {
@@ -2116,7 +2116,7 @@
     "spaceName": "Euler",
     "twitterHandler": "eulerfinance",
     "avatar": "ipfs://bafkreifkocv6e3vgwm47enzwmqvjuzcxz4fbbdy6ddw2h6smj46depw5ci",
-    "followersCount": 1414,
+    "followersCount": 1413,
     "isVerified": true
   },
   {
@@ -2132,7 +2132,7 @@
     "spaceName": "Morpho",
     "twitterHandler": "MorphoLabs",
     "avatar": "ipfs://bafkreihmxilb24x2q5qbs4vgxmvp5ua5ygkblymafzzbf5zwt4qagmmtoq",
-    "followersCount": 1161,
+    "followersCount": 1159,
     "isVerified": false
   },
   {
@@ -2268,7 +2268,7 @@
     "spaceName": "PancakeSwap",
     "twitterHandler": null,
     "avatar": "ipfs://bafkreidd4kzjvr5hfbcazj5jqpvd5vz2lj467uhl2i3ejdllafnlx4itcy",
-    "followersCount": 111075,
+    "followersCount": 111076,
     "isVerified": true
   },
   {
@@ -2284,7 +2284,7 @@
     "spaceName": " Starknet",
     "twitterHandler": "StarknetFndn",
     "avatar": "ipfs://bafkreiczt6ntienh54rrzv7dvfz5233u4ukwsqfjwavwaud4f5h5i5mq7q",
-    "followersCount": 66519,
+    "followersCount": 66521,
     "isVerified": true
   },
   {
@@ -2452,7 +2452,7 @@
     "spaceName": "Magic Square",
     "twitterHandler": "MagicSquareio",
     "avatar": "ipfs://bafkreidmdngu5cfd4tnk7glxe5bfwwywkqlhafal4v6vd4devgsuydkcgu",
-    "followersCount": 96433,
+    "followersCount": 96435,
     "isVerified": false
   },
   {
@@ -2556,7 +2556,7 @@
     "spaceName": "Decubate.com",
     "twitterHandler": "decubate",
     "avatar": "ipfs://bafkreiehqwgv3ipr4tymyh54ar2wx4n3jsoqzjzow4tsarqd6ybibdxbdq",
-    "followersCount": 1600,
+    "followersCount": 1601,
     "isVerified": false
   },
   {
@@ -2636,7 +2636,7 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 316615,
+    "followersCount": 316628,
     "isVerified": true
   }
 ]
