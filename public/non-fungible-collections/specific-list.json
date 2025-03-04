@@ -30,6 +30,34 @@
   },
   {
     "pluginID": "com.mask.evm",
+    "address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+    "name": "Bored Ape Yacht Club",
+    "chainId": 1,
+    "symbol": "BAYC",
+    "iconURL": "https://i.seadn.io/gae/Ju9CkWtV-1Okvf45wo8UctR-M9He2PjILP0oOvxE89AyiPPGtrR3gysu1Zgy0hjd2xKIgjJJtWIc0ybj4Vd7wv8t3pxDGHoJBzDB?auto=format&dpr=1&w=256",
+    "tokensTotal": 10000,
+    "verified": false,
+    "source": "NFTScan",
+    "type": "NonFungibleCollection",
+    "rank": 7,
+    "collection": {
+      "address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "name": "Bored Ape Yacht Club",
+      "chainId": 1,
+      "iconURL": "https://i.seadn.io/gae/Ju9CkWtV-1Okvf45wo8UctR-M9He2PjILP0oOvxE89AyiPPGtrR3gysu1Zgy0hjd2xKIgjJJtWIc0ybj4Vd7wv8t3pxDGHoJBzDB?auto=format&dpr=1&w=256",
+      "socialLinks": {
+        "website": "https://www.boredapeyachtclub.com/",
+        "twitter": "https://twitter.com/BoredApeYC",
+        "discord": "https://discord.gg/3P5K3dzgdB",
+        "telegram": null,
+        "github": null,
+        "instagram": null,
+        "medium": null
+      }
+    }
+  },
+  {
+    "pluginID": "com.mask.evm",
     "address": "0xe3b1d32e43ce8d658368e2cbff95d57ef39be8a6",
     "name": "SPACE ID",
     "chainId": 56,
