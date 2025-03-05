@@ -54,7 +54,13 @@
         "instagram": null,
         "medium": null
       }
-    }
+    },
+    "alias": [
+      {
+        "value": "ape",
+        "isPin": true
+      }
+    ]
   },
   {
     "pluginID": "com.mask.evm",
