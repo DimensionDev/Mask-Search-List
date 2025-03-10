@@ -16,9 +16,7 @@ const fungibleProviders = [coinGeckoAPI, cmcAPI]
 const nonFungibleTokenProviders = [nftScanTokenAPI]
 const nonFungibleCollectionProviders = [nftScanCollectionAPI]
 
-async function main() {
-  await initFolder()
-
+async function getFungibleTokens() {
   for (const p of fungibleProviders) {
     let fungibleTokens: FungibleToken[] = []
     console.log(`Fetch the data from ${p.getProviderName()}`)
@@ -40,7 +38,9 @@ async function main() {
       )
     }
   }
+}
 
+async function getNonFungibleTokens() {
   for (const p of nonFungibleTokenProviders) {
     let nonFungibleTokens: NonFungibleToken[] = []
     console.log(`Fetch the data from ${p.getProviderName()}`)
@@ -58,7 +58,9 @@ async function main() {
       await writeTokensToFile(p.getProviderName(), 'non-fungible-tokens', nonFungibleTokens)
     }
   }
+}
 
+async function getNonfungibleCollections() {
   for (const p of nonFungibleCollectionProviders) {
     let nonFungibleCollections: NonFungibleCollection[] = []
     console.log(`Fetch the data from ${p.getProviderName()}`)
@@ -76,15 +78,25 @@ async function main() {
       await writeCollectionsToFile(p.getProviderName(), nonFungibleCollections)
     }
   }
+}
 
+async function getDaos() {
   const spaces = await daoAPI.getSpaces()
   await writeDAOToFile(spaces)
+}
 
-  await mergePublicFileToOutput('non-fungible-collections')
-  await mergePublicFileToOutput('non-fungible-tokens')
-  await mergePublicFileToOutput('nft-lucky-drop')
-  await mergePublicFileToOutput('fungible-tokens')
-  await mergePublicFileToOutput('dao')
+async function main() {
+  await initFolder()
+
+  await Promise.allSettled([getFungibleTokens(), getNonFungibleTokens(), getNonfungibleCollections(), getDaos()])
+
+  await Promise.all([
+    mergePublicFileToOutput('non-fungible-collections'),
+    mergePublicFileToOutput('non-fungible-tokens'),
+    mergePublicFileToOutput('nft-lucky-drop'),
+    mergePublicFileToOutput('fungible-tokens'),
+    mergePublicFileToOutput('dao'),
+  ])
 
   console.log('Generate success!')
   process.exit(0)
