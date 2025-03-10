@@ -178,16 +178,16 @@ export class NFTScanToken implements NonFungibleTokenProvider {
       const data = list.data.data
         .map(
           (x, index) =>
-          ({
-            pluginID: config.pluginID,
-            address: x.contract_address,
-            name: x.contract_name,
-            chainId: config.chainId,
-            type: SearchResultType.NonFungibleToken,
-            source: SourceType.NFTScan,
-            logoURL: x.logo_url,
-            rank: index + 1,
-          } as NonFungibleToken),
+            ({
+              pluginID: config.pluginID,
+              address: x.contract_address,
+              name: x.contract_name,
+              chainId: config.chainId,
+              type: SearchResultType.NonFungibleToken,
+              source: SourceType.NFTScan,
+              logoURL: x.logo_url,
+              rank: index + 1,
+            } as NonFungibleToken),
         )
         .slice(0, config.limit)
 
@@ -213,7 +213,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
       },
     })
 
-    await delay(1000)
+    await delay(500)
 
     const collection = collectionResult.data.data
 
@@ -258,7 +258,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
       },
     })
 
-    await delay(1000)
+    await delay(500)
 
     const collection = collectionResult.data.data
 
@@ -352,3 +352,4 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
     return SourceType.NFTScan
   }
 }
+
