@@ -105,7 +105,20 @@ export type SocialLinks = {
   medium?: string
 }
 
-export interface FungibleToken {
+interface SocialTagMeta {
+  /**
+   * Join name with underscore and will be used for hash tag or currency tag.
+   * e.g., 'Bitcoin Puppets' => 'Bitcoin_Puppets', will be used to match `#Bitcoin_Puppets` or `$Bitcoin_Puppets`
+   */
+  name_underscore: string
+  /**
+   * Remove space in name and will be used for hash tag or currency tag.
+   * e.g., 'Bitcoin Puppets' => 'BitcoinPuppets', will be used to match `#BitcoinPuppets` or `$BitcoinPuppets`
+   */
+  name_connect: string
+}
+
+export interface FungibleToken extends SocialTagMeta {
   pluginID: NetworkPluginID
   id: string | number
   name: string
@@ -133,9 +146,10 @@ export interface CoinGeckoNonFungibleToken extends Omit<NonFungibleToken, 'chain
   chainId: EVMChainId | null
 }
 
-export interface NonFungibleCollection {
+export interface NonFungibleCollection extends SocialTagMeta {
   pluginID: NetworkPluginID
   chainId: EVMChainId | SolanaChainId
+  id: string
   name: string
   logoURL: string
   slug?: string

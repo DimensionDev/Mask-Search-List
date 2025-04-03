@@ -9,6 +9,7 @@ import {
   SourceType,
 } from '../type'
 import { delay } from '../utils'
+import { joinName } from '../utils/misc'
 import { parallelLimit } from '../utils/parallelLimit'
 
 export const baseURL = 'https://api.coingecko.com/api/v3'
@@ -97,7 +98,7 @@ export class CoinGecko implements FungibleTokenProvider {
         const tokenInfo = await axios.get<CoinDetail>(metadataURL)
         result[id] = this.getSocialLinks(tokenInfo.data)
       } catch (e) {
-        console.log(`CoinGecko get ${id} coin info failed`)
+        console.error(`CoinGecko get ${id} coin info failed`)
       }
       await delay(300)
     })
@@ -131,12 +132,14 @@ export class CoinGecko implements FungibleTokenProvider {
           id: x.id,
           symbol: x.symbol,
           name: x.name,
+          name_underscore: joinName(x.name, '_'),
+          name_connect: joinName(x.name, ''),
           source: SourceType.CoinGecko,
           type: SearchResultType.FungibleToken,
           logoURL: x.image,
           rank: x.market_cap_rank,
           socialLinks: links[x.id],
-        })),
+        } satisfies FungibleToken)),
       )
       console.timeEnd(`CoinGecko: get top tokens of page ${page}`)
 
