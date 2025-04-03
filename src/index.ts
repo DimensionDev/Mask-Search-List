@@ -14,11 +14,12 @@ const nftScanCollectionAPI = new NFTScanCollection()
 const cmcAPI = new CoinMarketCap()
 const daoAPI = new DAO()
 
-const fungibleProviders = [coinGeckoAPI]
+const fungibleProviders = [coinGeckoAPI, cmcAPI]
 const nonFungibleTokenProviders = [nftScanTokenAPI]
 const nonFungibleCollectionProviders = [nftScanCollectionAPI, coinGeckoCollectionAPI]
 
 async function getFungibleTokens() {
+  console.time('getFungibleTokens')
   await Promise.allSettled(
     fungibleProviders.map(async (p) => {
       const providerName = p.getProviderName()
@@ -43,9 +44,11 @@ async function getFungibleTokens() {
       }
     }),
   )
+  console.timeEnd('getFungibleTokens')
 }
 
 async function getNonFungibleTokens() {
+  console.time('getNonFungibleTokens')
   for (const p of nonFungibleTokenProviders) {
     let nonFungibleTokens: NonFungibleToken[] = []
     console.log(`Fetch the data from ${p.getProviderName()}`)
@@ -63,9 +66,11 @@ async function getNonFungibleTokens() {
       await writeTokensToFile(p.getProviderName(), 'non-fungible-tokens', nonFungibleTokens)
     }
   }
+  console.timeEnd('getNonFungibleTokens')
 }
 
 async function getNonfungibleCollections() {
+  console.time('getNonfungibleCollections')
   await Promise.allSettled(
     nonFungibleCollectionProviders.map(async (p) => {
       let nonFungibleCollections: NonFungibleCollection[] = []
@@ -79,26 +84,30 @@ async function getNonfungibleCollections() {
         console.log(e)
       }
 
-      console.log(`CoinGecko: get total ${nonFungibleCollections.length} collections`)
+      console.log(`${providerName}: get total ${nonFungibleCollections.length} collections`)
 
       if (nonFungibleCollections.length) {
         await writeCollectionsToFile(p.getProviderName(), nonFungibleCollections)
       }
     }),
   )
+  console.timeEnd('getNonfungibleCollections')
 }
 
 async function getDaos() {
+  console.time('getDaos')
   const spaces = await daoAPI.getSpaces()
   await writeDAOToFile(spaces)
+  console.timeEnd('getDaos')
 }
 
 async function main() {
+  console.time('generate')
   await initFolder()
 
   await Promise.allSettled([getFungibleTokens(), getNonFungibleTokens(), getNonfungibleCollections(), getDaos()])
 
-  await Promise.all([
+  await Promise.allSettled([
     mergePublicFileToOutput('non-fungible-collections'),
     mergePublicFileToOutput('non-fungible-tokens'),
     mergePublicFileToOutput('nft-lucky-drop'),
@@ -106,6 +115,7 @@ async function main() {
     mergePublicFileToOutput('dao'),
   ])
 
+  console.timeEnd('generate')
   console.log('Generate success!')
   process.exit(0)
 }

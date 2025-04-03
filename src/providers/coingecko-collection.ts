@@ -162,8 +162,10 @@ export class CoinGeckoCollection implements NonFungibleCollectionProvider {
   }
 
   async getCollectionDetails(ids: string[]): Promise<Record<string, CollectionDetail | TaskError>> {
+    console.time('CoinGecko: get collection details')
     const tasks = ids.map((id) => () => this.getCollectionDetail(id))
-    const results = await parallelLimit(tasks, 5)
+    const results = await parallelLimit(tasks, 10)
+    console.timeEnd('CoinGecko: get collection details')
 
     return Object.fromEntries(results.map((x, i) => [ids[i], x]))
   }
