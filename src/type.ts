@@ -128,6 +128,11 @@ export interface NonFungibleToken {
   rank: number
 }
 
+export interface CoinGeckoNonFungibleToken extends Omit<NonFungibleToken, 'chainId'> {
+  socialLinks: SocialLinks
+  chainId: EVMChainId | null
+}
+
 export interface NonFungibleCollection {
   pluginID: NetworkPluginID
   chainId: EVMChainId | SolanaChainId
@@ -149,7 +154,7 @@ export interface NonFungibleCollection {
   /** source type */
   source: SourceType
   type: SearchResultType
-  rank: number
+  rank: number | null | undefined
   collection: {
     chainId: EVMChainId | SolanaChainId
     name: string

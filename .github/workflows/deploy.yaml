@@ -13,7 +13,7 @@ jobs:
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22.2.0'
+          node-version-file: '.node-version'
           cache: 'pnpm'
       - name: Use node_modules cache
         uses: actions/cache@v4
@@ -27,12 +27,12 @@ jobs:
         run: pnpm install
         if: steps.pnpm-cache.outputs.cache-hit != 'true'
 
-      - name: build
+      - name: Fetch data
         env:
           COINMARKETCAP_API_KEY: ${{ secrets.COINMARKETCAP_API_KEY }}
           RUNTIME_TARGET: ${{ inputs.target }}
         run: |
-          pnpm build
+          pnpm run fetch-data
 
       - name: Get Package Version
         id: package-version

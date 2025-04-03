@@ -6,7 +6,7 @@
   "author": "guanbinrui <guanbinrui@mask.io>",
   "main": "index.js",
   "scripts": {
-    "build": "ts-node src/index.ts",
+    "fetch-data": "ts-node src/index.ts",
     "prepare": "husky install",
     "prettier": "prettier -c .",
     "lint-fix": "prettier --write .",
