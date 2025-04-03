@@ -9,6 +9,7 @@ import {
   SourceType,
 } from '../type'
 import { delay } from '../utils'
+import { parallelLimit } from '../utils/parallelLimit'
 
 export const baseURL = 'https://api.coingecko.com/api/v3'
 export const baseProURL = 'https://coingecko-agent.r2d2.to'
@@ -82,7 +83,8 @@ export class CoinGecko implements FungibleTokenProvider {
 
   private async getMetadata(ids: (string | number)[]) {
     const result: Record<string, SocialLinks> = {}
-    for (const id of ids) {
+    console.time('CoinGecko: get metadata')
+    const tasks = ids.map((id) => async () => {
       try {
         const metadataURL = urlcat(baseProURL, '/api/v3/coins/:id', {
           id,
@@ -98,7 +100,9 @@ export class CoinGecko implements FungibleTokenProvider {
         console.log(`CoinGecko get ${id} coin info failed`)
       }
       await delay(300)
-    }
+    })
+    await parallelLimit(tasks, 10)
+    console.timeEnd('CoinGecko: get metadata')
 
     return result
   }
@@ -106,15 +110,17 @@ export class CoinGecko implements FungibleTokenProvider {
   async getTopTokens(): Promise<FungibleToken[]> {
     const result: FungibleToken[] = []
     while (result.length < 2000) {
+      const page = Math.ceil(result.length / 250)
+      console.time(`CoinGecko: get top tokens of page ${page}`)
       const requestURL = urlcat(baseURL, '/coins/markets', {
         vs_currency: 'usd',
         order: 'market_cap_desc',
         per_page: 250,
-        page: Math.ceil(result.length / 250),
+        page,
       })
       const list = await axios.get<Coin[]>(requestURL)
 
-      console.log(`Fetched the ${result.length / 250} page data, the list length is: ${list.data.length}`)
+      console.log(`CoinGecko: Fetched the ${page} page data, the list length is: ${list.data.length}`)
 
       if (!list.data.length) break
       const links = await this.getMetadata(list.data.map((x) => x.id))
@@ -132,6 +138,7 @@ export class CoinGecko implements FungibleTokenProvider {
           socialLinks: links[x.id],
         })),
       )
+      console.timeEnd(`CoinGecko: get top tokens of page ${page}`)
 
       await delay(6000)
     }

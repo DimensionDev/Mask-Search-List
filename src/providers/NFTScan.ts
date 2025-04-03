@@ -13,6 +13,7 @@ import {
 } from '../type'
 import { orderBy } from 'lodash'
 import { delay } from '../utils'
+import { isTaskError, parallelLimit } from '../utils/parallelLimit'
 
 const baseURL = 'https://nftscan-proxy.r2d2.to'
 
@@ -164,9 +165,7 @@ export type SolanaCollectionsRankingResponse = {
 
 export class NFTScanToken implements NonFungibleTokenProvider {
   async getTopTokens() {
-    let result: NonFungibleToken[] = []
-
-    for (let config of evmConfigs) {
+    const chainTasks = evmConfigs.map((config) => async () => {
       const url = urlcat(baseURL, '/api/v2/statistics/ranking/marketcap')
       const list = await axios.get<Response>(url, {
         headers: {
@@ -190,11 +189,11 @@ export class NFTScanToken implements NonFungibleTokenProvider {
             } as NonFungibleToken),
         )
         .slice(0, config.limit)
+      return data
+    })
 
-      result = [...result, ...data]
-    }
-
-    return result
+    const results = await parallelLimit(chainTasks, 3)
+    return results.flatMap((x) => (isTaskError(x) ? [] : x))
   }
 
   getProviderName(): SourceType {
@@ -296,7 +295,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
   async getCollections(): Promise<NonFungibleCollection[]> {
     let result: NonFungibleCollection[] = []
 
-    for (let config of evmConfigs) {
+    const evmTasks = evmConfigs.map((config) => async () => {
       const chainId = config.pluginID === NetworkPluginID.PLUGIN_SOLANA ? 'solana' : config.chainId.toString()
       const url = urlcat(baseURL, '/api/v2/statistics/ranking/marketcap')
 
@@ -309,8 +308,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
 
       const data = orderBy(list.data.data, ['market_cap'], ['desc']).slice(0, config.limit)
 
-      for (let i = 0; i < data.length; i++) {
-        const item = data[i]
+      const subtasks = data.map((item, i) => async () => {
         try {
           const collection = await this.getCollection(item.contract_address, chainId, i + 1, config)
           if (collection) {
@@ -319,11 +317,16 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
         } catch (e) {
           console.log(`Fetch error for ${config.chainId} ${item.contract_address} from nftscan`)
         }
-      }
-    }
+      })
+      await parallelLimit(subtasks, 5)
+    })
+    console.time('NFTScan getCollections EVM')
+    await parallelLimit(evmTasks, 3)
+    console.timeEnd('NFTScan getCollections EVM')
 
     const solanaURL = urlcat(baseURL, '/api/sol/statistics/ranking/trade')
 
+    console.time('NFTScan getCollections Solana')
     const list = await axios.get<SolanaCollectionsRankingResponse>(solanaURL, {
       headers: {
         'content-type': 'application/json',
@@ -333,8 +336,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
 
     const data = orderBy(list.data.data, ['market_cap'], ['desc']).slice(0, 200)
 
-    for (let i = 0; i < data.length; i++) {
-      const item = data[i]
+    const solanaTasks = data.map((item, i) => async () => {
       try {
         const collection = await this.getSolanaCollection(item.collection, i + 1)
         if (collection) {
@@ -343,7 +345,9 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
       } catch (e) {
         console.log(`Fetch error for solana ${item.collection} from nftscan`)
       }
-    }
+    })
+    await parallelLimit(solanaTasks, 10)
+    console.timeEnd('NFTScan getCollections Solana')
 
     return result
   }
@@ -352,4 +356,3 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
     return SourceType.NFTScan
   }
 }
-

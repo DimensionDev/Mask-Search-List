@@ -3,6 +3,7 @@ import urlcat from 'urlcat'
 import { chunk } from 'lodash'
 import { getCoinMarketCapAPIKey } from '../utils'
 import { FungibleToken, FungibleTokenProvider, NetworkPluginID, SearchResultType, SourceType } from '../type'
+import { isTaskError, parallelLimit } from '../utils/parallelLimit'
 
 export interface IDInfo {
   id: number
@@ -57,10 +58,10 @@ export class CoinMarketCap implements FungibleTokenProvider {
     }
   }
   private async getMetadata(ids: (string | number)[]) {
-    const idsChunk = chunk(ids, 200)
-    const reqs = idsChunk.map((x) => {
+    const idChunks = chunk(ids, 200)
+    const tasks = idChunks.map((chunk) => async () => {
       const metadataURL = urlcat(baseProURL, 'v2/cryptocurrency/info', {
-        id: x.join(),
+        id: chunk.join(','),
         aux: 'urls,logo',
       })
       return axios.get<{ data: Record<string, CoinDetail> }>(metadataURL, {
@@ -68,8 +69,8 @@ export class CoinMarketCap implements FungibleTokenProvider {
       })
     })
 
-    const result = await Promise.all(reqs)
-    const data = result.map((x) => x.data.data)
+    const results = await parallelLimit(tasks, 5)
+    const data = results.flatMap((x) => (isTaskError(x) ? [] : x)).map((x) => x.data.data)
     // @ts-ignore
     return Object.assign(...data)
   }
@@ -79,13 +80,14 @@ export class CoinMarketCap implements FungibleTokenProvider {
       sort: 'cmc_rank',
       limit: 2000,
     })
+    console.time('CoinMarketCap: get top tokens')
     const res = await axios.get<Response>(url, {
       headers: { 'X-CMC_PRO_API_KEY': getCoinMarketCapAPIKey() },
     })
 
     const metadata = await this.getMetadata(res.data.data.map((x) => x.id))
 
-    return res.data.data.map(
+    const result = res.data.data.map(
       (x) =>
         ({
           pluginID: NetworkPluginID.PLUGIN_EVM,
@@ -99,6 +101,8 @@ export class CoinMarketCap implements FungibleTokenProvider {
           socialLinks: this.getSocialLinks(metadata[x.id.toString()]),
         } as FungibleToken),
     )
+    console.timeEnd('CoinMarketCap: get top tokens')
+    return result
   }
 
   getProviderName(): SourceType {
