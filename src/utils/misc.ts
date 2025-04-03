@@ -49,3 +49,7 @@ export function guestChainByExplorer(link: string | undefined) {
   const url = new URL(link)
   return explorerToChain[url.host] || null
 }
+
+export function joinName(name: string, sep: '_' | '') {
+  return name.replace(/\s+/g, sep)
+}

@@ -14,6 +14,7 @@ import {
 import { orderBy } from 'lodash'
 import { delay } from '../utils'
 import { isTaskError, parallelLimit } from '../utils/parallelLimit'
+import { joinName } from '../utils/misc'
 
 const baseURL = 'https://nftscan-proxy.r2d2.to'
 
@@ -263,8 +264,11 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
 
     return {
       pluginID: config.pluginID,
+      id: collection.contract_address,
       address: collection.contract_address,
       name: collection.name,
+      name_underscore: joinName(collection.name, '_'),
+      name_connect: joinName(collection.name, ''),
       chainId: config.chainId,
       symbol: collection.symbol,
       logoURL: collection.logo_url,
@@ -289,7 +293,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
           medium: collection.medium,
         },
       },
-    } as NonFungibleCollection
+    } satisfies NonFungibleCollection
   }
 
   async getCollections(): Promise<NonFungibleCollection[]> {
@@ -315,7 +319,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
             result = [...result, collection]
           }
         } catch (e) {
-          console.log(`Fetch error for ${config.chainId} ${item.contract_address} from nftscan`)
+          console.error(`Fetch error for ${config.chainId} ${item.contract_address} from nftscan`)
         }
       })
       await parallelLimit(subtasks, 5)
@@ -343,7 +347,7 @@ export class NFTScanCollection implements NonFungibleCollectionProvider {
           result = [...result, collection]
         }
       } catch (e) {
-        console.log(`Fetch error for solana ${item.collection} from nftscan`)
+        console.error(`Fetch error for solana ${item.collection} from nftscan`)
       }
     })
     await parallelLimit(solanaTasks, 10)

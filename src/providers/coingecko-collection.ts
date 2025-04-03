@@ -9,7 +9,7 @@ import {
   SourceType,
 } from '../type'
 import { delay } from '../utils'
-import { guestChainByExplorer } from '../utils/misc'
+import { guestChainByExplorer, joinName } from '../utils/misc'
 import { isTaskError, parallelLimit, TaskError } from '../utils/parallelLimit'
 
 export const baseURL = 'https://api.coingecko.com/api/v3'
@@ -197,6 +197,8 @@ export class CoinGeckoCollection implements NonFungibleCollectionProvider {
             id: x.id,
             address: x.contract_address,
             name: x.name,
+            name_underscore: joinName(x.name, '_'),
+            name_connect: joinName(x.name, ''),
             logoURL: x.image.small_2x || x.image.small,
             slug: detail?.web_slug,
             symbol: x.symbol,
@@ -212,7 +214,7 @@ export class CoinGeckoCollection implements NonFungibleCollectionProvider {
               iconURL: x.image.small_2x || x.image.small,
               socialLinks: detail?.links || {},
             },
-          }
+          } satisfies NonFungibleCollection
         }),
       )
 

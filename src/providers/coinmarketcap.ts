@@ -1,8 +1,9 @@
 import axios from 'axios'
-import urlcat from 'urlcat'
 import { chunk } from 'lodash'
-import { getCoinMarketCapAPIKey } from '../utils'
+import urlcat from 'urlcat'
 import { FungibleToken, FungibleTokenProvider, NetworkPluginID, SearchResultType, SourceType } from '../type'
+import { getCoinMarketCapAPIKey } from '../utils'
+import { joinName } from '../utils/misc'
 import { isTaskError, parallelLimit } from '../utils/parallelLimit'
 
 export interface IDInfo {
@@ -93,13 +94,15 @@ export class CoinMarketCap implements FungibleTokenProvider {
           pluginID: NetworkPluginID.PLUGIN_EVM,
           id: x.id,
           name: x.name,
+          name_underscore: joinName(x.name, '_'),
+          name_connect: joinName(x.name, ''),
           symbol: x.symbol,
           source: SourceType.CoinMarketCap,
           type: SearchResultType.FungibleToken,
           rank: x.rank,
           logoURL: metadata[x.id.toString()]?.logo,
           socialLinks: this.getSocialLinks(metadata[x.id.toString()]),
-        } as FungibleToken),
+        } satisfies FungibleToken),
     )
     console.timeEnd('CoinMarketCap: get top tokens')
     return result
