@@ -116,7 +116,7 @@
     "spaceName": "Stake DAO",
     "twitterHandler": "StakeDAOHQ",
     "avatar": "ipfs://QmV71VYHbeSGjTphMx95hUSRawsMVei4RH6WAFS1LTFZMF",
-    "followersCount": 1367,
+    "followersCount": 1366,
     "isVerified": true
   },
   {
@@ -132,7 +132,7 @@
     "spaceName": "Nexus Mutual DAO Treasury",
     "twitterHandler": "NexusMutual",
     "avatar": "ipfs://bafkreierijykemhf2busmjdbjf6cezeozfyxzuk3h4tf5cvhncimgl6pl4",
-    "followersCount": 225,
+    "followersCount": 224,
     "isVerified": true
   },
   {
@@ -180,7 +180,7 @@
     "spaceName": "DIA",
     "twitterHandler": "DIAdata_org",
     "avatar": "ipfs://bafkreibcko4sioygr6w74l423ghplm2un2i7nkgnubbsegmc7rv6rc4pty",
-    "followersCount": 2448,
+    "followersCount": 2449,
     "isVerified": false
   },
   {
@@ -804,7 +804,7 @@
     "spaceName": "Tetu.io",
     "twitterHandler": "tetu_io",
     "avatar": "ipfs://QmbV5vvSrTEBkGFqve8mddQZCQ61TAx5ak3qy1FEawQYCm",
-    "followersCount": 153,
+    "followersCount": 152,
     "isVerified": true
   },
   {
@@ -860,7 +860,7 @@
     "spaceName": "Balancer",
     "twitterHandler": "balancer",
     "avatar": "ipfs://QmfQDYJF93G53RcCUaCzyy2eEViM6kCVmp6UMKPqcM649H",
-    "followersCount": 35884,
+    "followersCount": 35885,
     "isVerified": true
   },
   {
@@ -1780,7 +1780,7 @@
     "spaceName": "Stargate DAO",
     "twitterHandler": "stargatefinance",
     "avatar": "ipfs://QmNStftrH92EKDXENSoxHgVneaV5jYyNoG5NKeRD88HUSY",
-    "followersCount": 920558,
+    "followersCount": 920557,
     "isVerified": true
   },
   {
@@ -1828,7 +1828,7 @@
     "spaceName": "ApeCoin DAO",
     "twitterHandler": "apecoin",
     "avatar": "ipfs://QmfVZLhH51S1G3UVFRZecXR5KbhS1CQ9RVbpgsqU25YG2C",
-    "followersCount": 36154,
+    "followersCount": 36153,
     "isVerified": true
   },
   {
@@ -2644,7 +2644,7 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 320988,
+    "followersCount": 320989,
     "isVerified": true
   }
 ]
