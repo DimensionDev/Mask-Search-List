@@ -73,7 +73,7 @@ export type CoinDetail = {
 }
 
 const tokenRelatedTwitters: Record<string, string[]> = {
-  'binancecoin': ['binance', 'bnbchain']
+  binancecoin: ['binance', 'bnbchain'],
 }
 
 export class CoinGecko implements FungibleTokenProvider {
@@ -131,20 +131,22 @@ export class CoinGecko implements FungibleTokenProvider {
       const links = await this.getMetadata(list.data.map((x) => x.id))
 
       result.push(
-        ...list.data.map((x) => ({
-          pluginID: NetworkPluginID.PLUGIN_EVM,
-          id: x.id,
-          symbol: x.symbol,
-          name: x.name,
-          name_underscore: joinName(x.name, '_').toLowerCase(),
-          name_connect: joinName(x.name, '').toLowerCase(),
-          source: SourceType.CoinGecko,
-          type: SearchResultType.FungibleToken,
-          logoURL: x.image,
-          rank: x.market_cap_rank,
-          socialLinks: links[x.id],
-          relatedTwitters: tokenRelatedTwitters[x.id],
-        } satisfies FungibleToken)),
+        ...list.data.map((x) => {
+          return {
+            pluginID: NetworkPluginID.PLUGIN_EVM,
+            id: x.id,
+            symbol: x.symbol,
+            name: x.name,
+            name_underscore: joinName(x.name, '_').toLowerCase(),
+            name_connect: joinName(x.name, '').toLowerCase(),
+            source: SourceType.CoinGecko,
+            type: SearchResultType.FungibleToken,
+            logoURL: x.image,
+            rank: x.market_cap_rank,
+            socialLinks: links[x.id],
+            relatedTwitters: tokenRelatedTwitters[x.id],
+          } satisfies FungibleToken
+        }),
       )
       console.timeEnd(`CoinGecko: get top tokens of page ${page}`)
 

@@ -46,13 +46,9 @@ export async function writeCollectionsToFile(provider: SourceType, tokens: Fungi
 export async function writeDAOToFile(spaces: Space[]) {
   if (!spaces.length) throw new Error(`Forbid writing the empty data of DAO to output`)
 
-  await fs.writeFile(
-    path.join(getOutputDir('dao'), `spaces.json`),
-    JSON.stringify(spaces, undefined, 2),
-    {
-      encoding: 'utf-8',
-    },
-  )
+  await fs.writeFile(path.join(getOutputDir('dao'), `spaces.json`), JSON.stringify(spaces, undefined, 2), {
+    encoding: 'utf-8',
+  })
 }
 
 export async function mergePublicFileToOutput(
