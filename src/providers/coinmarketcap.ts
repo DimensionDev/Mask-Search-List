@@ -88,22 +88,21 @@ export class CoinMarketCap implements FungibleTokenProvider {
 
     const metadata = await this.getMetadata(res.data.data.map((x) => x.id))
 
-    const result = res.data.data.map(
-      (x) =>
-        ({
-          pluginID: NetworkPluginID.PLUGIN_EVM,
-          id: x.id,
-          name: x.name,
-          name_underscore: joinName(x.name, '_').toLowerCase(),
-          name_connect: joinName(x.name, '').toLowerCase(),
-          symbol: x.symbol,
-          source: SourceType.CoinMarketCap,
-          type: SearchResultType.FungibleToken,
-          rank: x.rank,
-          logoURL: metadata[x.id.toString()]?.logo,
-          socialLinks: this.getSocialLinks(metadata[x.id.toString()]),
-        } satisfies FungibleToken),
-    )
+    const result = res.data.data.map((x) => {
+      return {
+        pluginID: NetworkPluginID.PLUGIN_EVM,
+        id: x.id,
+        name: x.name,
+        name_underscore: joinName(x.name, '_').toLowerCase(),
+        name_connect: joinName(x.name, '').toLowerCase(),
+        symbol: x.symbol,
+        source: SourceType.CoinMarketCap,
+        type: SearchResultType.FungibleToken,
+        rank: x.rank,
+        logoURL: metadata[x.id.toString()]?.logo,
+        socialLinks: this.getSocialLinks(metadata[x.id.toString()]),
+      } satisfies FungibleToken
+    })
     console.timeEnd('CoinMarketCap: get top tokens')
     return result
   }

@@ -176,19 +176,18 @@ export class NFTScanToken implements NonFungibleTokenProvider {
       })
 
       const data = list.data.data
-        .map(
-          (x, index) =>
-            ({
-              pluginID: config.pluginID,
-              address: x.contract_address,
-              name: x.contract_name,
-              chainId: config.chainId,
-              type: SearchResultType.NonFungibleToken,
-              source: SourceType.NFTScan,
-              logoURL: x.logo_url,
-              rank: index + 1,
-            } as NonFungibleToken),
-        )
+        .map((x, index) => {
+          return {
+            pluginID: config.pluginID,
+            address: x.contract_address,
+            name: x.contract_name,
+            chainId: config.chainId,
+            type: SearchResultType.NonFungibleToken,
+            source: SourceType.NFTScan,
+            logoURL: x.logo_url,
+            rank: index + 1,
+          } as NonFungibleToken
+        })
         .slice(0, config.limit)
       return data
     })
