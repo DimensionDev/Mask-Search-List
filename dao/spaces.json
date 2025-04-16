@@ -428,7 +428,7 @@
     "spaceName": "ENS",
     "twitterHandler": "ensdomains",
     "avatar": "ipfs://QmSL2X1h1uk26ahSALTw2qKyc61VaySRRstueVMm1Aym3e",
-    "followersCount": 142560,
+    "followersCount": 142561,
     "isVerified": true
   },
   {
@@ -1924,7 +1924,7 @@
     "spaceName": "SafeDAO",
     "twitterHandler": "safe",
     "avatar": "ipfs://bafkreihajbe776zgzt7crg4ekq3xpq6nghyr7we2hrldpygzhdljgc7nm4",
-    "followersCount": 17404,
+    "followersCount": 17403,
     "isVerified": false
   },
   {
@@ -1980,7 +1980,7 @@
     "spaceName": "Optimism Collective",
     "twitterHandler": "optimismPBC",
     "avatar": "https://github.com/ethereum-optimism/brand-kit/blob/main/assets/images/Profile-Logo.png?raw=true",
-    "followersCount": 203800,
+    "followersCount": 203801,
     "isVerified": true
   },
   {
@@ -2276,7 +2276,7 @@
     "spaceName": " Starknet",
     "twitterHandler": "StarknetFndn",
     "avatar": "ipfs://bafkreiczt6ntienh54rrzv7dvfz5233u4ukwsqfjwavwaud4f5h5i5mq7q",
-    "followersCount": 66756,
+    "followersCount": 66757,
     "isVerified": true
   },
   {
@@ -2332,7 +2332,7 @@
     "spaceName": "G DAO",
     "twitterHandler": "GalxeDAO",
     "avatar": "ipfs://bafybeihf6gzofqlmyv4wwszuqzgwodxx66rvkdz6k34g6yxb5mmrukxnbe",
-    "followersCount": 65723,
+    "followersCount": 65724,
     "isVerified": false
   },
   {
@@ -2636,7 +2636,7 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 321186,
+    "followersCount": 321188,
     "isVerified": true
   }
 ]
