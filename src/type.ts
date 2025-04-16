@@ -128,6 +128,7 @@ export interface FungibleToken extends SocialTagMeta {
   type: SearchResultType
   rank: number
   socialLinks: SocialLinks
+  relatedTwitters?: string[]
 }
 
 export interface NonFungibleToken {

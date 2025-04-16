@@ -72,6 +72,10 @@ export type CoinDetail = {
   }
 }
 
+const tokenRelatedTwitters: Record<string, string[]> = {
+  'binancecoin': ['binance', 'bnbchain']
+}
+
 export class CoinGecko implements FungibleTokenProvider {
   private getSocialLinks(coin: CoinDetail) {
     // CoinGecko provided more info.
@@ -139,6 +143,7 @@ export class CoinGecko implements FungibleTokenProvider {
           logoURL: x.image,
           rank: x.market_cap_rank,
           socialLinks: links[x.id],
+          relatedTwitters: tokenRelatedTwitters[x.id],
         } satisfies FungibleToken)),
       )
       console.timeEnd(`CoinGecko: get top tokens of page ${page}`)
