@@ -44,7 +44,7 @@
     "spaceName": "Aavegotchi",
     "twitterHandler": "aavegotchi",
     "avatar": "ipfs://bafkreidbonscxgm7ylrjtfpg7xxhoqr57zxtghavjjcu552hhowgb7repq",
-    "followersCount": 86223,
+    "followersCount": 86224,
     "isVerified": true
   },
   {
@@ -68,7 +68,7 @@
     "spaceName": "Frax",
     "twitterHandler": "fraxfinance",
     "avatar": "ipfs://QmaTXpvMhATxSyJ8Rb5n8Ymdt8j9DEg3NBSwYGTvdmUYiL",
-    "followersCount": 4622,
+    "followersCount": 4621,
     "isVerified": true
   },
   {
@@ -276,7 +276,7 @@
     "spaceName": "QuickSwap",
     "twitterHandler": "QuickswapDEX",
     "avatar": "ipfs://QmVmuKFU8EqepqfF7MUk7CQK1FoBfGM4qjV5Pnw5b9CSyU",
-    "followersCount": 25491,
+    "followersCount": 25492,
     "isVerified": false
   },
   {
@@ -428,7 +428,7 @@
     "spaceName": "ENS",
     "twitterHandler": "ensdomains",
     "avatar": "ipfs://QmSL2X1h1uk26ahSALTw2qKyc61VaySRRstueVMm1Aym3e",
-    "followersCount": 142875,
+    "followersCount": 142876,
     "isVerified": true
   },
   {
@@ -500,7 +500,7 @@
     "spaceName": "Decentraland",
     "twitterHandler": "decentraland",
     "avatar": "ipfs://QmZAWXeepWnWpsdEXnkym5nvipxGCj87sS6SABBV8x6pPh",
-    "followersCount": 34476,
+    "followersCount": 34478,
     "isVerified": true
   },
   {
@@ -684,7 +684,7 @@
     "spaceName": "Convex Finance",
     "twitterHandler": "ConvexFinance",
     "avatar": "ipfs://QmXB2Ce726sNzJbrJPsQQz1BZRQvfDntPS18prAi9JmrgG",
-    "followersCount": 5581,
+    "followersCount": 5582,
     "isVerified": true
   },
   {
@@ -700,7 +700,7 @@
     "spaceName": "Mantle (prev. BitDAO)",
     "twitterHandler": "0xMantle",
     "avatar": "ipfs://bafkreib4sesy2gxeayly4qua6vgvfe6svvotz7ild6jpys4jrfid6kfgiy",
-    "followersCount": 89015,
+    "followersCount": 89016,
     "isVerified": true
   },
   {
@@ -716,7 +716,7 @@
     "spaceName": "Origin Protocol",
     "twitterHandler": "originprotocol",
     "avatar": "ipfs://bafkreih4odyhgyywdvmgyw5eb2v54mbawyxpfl6l3pk3by2gplocqei5ty",
-    "followersCount": 721,
+    "followersCount": 722,
     "isVerified": true
   },
   {
@@ -852,7 +852,7 @@
     "spaceName": "Balancer",
     "twitterHandler": "balancer",
     "avatar": "ipfs://QmfQDYJF93G53RcCUaCzyy2eEViM6kCVmp6UMKPqcM649H",
-    "followersCount": 36420,
+    "followersCount": 36421,
     "isVerified": true
   },
   {
@@ -1172,7 +1172,7 @@
     "spaceName": "GMX",
     "twitterHandler": "GMX_IO",
     "avatar": "ipfs://QmYg73njLyPinShPKZjy1U2zKH8QULK2qfCgBRNYLuVP37",
-    "followersCount": 75905,
+    "followersCount": 75906,
     "isVerified": false
   },
   {
@@ -1980,7 +1980,7 @@
     "spaceName": "Optimism Collective",
     "twitterHandler": "optimismPBC",
     "avatar": "https://github.com/ethereum-optimism/brand-kit/blob/main/assets/images/Profile-Logo.png?raw=true",
-    "followersCount": 203976,
+    "followersCount": 203977,
     "isVerified": true
   },
   {
@@ -2276,7 +2276,7 @@
     "spaceName": " Starknet",
     "twitterHandler": "StarknetFndn",
     "avatar": "ipfs://bafkreiczt6ntienh54rrzv7dvfz5233u4ukwsqfjwavwaud4f5h5i5mq7q",
-    "followersCount": 67034,
+    "followersCount": 67033,
     "isVerified": true
   },
   {
@@ -2300,7 +2300,7 @@
     "spaceName": "EtherScore",
     "twitterHandler": "etherscore",
     "avatar": "ipfs://bafkreie6zxembvkdgbogr6obcc4xf72dxrozbg2w5hiaiv64ay3xuqtxs4",
-    "followersCount": 27661,
+    "followersCount": 27662,
     "isVerified": false
   },
   {
@@ -2332,7 +2332,7 @@
     "spaceName": "G DAO",
     "twitterHandler": "GalxeDAO",
     "avatar": "ipfs://bafybeihf6gzofqlmyv4wwszuqzgwodxx66rvkdz6k34g6yxb5mmrukxnbe",
-    "followersCount": 66282,
+    "followersCount": 66283,
     "isVerified": false
   },
   {
@@ -2580,7 +2580,7 @@
     "spaceName": "Treasure",
     "twitterHandler": "Treasure_DAO",
     "avatar": "ipfs://bafkreihsajn6tn6mns4r24wsieoyneqh3blirvfnbopcpimtq7ancdzp5m",
-    "followersCount": 8738,
+    "followersCount": 8739,
     "isVerified": false
   },
   {
@@ -2652,7 +2652,7 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 323171,
+    "followersCount": 323177,
     "isVerified": true
   }
 ]
