@@ -428,7 +428,7 @@
     "spaceName": "ENS",
     "twitterHandler": "ensdomains",
     "avatar": "ipfs://QmSL2X1h1uk26ahSALTw2qKyc61VaySRRstueVMm1Aym3e",
-    "followersCount": 142889,
+    "followersCount": 142891,
     "isVerified": true
   },
   {
@@ -476,7 +476,7 @@
     "spaceName": "Trust Wallet",
     "twitterHandler": null,
     "avatar": "ipfs://QmTEB3kzNuCqzoGw67N1uryBGeKhfVeLfeYDTzgc2WwvX4",
-    "followersCount": 47106,
+    "followersCount": 47107,
     "isVerified": true
   },
   {
@@ -484,7 +484,7 @@
     "spaceName": "Uniswap",
     "twitterHandler": "uniswapfnd",
     "avatar": "ipfs://QmdNntEZMnen3QE9GfHG4heeqMJkFjxQ9BDof4m8xzV6UT",
-    "followersCount": 125041,
+    "followersCount": 125040,
     "isVerified": false
   },
   {
@@ -500,7 +500,7 @@
     "spaceName": "Decentraland",
     "twitterHandler": "decentraland",
     "avatar": "ipfs://QmZAWXeepWnWpsdEXnkym5nvipxGCj87sS6SABBV8x6pPh",
-    "followersCount": 34506,
+    "followersCount": 34507,
     "isVerified": true
   },
   {
@@ -684,7 +684,7 @@
     "spaceName": "Convex Finance",
     "twitterHandler": "ConvexFinance",
     "avatar": "ipfs://QmXB2Ce726sNzJbrJPsQQz1BZRQvfDntPS18prAi9JmrgG",
-    "followersCount": 5603,
+    "followersCount": 5605,
     "isVerified": true
   },
   {
@@ -1716,7 +1716,7 @@
     "spaceName": "CoW DAO",
     "twitterHandler": "CoWSwap",
     "avatar": "https://ipfs.filebase.io/ipfs/QmUZp4Ljp3sa5dz827kRv12LazACeUB2kxTMvbu7tKzpcu",
-    "followersCount": 7209,
+    "followersCount": 7211,
     "isVerified": true
   },
   {
@@ -1868,7 +1868,7 @@
     "spaceName": "Rocket Pool",
     "twitterHandler": "Rocket_Pool",
     "avatar": "https://rocketpool.net/files/rpl-icon-200x200.png",
-    "followersCount": 1146,
+    "followersCount": 1147,
     "isVerified": false
   },
   {
@@ -2620,7 +2620,7 @@
     "spaceName": "BIO",
     "twitterHandler": "bioprotocol",
     "avatar": "ipfs://bafkreih2qqxjebi5ienu23jug2hmcfcfa6l7nho6h4bgcl2tfw2rvwkn5i",
-    "followersCount": 1112,
+    "followersCount": 1113,
     "isVerified": false
   },
   {
@@ -2652,7 +2652,7 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 323253,
+    "followersCount": 323257,
     "isVerified": true
   }
 ]
