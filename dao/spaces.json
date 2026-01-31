@@ -564,7 +564,7 @@
     "spaceName": "Gitcoin",
     "twitterHandler": "gitcoin",
     "avatar": "ipfs://bafkreibeccmlpytnkyied2po2d32thitbnvtcnof42qs4cwxchi4boyfli",
-    "followersCount": 150456,
+    "followersCount": 150455,
     "isVerified": true
   },
   {
@@ -684,7 +684,7 @@
     "spaceName": "Convex Finance",
     "twitterHandler": "ConvexFinance",
     "avatar": "ipfs://QmXB2Ce726sNzJbrJPsQQz1BZRQvfDntPS18prAi9JmrgG",
-    "followersCount": 5723,
+    "followersCount": 5732,
     "isVerified": true
   },
   {
@@ -1148,7 +1148,7 @@
     "spaceName": "Beets",
     "twitterHandler": "beets_fi",
     "avatar": "ipfs://bafkreig2w5k4swl6dmbhhx3uprx5sosdooclkmy2ekkeh5gn3cyabpqhhi",
-    "followersCount": 5145,
+    "followersCount": 5147,
     "isVerified": true
   },
   {
@@ -1340,7 +1340,7 @@
     "spaceName": "zwei",
     "twitterHandler": "tuchui4",
     "avatar": "ipfs://QmQ9kkv9X3iaVxxRKvhgmfZ6n8RsndFMmBB84SzHz2QDT3",
-    "followersCount": 1224,
+    "followersCount": 1223,
     "isVerified": false
   },
   {
@@ -1460,7 +1460,7 @@
     "spaceName": "Beefy",
     "twitterHandler": "beefyfinance",
     "avatar": "ipfs://bafkreiadwr6k6wuxf4ktymmesx6ssj4r3hm7ki2unyehzav32zfkmrwzsa",
-    "followersCount": 11032,
+    "followersCount": 11033,
     "isVerified": true
   },
   {
@@ -1716,7 +1716,7 @@
     "spaceName": "CoW DAO",
     "twitterHandler": "CoWSwap",
     "avatar": "https://ipfs.filebase.io/ipfs/QmUZp4Ljp3sa5dz827kRv12LazACeUB2kxTMvbu7tKzpcu",
-    "followersCount": 7296,
+    "followersCount": 7297,
     "isVerified": true
   },
   {
@@ -1980,7 +1980,7 @@
     "spaceName": "Optimism Collective",
     "twitterHandler": "optimismPBC",
     "avatar": "https://github.com/ethereum-optimism/brand-kit/blob/main/assets/images/Profile-Logo.png?raw=true",
-    "followersCount": 204001,
+    "followersCount": 204002,
     "isVerified": true
   },
   {
@@ -2580,7 +2580,7 @@
     "spaceName": "Treasure",
     "twitterHandler": "Treasure_DAO",
     "avatar": "ipfs://bafkreihsajn6tn6mns4r24wsieoyneqh3blirvfnbopcpimtq7ancdzp5m",
-    "followersCount": 8737,
+    "followersCount": 8736,
     "isVerified": false
   },
   {
@@ -2604,7 +2604,7 @@
     "spaceName": "Taho",
     "twitterHandler": "taho_xyz",
     "avatar": "ipfs://bafkreie6usq7zwpdhk73tbdghvgfiyb7ijic5pfiwwaa3etnuzx7zinrfu",
-    "followersCount": 22143,
+    "followersCount": 22142,
     "isVerified": false
   },
   {
