@@ -212,7 +212,7 @@
     "spaceName": "GnosisDAO",
     "twitterHandler": "gnosisdao",
     "avatar": "ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42",
-    "followersCount": 12201,
+    "followersCount": 12200,
     "isVerified": true
   },
   {
@@ -684,7 +684,7 @@
     "spaceName": "Convex Finance",
     "twitterHandler": "ConvexFinance",
     "avatar": "ipfs://QmXB2Ce726sNzJbrJPsQQz1BZRQvfDntPS18prAi9JmrgG",
-    "followersCount": 5839,
+    "followersCount": 5840,
     "isVerified": true
   },
   {
@@ -1732,7 +1732,7 @@
     "spaceName": "Botto",
     "twitterHandler": "bottoproject",
     "avatar": "ipfs://QmTmECakc38bgnk2Qf8BYaRicpBDf9us4yf3K379k6GUtK",
-    "followersCount": 543,
+    "followersCount": 544,
     "isVerified": true
   },
   {
@@ -2116,7 +2116,7 @@
     "spaceName": "Morpho",
     "twitterHandler": "MorphoLabs",
     "avatar": "ipfs://bafkreihmxilb24x2q5qbs4vgxmvp5ua5ygkblymafzzbf5zwt4qagmmtoq",
-    "followersCount": 1334,
+    "followersCount": 1335,
     "isVerified": false
   },
   {
@@ -2276,7 +2276,7 @@
     "spaceName": "Moonwell Governance",
     "twitterHandler": "MoonwellDeFi",
     "avatar": "ipfs://bafkreihlg476u2id5ykgygj343zviufrf7lyqc3wwnrmgzmbfl4tlgvfhe",
-    "followersCount": 1220,
+    "followersCount": 1221,
     "isVerified": false
   },
   {
@@ -2644,7 +2644,7 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 323484,
+    "followersCount": 323485,
     "isVerified": true
   }
 ]
