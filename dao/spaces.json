@@ -44,7 +44,7 @@
     "spaceName": "Aavegotchi",
     "twitterHandler": "aavegotchi",
     "avatar": "ipfs://bafkreidbonscxgm7ylrjtfpg7xxhoqr57zxtghavjjcu552hhowgb7repq",
-    "followersCount": 86270,
+    "followersCount": 86271,
     "isVerified": true
   },
   {
@@ -212,7 +212,7 @@
     "spaceName": "GnosisDAO",
     "twitterHandler": "gnosisdao",
     "avatar": "ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42",
-    "followersCount": 12205,
+    "followersCount": 12204,
     "isVerified": true
   },
   {
@@ -428,7 +428,7 @@
     "spaceName": "ENS",
     "twitterHandler": "ensdomains",
     "avatar": "ipfs://QmSL2X1h1uk26ahSALTw2qKyc61VaySRRstueVMm1Aym3e",
-    "followersCount": 142993,
+    "followersCount": 142994,
     "isVerified": true
   },
   {
@@ -484,7 +484,7 @@
     "spaceName": "Uniswap",
     "twitterHandler": "uniswapfnd",
     "avatar": "ipfs://QmdNntEZMnen3QE9GfHG4heeqMJkFjxQ9BDof4m8xzV6UT",
-    "followersCount": 125199,
+    "followersCount": 125213,
     "isVerified": false
   },
   {
@@ -500,7 +500,7 @@
     "spaceName": "Decentraland",
     "twitterHandler": "decentraland",
     "avatar": "ipfs://QmZAWXeepWnWpsdEXnkym5nvipxGCj87sS6SABBV8x6pPh",
-    "followersCount": 34825,
+    "followersCount": 34826,
     "isVerified": true
   },
   {
@@ -540,7 +540,7 @@
     "spaceName": "Rarible Protocol DAO",
     "twitterHandler": "rariblecom",
     "avatar": "ipfs://QmWWB9rNVzyPjuUxQvcYVDw5coH4uUTR1JG7EWxPMUhASN",
-    "followersCount": 4132,
+    "followersCount": 4133,
     "isVerified": true
   },
   {
@@ -620,7 +620,7 @@
     "spaceName": "Unlock Protocol",
     "twitterHandler": "unlockprotocol",
     "avatar": "ipfs://bafkreihlcpcef2zlgfgopzjstdp4e2mhqnms5om3iqattbbzvnt6vfjp3a",
-    "followersCount": 350,
+    "followersCount": 351,
     "isVerified": true
   },
   {
@@ -700,7 +700,7 @@
     "spaceName": "Mantle (prev. BitDAO)",
     "twitterHandler": "0xMantle",
     "avatar": "ipfs://bafkreib4sesy2gxeayly4qua6vgvfe6svvotz7ild6jpys4jrfid6kfgiy",
-    "followersCount": 89058,
+    "followersCount": 89059,
     "isVerified": true
   },
   {
@@ -2644,7 +2644,7 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 323549,
+    "followersCount": 323552,
     "isVerified": true
   }
 ]
