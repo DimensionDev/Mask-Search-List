@@ -44,7 +44,7 @@
     "spaceName": "Aavegotchi",
     "twitterHandler": "aavegotchi",
     "avatar": "ipfs://bafkreidbonscxgm7ylrjtfpg7xxhoqr57zxtghavjjcu552hhowgb7repq",
-    "followersCount": 86290,
+    "followersCount": 86291,
     "isVerified": true
   },
   {
@@ -116,7 +116,7 @@
     "spaceName": "Stake DAO",
     "twitterHandler": "StakeDAOHQ",
     "avatar": "ipfs://QmV71VYHbeSGjTphMx95hUSRawsMVei4RH6WAFS1LTFZMF",
-    "followersCount": 1562,
+    "followersCount": 1563,
     "isVerified": true
   },
   {
@@ -684,7 +684,7 @@
     "spaceName": "Convex Finance",
     "twitterHandler": "ConvexFinance",
     "avatar": "ipfs://QmXB2Ce726sNzJbrJPsQQz1BZRQvfDntPS18prAi9JmrgG",
-    "followersCount": 5949,
+    "followersCount": 5950,
     "isVerified": true
   },
   {
@@ -1316,7 +1316,7 @@
     "spaceName": "Velora DAO",
     "twitterHandler": "VeloraDEX",
     "avatar": "ipfs://bafybeicjnll77bkxyt3d4yhupwc7b5uxdev6trgu5pnqco5c5mw5wmx3qq",
-    "followersCount": 8195,
+    "followersCount": 8194,
     "isVerified": true
   },
   {
@@ -1708,7 +1708,7 @@
     "spaceName": "CoW DAO",
     "twitterHandler": "CoWSwap",
     "avatar": "https://ipfs.filebase.io/ipfs/QmUZp4Ljp3sa5dz827kRv12LazACeUB2kxTMvbu7tKzpcu",
-    "followersCount": 7345,
+    "followersCount": 7346,
     "isVerified": true
   },
   {
@@ -2116,7 +2116,7 @@
     "spaceName": "Morpho",
     "twitterHandler": "MorphoLabs",
     "avatar": "ipfs://bafkreihmxilb24x2q5qbs4vgxmvp5ua5ygkblymafzzbf5zwt4qagmmtoq",
-    "followersCount": 1346,
+    "followersCount": 1345,
     "isVerified": false
   },
   {
@@ -2324,7 +2324,7 @@
     "spaceName": "G DAO",
     "twitterHandler": "GalxeDAO",
     "avatar": "ipfs://bafybeihf6gzofqlmyv4wwszuqzgwodxx66rvkdz6k34g6yxb5mmrukxnbe",
-    "followersCount": 66344,
+    "followersCount": 66345,
     "isVerified": false
   },
   {
@@ -2644,7 +2644,7 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 323601,
+    "followersCount": 323602,
     "isVerified": true
   }
 ]
