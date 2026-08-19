@@ -212,7 +212,7 @@
     "spaceName": "GnosisDAO",
     "twitterHandler": "gnosisdao",
     "avatar": "ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42",
-    "followersCount": 12243,
+    "followersCount": 12244,
     "isVerified": true
   },
   {
@@ -484,7 +484,7 @@
     "spaceName": "Uniswap",
     "twitterHandler": "uniswapfnd",
     "avatar": "ipfs://QmdNntEZMnen3QE9GfHG4heeqMJkFjxQ9BDof4m8xzV6UT",
-    "followersCount": 125279,
+    "followersCount": 125281,
     "isVerified": false
   },
   {
@@ -500,7 +500,7 @@
     "spaceName": "Decentraland",
     "twitterHandler": "decentraland",
     "avatar": "ipfs://QmZAWXeepWnWpsdEXnkym5nvipxGCj87sS6SABBV8x6pPh",
-    "followersCount": 34936,
+    "followersCount": 34938,
     "isVerified": true
   },
   {
@@ -700,7 +700,7 @@
     "spaceName": "Mantle (prev. BitDAO)",
     "twitterHandler": "0xMantle",
     "avatar": "ipfs://bafkreib4sesy2gxeayly4qua6vgvfe6svvotz7ild6jpys4jrfid6kfgiy",
-    "followersCount": 89069,
+    "followersCount": 89070,
     "isVerified": true
   },
   {
@@ -852,7 +852,7 @@
     "spaceName": "Balancer",
     "twitterHandler": "balancer",
     "avatar": "ipfs://QmfQDYJF93G53RcCUaCzyy2eEViM6kCVmp6UMKPqcM649H",
-    "followersCount": 36596,
+    "followersCount": 36597,
     "isVerified": true
   },
   {
@@ -1768,238 +1768,6 @@
     "isVerified": true
   },
   {
-    "spaceId": "synthetix-stakers-poll.eth",
-    "spaceName": "Synthetix Stakers Poll",
-    "twitterHandler": "synthetix_io",
-    "avatar": "ipfs://QmWZ8otAymmLnXXXsHDDYcFUhrerEsuTo3wKUXxWJ5Fyr5",
-    "followersCount": 2205,
-    "isVerified": true
-  },
-  {
-    "spaceId": "pistachiodao.eth",
-    "spaceName": "Pistachio DAO",
-    "twitterHandler": "SnapshotLabs",
-    "avatar": "ipfs://bafkreifcpi3z2vfn2k6ci2lr2exmn65wv6thisk36can25fvqot27cbrlq",
-    "followersCount": 3648,
-    "isVerified": false
-  },
-  {
-    "spaceId": "panda-dao.eth",
-    "spaceName": "PandaDAO",
-    "twitterHandler": "PandaDAO_Office",
-    "avatar": "ipfs://Qma7obVnwdJVzeUQfraFitrVkeA9jDZF2tihVmQtiSUUd6",
-    "followersCount": 380,
-    "isVerified": true
-  },
-  {
-    "spaceId": "nation3.eth",
-    "spaceName": "Nation3 DAO",
-    "twitterHandler": "Nation3DAO",
-    "avatar": "ipfs://QmV78agUo9sBHH9KwBz49z9YMyccadkYp3HMotcYixWkGv",
-    "followersCount": 1047,
-    "isVerified": false
-  },
-  {
-    "spaceId": "livelabs.eth",
-    "spaceName": "SecondLive",
-    "twitterHandler": null,
-    "avatar": "ipfs://QmYC2SoDjVN52Ej8dn7kwxJWP4WScXkRq8bfN2gc4uzf8C",
-    "followersCount": 1156,
-    "isVerified": true
-  },
-  {
-    "spaceId": "apecoin.eth",
-    "spaceName": "ApeCoin DAO",
-    "twitterHandler": "apecoin",
-    "avatar": "ipfs://QmfVZLhH51S1G3UVFRZecXR5KbhS1CQ9RVbpgsqU25YG2C",
-    "followersCount": 36331,
-    "isVerified": true
-  },
-  {
-    "spaceId": "jpeg’d.eth",
-    "spaceName": "JPEG’d",
-    "twitterHandler": "JPEGd_69",
-    "avatar": "ipfs://QmZZP55BVBPkBppvZmz3oSpYEH6Nj7kP6EgV1XkM9eLQ1T",
-    "followersCount": 677,
-    "isVerified": true
-  },
-  {
-    "spaceId": "gnars.eth",
-    "spaceName": "Gnars",
-    "twitterHandler": "gnars_dao",
-    "avatar": "ipfs://bafkreihd7yqih3qfzxnj5cibp3yyqb5tjkamgqyz3kn3yiraumcyz4y5au",
-    "followersCount": 627,
-    "isVerified": true
-  },
-  {
-    "spaceId": "crowncapital.eth",
-    "spaceName": "Crown Capital",
-    "twitterHandler": "crowncapitaldao",
-    "avatar": "ipfs://bafybeiape67ceoih3oh6ooa35co7xx5kvcajyn7h3fi4zh3tcuhvqvhd2u",
-    "followersCount": 48,
-    "isVerified": true
-  },
-  {
-    "spaceId": "layer2dao.org",
-    "spaceName": "Layer2DAO",
-    "twitterHandler": "TheLayer2DAO",
-    "avatar": "ipfs://bafkreibnbc2bf2jaxw6saghvohblblmrncs4f24ob5fvdnytwzrrvwwya4",
-    "followersCount": 7601,
-    "isVerified": true
-  },
-  {
-    "spaceId": "thegurudao.eth",
-    "spaceName": " Guru Network DAO",
-    "twitterHandler": "xgurunetwork",
-    "avatar": "ipfs://QmTX7b1M6YMTnQ4tGQk1UQ3cMnC3xgnbq3nxiJhKVnUHpk",
-    "followersCount": 14889,
-    "isVerified": true
-  },
-  {
-    "spaceId": "rocketpool-dao.eth",
-    "spaceName": "Rocket Pool",
-    "twitterHandler": "Rocket_Pool",
-    "avatar": "ipfs://bafkreic3ytvu4w6b2kxu25kwncltppoflt34tt5jonlzm43i7rk56faxnu",
-    "followersCount": 1189,
-    "isVerified": false
-  },
-  {
-    "spaceId": "metislayer2.eth",
-    "spaceName": "Metis",
-    "twitterHandler": "MetisL2",
-    "avatar": "ipfs://bafkreibslifg4sk3nokkx7kfr7jvbwepbib3x67j4g3qrov7ar6rw525da",
-    "followersCount": 26069,
-    "isVerified": true
-  },
-  {
-    "spaceId": "copernicusbeer.eth",
-    "spaceName": "Copernicus Beer",
-    "twitterHandler": "copernicusbeer",
-    "avatar": "ipfs://QmPDYr6WVXb4cMdQFC5nLM9EE99u9veUqWmbzFrKdqux5z",
-    "followersCount": 45,
-    "isVerified": true
-  },
-  {
-    "spaceId": "lgcryptounicorns.eth",
-    "spaceName": "Crypto Unicorns",
-    "twitterHandler": "crypto_unicorns",
-    "avatar": "ipfs://QmdHtxcTXwSb9E1k1TPtowXgnoSG3vSFZcQxhq4e9UPxsj",
-    "followersCount": 1492,
-    "isVerified": true
-  },
-  {
-    "spaceId": "shellprotocol.eth",
-    "spaceName": "Shell Protocol",
-    "twitterHandler": "ShellProtocol",
-    "avatar": "https://pbs.twimg.com/profile_images/1424905366572199936/63UuIZRl_400x400.jpg",
-    "followersCount": 40011,
-    "isVerified": true
-  },
-  {
-    "spaceId": "gauge.rbn.eth",
-    "spaceName": "Ribbon Gauges",
-    "twitterHandler": null,
-    "avatar": "",
-    "followersCount": 255,
-    "isVerified": true
-  },
-  {
-    "spaceId": "evmaverick.eth",
-    "spaceName": "EVMavericks",
-    "twitterHandler": null,
-    "avatar": "ipfs://QmaM5DNzf7cU75PfXzwsYjJFfoQAxgW8bFcoYmhSo65k9z",
-    "followersCount": 394,
-    "isVerified": true
-  },
-  {
-    "spaceId": "safe.eth",
-    "spaceName": "SafeDAO",
-    "twitterHandler": "safe",
-    "avatar": "ipfs://bafkreihajbe776zgzt7crg4ekq3xpq6nghyr7we2hrldpygzhdljgc7nm4",
-    "followersCount": 17717,
-    "isVerified": false
-  },
-  {
-    "spaceId": "rebellionprotocol.eth",
-    "spaceName": "Rebellion Protocol DAO",
-    "twitterHandler": "RebellionToken",
-    "avatar": "ipfs://bafkreid2ae5inh7f3p22txi22aloadgbzbct2emlmvkspk3ttlkxkzt2jm",
-    "followersCount": 1051,
-    "isVerified": false
-  },
-  {
-    "spaceId": "hashflowdao.eth",
-    "spaceName": "Hashflow",
-    "twitterHandler": "hashflow",
-    "avatar": "ipfs://bafkreiefrvffpq3qilbiwmviintjxegi2nyigu2rb46scmjjyepon5r6qq",
-    "followersCount": 3505,
-    "isVerified": false
-  },
-  {
-    "spaceId": "derify.eth",
-    "spaceName": "Derify Protocol",
-    "twitterHandler": "DerifyProtocol",
-    "avatar": "https://avatars.githubusercontent.com/u/80569165?s=200&v=4",
-    "followersCount": 1647,
-    "isVerified": false
-  },
-  {
-    "spaceId": "deskvoting.eth",
-    "spaceName": "DESK",
-    "twitterHandler": "coindesk",
-    "avatar": "ipfs://QmXMnDJYEKt7rceeeScLxX5yN3DR4Xeff2BtG4f2JYqfGM",
-    "followersCount": 2392,
-    "isVerified": false
-  },
-  {
-    "spaceId": "fractaller.eth",
-    "spaceName": "Fractaller",
-    "twitterHandler": "FractallerP",
-    "avatar": "ipfs://QmPzZjXdna8rSRWwLd5ZvJjbmUSkgCMSxGqG3togv836wu",
-    "followersCount": 1493,
-    "isVerified": false
-  },
-  {
-    "spaceId": "dlytoken.eth",
-    "spaceName": "DLY DAO Gobernanza ",
-    "twitterHandler": "dlytoken",
-    "avatar": "ipfs://QmapDKeNMLuaSM7W7KA7ovrwmhYFCUY8AZe5GhsMVFoZam",
-    "followersCount": 411,
-    "isVerified": true
-  },
-  {
-    "spaceId": "opcollective.eth",
-    "spaceName": "Optimism Collective",
-    "twitterHandler": "optimismPBC",
-    "avatar": "https://github.com/ethereum-optimism/brand-kit/blob/main/assets/images/Profile-Logo.png?raw=true",
-    "followersCount": 204019,
-    "isVerified": true
-  },
-  {
-    "spaceId": "fatcatsdao.eth",
-    "spaceName": "Aurion Capital",
-    "twitterHandler": "Aurion_Capital",
-    "avatar": "ipfs://bafybeihw3n32fj5lp5cuwrracuwj4y2kmftj5kdiy6g4rxuotzaglsvuvy",
-    "followersCount": 163,
-    "isVerified": true
-  },
-  {
-    "spaceId": "flygame.eth",
-    "spaceName": "dappback",
-    "twitterHandler": null,
-    "avatar": "https://cdn.discordapp.com/attachments/954841225305919499/977486354034339840/unnamed1.png",
-    "followersCount": 2443,
-    "isVerified": false
-  },
-  {
-    "spaceId": "babydogevote.eth",
-    "spaceName": "Baby Doge",
-    "twitterHandler": "babydogecoin",
-    "avatar": "ipfs://QmVPKN7Sf35sZroq2kx9mEVwc23XBr1PC16Cxho9rphdxZ",
-    "followersCount": 1254,
-    "isVerified": false
-  },
-  {
     "spaceId": "metfi.io",
     "spaceName": "MetFi DAO",
     "twitterHandler": "MetFi_DAO",
@@ -2332,7 +2100,7 @@
     "spaceName": "SyncSwap",
     "twitterHandler": "syncswap",
     "avatar": "ipfs://bafkreidockudiyug72vsmpmv57iqp6gq7hbdgcf53bf3qzbftjoqjf3j7a",
-    "followersCount": 42160,
+    "followersCount": 42161,
     "isVerified": false
   },
   {
@@ -2452,7 +2220,7 @@
     "spaceName": "Magic Square",
     "twitterHandler": "MagicSquareio",
     "avatar": "ipfs://bafkreidmdngu5cfd4tnk7glxe5bfwwywkqlhafal4v6vd4devgsuydkcgu",
-    "followersCount": 96454,
+    "followersCount": 96455,
     "isVerified": false
   },
   {
@@ -2612,7 +2380,7 @@
     "spaceName": "BIO",
     "twitterHandler": "bioprotocol",
     "avatar": "ipfs://bafkreih2qqxjebi5ienu23jug2hmcfcfa6l7nho6h4bgcl2tfw2rvwkn5i",
-    "followersCount": 1125,
+    "followersCount": 1126,
     "isVerified": false
   },
   {
