@@ -340,7 +340,7 @@
     "spaceName": "Compound",
     "twitterHandler": null,
     "avatar": "ipfs://bafkreibmpwegz45rdonek3yxssx2gmlaolmnbldrqjwdk7zp4gccfcgy7u",
-    "followersCount": 7320,
+    "followersCount": 7321,
     "isVerified": false
   },
   {
@@ -1004,7 +1004,7 @@
     "spaceName": "lobsterdao",
     "twitterHandler": "10b57e6da0",
     "avatar": "ipfs://bafybeif6p645473krvpqf2ewctedhyzip2ypdkgy4exxkbct3z52qfjchu",
-    "followersCount": 681,
+    "followersCount": 682,
     "isVerified": true
   },
   {
@@ -1516,7 +1516,7 @@
     "spaceName": "VitaDAO",
     "twitterHandler": "vita_dao",
     "avatar": "ipfs://QmeaG6fKFsPkdL2pQQjjsxBn8kyHTvsWG5z5pGpY82rcvA",
-    "followersCount": 1554,
+    "followersCount": 1553,
     "isVerified": true
   },
   {
@@ -2452,7 +2452,7 @@
     "spaceName": "Magic Square",
     "twitterHandler": "MagicSquareio",
     "avatar": "ipfs://bafkreidmdngu5cfd4tnk7glxe5bfwwywkqlhafal4v6vd4devgsuydkcgu",
-    "followersCount": 96462,
+    "followersCount": 96463,
     "isVerified": false
   },
   {
@@ -2572,7 +2572,7 @@
     "spaceName": "Treasure",
     "twitterHandler": "Treasure_DAO",
     "avatar": "ipfs://bafkreihsajn6tn6mns4r24wsieoyneqh3blirvfnbopcpimtq7ancdzp5m",
-    "followersCount": 8735,
+    "followersCount": 8734,
     "isVerified": false
   },
   {
@@ -2644,7 +2644,7 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 323618,
+    "followersCount": 323619,
     "isVerified": true
   }
 ]
