@@ -12,7 +12,7 @@
     "spaceName": "DODO",
     "twitterHandler": "BreederDodo",
     "avatar": "ipfs://QmPVpmxBYthxp2uTrbFV4sKr59X1LG1m4FDSZB1rfihnqH",
-    "followersCount": 3231,
+    "followersCount": 3232,
     "isVerified": true
   },
   {
@@ -1972,7 +1972,7 @@
     "spaceName": "Optimism Collective",
     "twitterHandler": "optimismPBC",
     "avatar": "https://github.com/ethereum-optimism/brand-kit/blob/main/assets/images/Profile-Logo.png?raw=true",
-    "followersCount": 204017,
+    "followersCount": 204018,
     "isVerified": true
   },
   {
@@ -2324,7 +2324,7 @@
     "spaceName": "G DAO",
     "twitterHandler": "GalxeDAO",
     "avatar": "ipfs://bafybeihf6gzofqlmyv4wwszuqzgwodxx66rvkdz6k34g6yxb5mmrukxnbe",
-    "followersCount": 66356,
+    "followersCount": 66357,
     "isVerified": false
   },
   {
@@ -2644,7 +2644,7 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 323622,
+    "followersCount": 323624,
     "isVerified": true
   }
 ]
