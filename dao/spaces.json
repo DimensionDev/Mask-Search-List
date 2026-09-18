@@ -212,7 +212,7 @@
     "spaceName": "GnosisDAO",
     "twitterHandler": "gnosisdao",
     "avatar": "ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42",
-    "followersCount": 12254,
+    "followersCount": 12255,
     "isVerified": true
   },
   {
@@ -324,7 +324,7 @@
     "spaceName": "Proof Of Humanity",
     "twitterHandler": "pohdao",
     "avatar": "ipfs://QmVg3dGTGDzqHNK2RJp9un6oYjA8n6ReQMnwNNKQgqLLDZ",
-    "followersCount": 58915,
+    "followersCount": 58914,
     "isVerified": true
   },
   {
@@ -1684,7 +1684,7 @@
     "spaceName": "AssangeDAO",
     "twitterHandler": "AssangeDAO",
     "avatar": "https://assangedao.org/img/JUSTICE_token_logo.png",
-    "followersCount": 812,
+    "followersCount": 813,
     "isVerified": true
   },
   {
@@ -1708,7 +1708,7 @@
     "spaceName": "CoW DAO",
     "twitterHandler": "CoWSwap",
     "avatar": "https://ipfs.filebase.io/ipfs/QmUZp4Ljp3sa5dz827kRv12LazACeUB2kxTMvbu7tKzpcu",
-    "followersCount": 7354,
+    "followersCount": 7355,
     "isVerified": true
   },
   {
@@ -2060,7 +2060,7 @@
     "spaceName": "Share",
     "twitterHandler": "share_offic",
     "avatar": "ipfs://QmRkjh3YEoXj3uBTY52uFd7DdhQkq4TuwFLiUyUsiMLhat",
-    "followersCount": 2096,
+    "followersCount": 2095,
     "isVerified": false
   },
   {
@@ -2116,7 +2116,7 @@
     "spaceName": "Morpho",
     "twitterHandler": "MorphoLabs",
     "avatar": "ipfs://bafkreihmxilb24x2q5qbs4vgxmvp5ua5ygkblymafzzbf5zwt4qagmmtoq",
-    "followersCount": 1352,
+    "followersCount": 1354,
     "isVerified": false
   },
   {
@@ -2140,7 +2140,7 @@
     "spaceName": "Prom",
     "twitterHandler": "prom_io",
     "avatar": "ipfs://bafkreicmbdpsi6vaqqxdhpsw3qtfirddlvir5ns4tg6xuyjcwv3za7weym",
-    "followersCount": 2059,
+    "followersCount": 2058,
     "isVerified": false
   },
   {
@@ -2644,7 +2644,7 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 323625,
+    "followersCount": 323626,
     "isVerified": true
   }
 ]
