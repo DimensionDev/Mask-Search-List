@@ -52,7 +52,7 @@
     "spaceName": "xDai Chain (Gnosis Chain)",
     "twitterHandler": "xdaichain",
     "avatar": "ipfs://QmTmwRjTHcHcPd9TLsBCkg6Hkk36kifPHfSXjN6rVhniDQ",
-    "followersCount": 12389,
+    "followersCount": 12388,
     "isVerified": true
   },
   {
@@ -1316,7 +1316,7 @@
     "spaceName": "Velora DAO",
     "twitterHandler": "VeloraDEX",
     "avatar": "ipfs://bafybeicjnll77bkxyt3d4yhupwc7b5uxdev6trgu5pnqco5c5mw5wmx3qq",
-    "followersCount": 8196,
+    "followersCount": 8195,
     "isVerified": true
   },
   {
@@ -1420,7 +1420,7 @@
     "spaceName": "Yoginth",
     "twitterHandler": "yogicodes",
     "avatar": "https://metadata.ens.domains/mainnet/avatar/yoginth.eth",
-    "followersCount": 6610,
+    "followersCount": 6609,
     "isVerified": false
   },
   {
@@ -1708,7 +1708,7 @@
     "spaceName": "CoW DAO",
     "twitterHandler": "CoWSwap",
     "avatar": "https://ipfs.filebase.io/ipfs/QmUZp4Ljp3sa5dz827kRv12LazACeUB2kxTMvbu7tKzpcu",
-    "followersCount": 7359,
+    "followersCount": 7360,
     "isVerified": true
   },
   {
@@ -1764,7 +1764,7 @@
     "spaceName": "Stargate DAO",
     "twitterHandler": "stargatefinance",
     "avatar": "ipfs://QmNStftrH92EKDXENSoxHgVneaV5jYyNoG5NKeRD88HUSY",
-    "followersCount": 921355,
+    "followersCount": 921354,
     "isVerified": true
   },
   {
@@ -1780,7 +1780,7 @@
     "spaceName": "Pistachio DAO",
     "twitterHandler": "SnapshotLabs",
     "avatar": "ipfs://bafkreifcpi3z2vfn2k6ci2lr2exmn65wv6thisk36can25fvqot27cbrlq",
-    "followersCount": 3649,
+    "followersCount": 3648,
     "isVerified": false
   },
   {
@@ -1972,7 +1972,7 @@
     "spaceName": "Optimism Collective",
     "twitterHandler": "optimismPBC",
     "avatar": "https://github.com/ethereum-optimism/brand-kit/blob/main/assets/images/Profile-Logo.png?raw=true",
-    "followersCount": 204019,
+    "followersCount": 204018,
     "isVerified": true
   },
   {
