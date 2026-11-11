@@ -276,7 +276,7 @@
     "spaceName": "QuickSwap",
     "twitterHandler": "QuickswapDEX",
     "avatar": "ipfs://QmVmuKFU8EqepqfF7MUk7CQK1FoBfGM4qjV5Pnw5b9CSyU",
-    "followersCount": 25542,
+    "followersCount": 25543,
     "isVerified": false
   },
   {
@@ -500,7 +500,7 @@
     "spaceName": "Decentraland",
     "twitterHandler": "decentraland",
     "avatar": "ipfs://QmZAWXeepWnWpsdEXnkym5nvipxGCj87sS6SABBV8x6pPh",
-    "followersCount": 34976,
+    "followersCount": 34977,
     "isVerified": true
   },
   {
@@ -700,7 +700,7 @@
     "spaceName": "Mantle (prev. BitDAO)",
     "twitterHandler": "0xMantle",
     "avatar": "ipfs://bafkreib4sesy2gxeayly4qua6vgvfe6svvotz7ild6jpys4jrfid6kfgiy",
-    "followersCount": 89072,
+    "followersCount": 89073,
     "isVerified": true
   },
   {
@@ -756,7 +756,7 @@
     "spaceName": "ShapeShift",
     "twitterHandler": "ShapeShift",
     "avatar": "https://static.coincap.io/assets/icons/256/fox.png",
-    "followersCount": 6653,
+    "followersCount": 6654,
     "isVerified": true
   },
   {
@@ -1172,7 +1172,7 @@
     "spaceName": "GMX",
     "twitterHandler": "GMX_IO",
     "avatar": "ipfs://QmYg73njLyPinShPKZjy1U2zKH8QULK2qfCgBRNYLuVP37",
-    "followersCount": 76025,
+    "followersCount": 76026,
     "isVerified": false
   },
   {
@@ -2268,7 +2268,7 @@
     "spaceName": " Starknet",
     "twitterHandler": "StarknetFndn",
     "avatar": "ipfs://bafkreiczt6ntienh54rrzv7dvfz5233u4ukwsqfjwavwaud4f5h5i5mq7q",
-    "followersCount": 67147,
+    "followersCount": 67148,
     "isVerified": true
   },
   {
@@ -2644,7 +2644,7 @@
     "spaceName": "Arbitrum DAO",
     "twitterHandler": "arbitrum",
     "avatar": "ipfs://bafkreiejp7kjzjm4mlck45xcfup5lha7wrgqlyghvrtvpjpu5sfb6rl2ei",
-    "followersCount": 323644,
+    "followersCount": 323645,
     "isVerified": true
   }
 ]
