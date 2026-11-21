@@ -40,14 +40,6 @@
     "isVerified": true
   },
   {
-    "spaceId": "aavegotchi.eth",
-    "spaceName": "Aavegotchi",
-    "twitterHandler": "aavegotchi",
-    "avatar": "ipfs://bafkreidbonscxgm7ylrjtfpg7xxhoqr57zxtghavjjcu552hhowgb7repq",
-    "followersCount": 86293,
-    "isVerified": true
-  },
-  {
     "spaceId": "xdaistake.eth",
     "spaceName": "xDai Chain (Gnosis Chain)",
     "twitterHandler": "xdaichain",
@@ -156,7 +148,7 @@
     "spaceName": "Lido",
     "twitterHandler": "LidoFinance",
     "avatar": "ipfs://QmT4DNWx6eRxUPeDp1NMtBv6pvQ9tMdTk1aRMWNfPqpZWG",
-    "followersCount": 32699,
+    "followersCount": 32700,
     "isVerified": true
   },
   {
@@ -212,7 +204,7 @@
     "spaceName": "GnosisDAO",
     "twitterHandler": "gnosisdao",
     "avatar": "ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42",
-    "followersCount": 12261,
+    "followersCount": 12262,
     "isVerified": true
   },
   {
@@ -428,7 +420,7 @@
     "spaceName": "ENS",
     "twitterHandler": "ensdomains",
     "avatar": "ipfs://QmSL2X1h1uk26ahSALTw2qKyc61VaySRRstueVMm1Aym3e",
-    "followersCount": 143099,
+    "followersCount": 143100,
     "isVerified": true
   },
   {
@@ -484,7 +476,7 @@
     "spaceName": "Uniswap",
     "twitterHandler": "uniswapfnd",
     "avatar": "ipfs://QmdNntEZMnen3QE9GfHG4heeqMJkFjxQ9BDof4m8xzV6UT",
-    "followersCount": 125300,
+    "followersCount": 125301,
     "isVerified": false
   },
   {
@@ -500,7 +492,7 @@
     "spaceName": "Decentraland",
     "twitterHandler": "decentraland",
     "avatar": "ipfs://QmZAWXeepWnWpsdEXnkym5nvipxGCj87sS6SABBV8x6pPh",
-    "followersCount": 34979,
+    "followersCount": 34981,
     "isVerified": true
   },
   {
@@ -700,7 +692,7 @@
     "spaceName": "Mantle (prev. BitDAO)",
     "twitterHandler": "0xMantle",
     "avatar": "ipfs://bafkreib4sesy2gxeayly4qua6vgvfe6svvotz7ild6jpys4jrfid6kfgiy",
-    "followersCount": 89074,
+    "followersCount": 89076,
     "isVerified": true
   },
   {
@@ -1316,7 +1308,7 @@
     "spaceName": "Velora DAO",
     "twitterHandler": "VeloraDEX",
     "avatar": "ipfs://bafybeicjnll77bkxyt3d4yhupwc7b5uxdev6trgu5pnqco5c5mw5wmx3qq",
-    "followersCount": 8195,
+    "followersCount": 8194,
     "isVerified": true
   },
   {
@@ -1892,7 +1884,7 @@
     "spaceName": "Shell Protocol",
     "twitterHandler": "ShellProtocol",
     "avatar": "https://pbs.twimg.com/profile_images/1424905366572199936/63UuIZRl_400x400.jpg",
-    "followersCount": 40010,
+    "followersCount": 40009,
     "isVerified": true
   },
   {
@@ -2116,7 +2108,7 @@
     "spaceName": "Morpho",
     "twitterHandler": "MorphoLabs",
     "avatar": "ipfs://bafkreihmxilb24x2q5qbs4vgxmvp5ua5ygkblymafzzbf5zwt4qagmmtoq",
-    "followersCount": 1357,
+    "followersCount": 1358,
     "isVerified": false
   },
   {
@@ -2332,7 +2324,7 @@
     "spaceName": "SyncSwap",
     "twitterHandler": "syncswap",
     "avatar": "ipfs://bafkreidockudiyug72vsmpmv57iqp6gq7hbdgcf53bf3qzbftjoqjf3j7a",
-    "followersCount": 42158,
+    "followersCount": 42157,
     "isVerified": false
   },
   {
